@@ -1,11 +1,11 @@
 import java.util.Scanner;
 import java.util.Arrays;
 
-class Main{
+public class Main{
     public static void main(String[] args){
 
         int MAX = 987654321;
-
+        boolean check = false; 
         int sum_height = 0;
 
         Scanner sc = new Scanner(System.in);
@@ -20,13 +20,20 @@ class Main{
                 if( sum_height - input[j] - input[k] == 100){
                     input[j] = MAX;
                     input[k] = MAX;
+                    check = true;
+                    break; 
                 }
+            }
+            if (check){
+                break;
             }
         }
 
         Arrays.sort(input);
-        for(int i=0; i<7 ;i++){
-            System.out.println(input[i]);
+        for(int i=0; i<9 ;i++){
+            if( input[i] != MAX){
+                System.out.println(input[i]);
+            }
         }
 
     }
