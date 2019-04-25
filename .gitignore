@@ -4,6 +4,8 @@
 .DS_Store?
 .vscode
 .class
+.classpath
+.project
 ._*
 .Spotlight-V100
 .Trashes
