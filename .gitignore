@@ -1,6 +1,9 @@
 /bin/
 .DS_Store
+.settings
 .DS_Store?
+.vscode
+.class
 ._*
 .Spotlight-V100
 .Trashes
