@@ -97,7 +97,7 @@ class DynamicArrayQueueMain {
   public static void main(String [] args){
 
     DynamicArrayQueue q = new DynamicArrayQueue(4);
-    q.enQueue(1);
+    q.deQueue();
     q.enQueue(10);
     q.enQueue(20);
     q.enQueue(40);
