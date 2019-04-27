@@ -40,7 +40,6 @@ class GraphAdjList {
   }
 
   public void displayVertex(int v){
-    //System.out.println(vertexList[v].label);
     count++;
   }
 
@@ -89,7 +88,6 @@ public class Main {
     for(int i=0; i<numberOfNode; i++){
       g.addVertex((char)i);
     }
-
 
     for(int i=0; i<numberOfEdge; i++){
       int u = sc.nextInt();
