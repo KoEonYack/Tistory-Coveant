@@ -60,7 +60,7 @@
   * 이런 소켓을 프로세스가 열면 어떤 포트번호인지 알면 따라가면 어떤 프로세스인지 나온다. 보통 프로세스는 PID라는 식별자를 가지고 있다.
 
 ### 스위치
-![switch](./Data2/switch.JPG)
+![switch](./Data2/switch.jpg)
 *  랜케이블 꼽을 때 딸각 거리며 꼽는다.그 단자가 여러 개 붙어있는 장치를 허브(스위치)라고 한다.
 * 하드웨어 수준에서 포트가 있다.
 * 그 위에 LED가 깜박이고 숫자가 써 있다. 1번 포트에 랜 케이블을 꼽았다. 이 때는 인터페이스 번호이다. 우리말로 하면 단자번호 즘 된다.
@@ -77,3 +77,7 @@
 
 ![이미지5](./Data2/5.JPG)
 * OSI 7Layer를 DOD(Depart of Defense) 즉 미국 방위성에서 이렇게 나눈다. 밑 부분을 **Network access(Access Layer), Network layer, Transport Layer, Application Layer**가 나온다.
+
+
+### Reference
+* [스위치 이미지 https://pixabay.com/ko/photos/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%97%B0%EA%B2%B0-pc-%EC%9B%B9-%EC%A3%BC%EC%86%8C-197300/](https://pixabay.com/ko/photos/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EC%97%B0%EA%B2%B0-pc-%EC%9B%B9-%EC%A3%BC%EC%86%8C-197300/)
