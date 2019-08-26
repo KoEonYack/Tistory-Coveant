@@ -129,6 +129,6 @@ apple@AuzerServer:~$ service apache2 restart
 - 아파치 서버를 재시작합니다.
 
 
-![cmd](https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/16.jpg?raw=true)
+![cmd](https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/16.JPG?raw=true)
 - 자 이렇게 배포를 완료했습니다.
 
