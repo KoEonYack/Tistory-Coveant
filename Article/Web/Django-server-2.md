@@ -1,4 +1,4 @@
-![cmd](0.JPG)
+![cmd](0.jpg)
 # Auzer를 이용하여 Django 배포하기
 ## 2편 Server 설정
 ------------------------
@@ -7,10 +7,10 @@
 * 본 글에서 사용하는 예제는 [여기](https://github.com/KoEonYack/Everyone-Exercise)  주소입니다.
 
 
-![cmd](13.JPG)
+![cmd](13.jpg)
 - **리소스로 이동**을 클릭합니다.
 
-![cmd](14.JPG)
+![cmd](14.jpg)
 - **공용 IP주소**를 확인합니다.
 
 ``` cmd
