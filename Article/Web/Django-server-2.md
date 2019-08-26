@@ -78,7 +78,13 @@ Require all granted
 </Directory>
 ```
 - apache2.conf의 맨 마지막에 위와 같이 작성합니다. 
-
+- **WSGIScriptAlias**: 공백을기준으로 좌측에는 / 우측에는  Django 프로젝트의 wsgi.py가 있는 경로를 작성해 줍니다.  
+- **WSGIDaemonProcess**: 
+    - 공백을 기준으로 좌측에는 EveryExercis, 우측에는 Clone한 Django 프로젝트의 상위 디렉토리를 작성해줍니다. 
+    - EveryExercise라고 하지 않아도 되지만 Django 프로젝트 이름을 할 것을 추천합니다. 
+- **Directory**: wsgi.py가 있는 경로를 작성해 줍니다. 
+- **Alias**: 공백을 기준으로 좌측에는 /static/ 우측에는 Django 프로젝트에서 static파일이 저장되는 곳(python3 manage.py collectstatic)의 경로를 작성합니다.
+- **Directory**: **Alias**에서 작성한 경로를 다시 한번 작성해 줍니다.
 
 ![cmd](15.JPG)
 - settings.py에서 ALLOWED_HOST = ['*']로 합니다.
