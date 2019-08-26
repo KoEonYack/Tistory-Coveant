@@ -16,7 +16,7 @@
 - 본 포스트가 Auzer를 이용해서 배포하려는 분들에게 가뭄에 단비 같은 존재가 되기를 바라고 있습니다.
 
 ## cmder 설치하기
-![cmd](https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/1.jpg)
+![cmd](https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/1.JPG)
 - ssh연결을 위해서를 설치할 것입니다. [cmder.zip (클릭)](https://github.com/cmderdev/cmder/releases/download/v1.3.2/cmder.zip) 
 - Linux, Ubuntu Bash(Window 10), Putty를 잘 사용할 줄 아신다면 본 프로그램은 설치하지 않아도 됩니다.
 - 설치 중간에 창이 뜨면 __Unblock and Continue__ 를 클릭하면 됩니다. 
@@ -25,11 +25,11 @@
 
 [AuzerPortal](https://portal.azure.com/)에서 로그인합니다.
 
-![cmd](https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/2.jpg)
+![cmd](https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/2.JPG)
 왼쪽 메뉴에서 **리소스 그룹**을 클릭합니다.
 
 ![cmd](https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/3.jpg)
-**+추가**를 클릭합니다.
+- **+추가**를 클릭합니다.
 
 ![cmd](https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/4.jpg)
 - **구독**에는 자신의 구독 정로를 클릭합니다. 저는 무료 체험을 사용하므로 **무료 체험**을 선택하였습니다.
@@ -52,7 +52,7 @@
 - **크기** 에서 B2s로 선택합니다. 본 서비스를 구동하기에 이정도면 충분합니다. 
 
 
-![cmd](https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/8.jpg)
+![cmd](https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/8.JPG)
 - **사용자 이름**과 **암호**를 설정합니다. 
 - **암호**는 다소 복잡한 규칙을 적용해야하므로 잘 기억해주세요!
 
