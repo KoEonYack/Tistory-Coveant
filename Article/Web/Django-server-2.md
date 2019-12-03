@@ -1,4 +1,4 @@
-![cmd](0.JPG)
+![cmd](0.jpg)
 # Auzer를 이용하여 Django 배포하기
 ## 2편 Server 설정
 ------------------------
@@ -7,10 +7,10 @@
 * 본 글에서 사용하는 예제는 [여기](https://github.com/KoEonYack/Everyone-Exercise)  주소입니다.
 
 
-![cmd](13.JPG)
+![cmd](https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/13.jpg?raw=true)
 - **리소스로 이동**을 클릭합니다.
 
-![cmd](14.JPG)
+![cmd](https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/14.jpg?raw=true)
 - **공용 IP주소**를 확인합니다.
 
 ``` cmd
@@ -129,6 +129,6 @@ apple@AuzerServer:~$ service apache2 restart
 - 아파치 서버를 재시작합니다.
 
 
-![cmd](16.JPG)
+![cmd](https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/16.JPG?raw=true)
 - 자 이렇게 배포를 완료했습니다.
 
