@@ -36,13 +36,14 @@
 
 - 이렇게 아이디어를 생각하다가 시간이 흘러갔습니다. 
 - 제출 당일 아침에도 어떤 주제를 해야할까 고민하고 있었습니다. 당시 H사에서 인턴하던 중이었습니다. 아침에 출근해서 피곤하던 중 운동을 하지 않아서 피로가 많이 쌓였다는 생각이 들었습니다. 그런 생각을 하던 중 __건강한 대한민국을 만들어야겠고, 그러기 위해서는 운동에 대한 접근성을 낮출 수 있는 서비스를 개발하자__ 라는 생각을 하였습니다. 
-- 주요 기능은 다음과 같습니다.
-``` text
-1. 공공데이터를 바탕으로 지도에 주변 무료 운동시설 조회
-2. 운동시설 별점 평가 코멘트 작성
-3. 운동량 및 식단 일지 작성
-4. 함께 운동할 사람 모집
-```
+- 기획서에서 다룬 주요 기능은 다음과 같습니다.
+
+    ``` 
+    1. 공공데이터를 바탕으로 지도에 주변 무료 운동시설 조회
+    2. 운동시설 별점 평가 코멘트 작성
+    3. 운동량 및 식단 일지 작성
+    4. 함께 운동할 사람 모집
+    ```
 
 
 <p style="text-align: center;">
@@ -92,15 +93,16 @@
 - 동대문 JW 메리어트 호텔에서 8월 22일 ~ 23일 무박 2일동안 진행됩니다. 
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/contest2.png?raw=true" align="center" width="400px"  >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/contest2.png?raw=true" align="center" width="600px"  >
 </p>
 
 > 해커톤 진행(11:00 ~ 다음날 12:00)
 
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/rest.jpg?raw=true" align="center" width="400px"  >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/rest.jpg?raw=true" align="center" width="600px"  >
 </p>
+
 
 - 해커톤 공간의 우측에는 쉴 수 있는 공간과 VR 게임을 할 수 있는 공간이 있습니다. 
 - 해커톤 밤에는 약간의 게임(?)도 합니다. 
@@ -110,7 +112,7 @@
 |<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/food.jpg?raw=true" align="center" width="720px" >|<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/food1.jpg?raw=true" align="center" width="720px" >|
 |------|------|
 |<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/food2.jpg?raw=true" align="center" width="720px">|<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/food4.JPG?raw=true" align="center" width="720px" >|
-|<img src="./img/food3.jpg" align="center" width="720px">|<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/contest.jpg?raw=true" align="center" width="720px" >|
+|<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/food3.jpg?raw=true" align="center" width="720px">|<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/contest.jpg?raw=true" align="center" width="720px" >|
 
 
 > 해커톤 내내 삼시 세끼 이렇게 맛있는 밥이 나옵니다.
@@ -142,13 +144,13 @@
 - 재미있는 주제가 많아서 끝까지 듣고 싶었는데 오후에 면접일정이 있어서 점심 먹고 가야해서 상당히 아쉬웠습니다. 
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/end3.jpg?raw=true" align="center" width="400px"  >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/end3.jpg?raw=true" align="center" width="550px"  >
 </p>
 
 > 아쉬워서 점심 먹고 사진..
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/winners.jpg?raw=true" align="center" width="500px"  >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/winners.jpg?raw=true" align="center" width="550px"  >
 </p>
 
 > 최우수상 ~ [출처 - 보안뉴스](https://www.boannews.com/media/view.asp?idx=84167&kind=)
@@ -181,7 +183,7 @@
 ## [8] 총총
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/end1_right.jpg?raw=true" align="center" width="250px" height="" rotate="180">
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/end1_right.jpg?raw=true" align="center" width="300px" height="">
 </p>
 
 > 불쌍한 취준생은 수상 판넬을 들고 수상 이후 오후에 있는 면접을 보러 DMC까지 갔다. 
@@ -189,7 +191,7 @@
 
 ## [8] 총총2
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/end2.png?raw=true" align="center" width="250" height="" rotate="180">
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/%EA%B0%9C%EB%B0%9C%EB%B3%B4%EC%95%88%EA%B2%BD%EC%A7%84%EB%8C%80%ED%9A%8C/img/end2.png?raw=true" align="center" width="300px" height="" >
 </p>
 
 > 면접 마치고 명동도 갔다... (뒤에는 명동성당, 부끄러워서 뒤집은 상태로 다녔습니다.)
