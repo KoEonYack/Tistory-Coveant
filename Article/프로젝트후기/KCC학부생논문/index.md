@@ -21,7 +21,7 @@
 
 ### Step 1. 존재하는 오픈소스 정적 분석 도구 찾기 
 <p style="text-align: center;">
-<img src="./img/static_collections.png" align="center" width="1000px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/KCC%ED%95%99%EB%B6%80%EC%83%9D%EB%85%BC%EB%AC%B8/img/static_collections.png?raw=true" align="center" width="1000px" >
 </p>
 
 > Google Sheet를 이용해서 협업했습니다.
@@ -36,7 +36,7 @@
 
 ### Step 2. 
 <p style="text-align: center;">
-<img src="./img/pattern.png" align="center" width="1000px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/KCC%ED%95%99%EB%B6%80%EC%83%9D%EB%85%BC%EB%AC%B8/img/pattern.png?raw=true" align="center" width="1000px" >
 </p>
 
 > Checker별로 탐지하는 패턴을 정리하였습니다.
@@ -65,13 +65,13 @@
 ## [5] 제주 IDC로  
 
 <p style="text-align: center;">
-<img src="./img/flight.jpg" align="center" width="400px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/KCC%ED%95%99%EB%B6%80%EC%83%9D%EB%85%BC%EB%AC%B8/img/flight.JPG?raw=true" align="center" width="400px" >
 </p>
 
 - 당시 H사 에서 인턴중이었기에, 현장 실습생에게 주어지는 한 달에 1일 쉴 수 있는 휴가를 이용해서 6/27 ~ 28 1박 2일동안 제주 IDC로 발표하러 갔습니다. 
 
 <p style="text-align: center;">
-<img src="./img/poster2.jpg" align="center" width="400px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/KCC%ED%95%99%EB%B6%80%EC%83%9D%EB%85%BC%EB%AC%B8/img/poster2.jpg?raw=true" align="center" width="400px" >
 </p>
 
 > 어벙...
@@ -82,7 +82,7 @@
 
 ## [6] 수상 발표
 <p style="text-align: center;">
-<img src="./img/winner.jpg" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/KCC%ED%95%99%EB%B6%80%EC%83%9D%EB%85%BC%EB%AC%B8/img/winner.jpg?raw=true" align="center" width="800px" >
 </p>
 
 - KCC 홈페이지에서는 7월 말에 발표라고 하였으나, 8월 8일날 [KCC 홈페이지](http://kiise.or.kr/conference/kcc/2019/)에서 발표하였습니다.
@@ -96,7 +96,7 @@
 ## [8] 총총
 
 <p style="text-align: center;">
-<img src="./img/riss.png" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%ED%9B%84%EA%B8%B0/KCC%ED%95%99%EB%B6%80%EC%83%9D%EB%85%BC%EB%AC%B8/img/riss.png?raw=true" align="center" width="800px" >
 </p>
 
 > RISS에서 확인할 수 있습니다. [(여기) - Python 웹 어플리케이션의 보안취약점 탐지를 위한 오픈소스 정적 결함 검출 도구의 총체적 조사 ](http://www.riss.kr/search/detail/DetailView.do?p_mat_type=1a0202e37d52c72d&control_no=a6ad7eeb5b6e185ec85d2949c297615a)
