@@ -4,7 +4,7 @@
 ## 조감도
 
 <p style="text-align: center;">
-<img src=".\img\mindmap.png" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Greedy/Introduce/img/mindmap.png?raw=true" align="center" width="800px" >
 </p>
 
 탐욕 알고리즘 아이디어를 활용한 알고리즘(문제들) 입니다.
@@ -13,7 +13,7 @@
 ## 도입
 
 <p style="text-align: center;">
-<img src=".\img\kakao.jpg" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Greedy/Introduce/img/kakao.jpg?raw=true" align="center" width="800px" >
 </p>
 
 제주 카카오에서 일하고 있던 무지는 판교 카카오에 있는 라이언이 빨리 오라는 카톡을 보고 판교 카카오로 이동하려고 합니다. 마음이 급한 무지는 당황하며 어떻게 하면 빨리 이동할 수 있을지 고민을 합니다. <br>
@@ -34,19 +34,19 @@
 ## 예시. 외판원(Traveling Salesman) 문제
 
 <p style="text-align: center;">
-<img src=".\img\graph2.png" align="center" width="350px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Greedy/Introduce/img/graph2.png?raw=true" align="center" width="350px" >
 </p>
 
 A, B, C, D 도시가 있습니다. 각 도시의 다리를 건너갈 때 숫자 만큼의 비용이 듭니다. 최소의 비용으로 __모든 도시를 방문__ 하려고 하면 어떻게 해야할까요?
 
 <p style="text-align: center;">
-<img src=".\img\graph1.png" align="center" width="350px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Greedy/Introduce/img/graph1.png?raw=true" align="center" width="350px" >
 </p>
 
 탐욕 알고리즘을 이용하면 A->B->D->C->A 총 33 비용이 듭니다. 
 
 <p style="text-align: center;">
-<img src=".\img\graph3.png" align="center" width="350px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Greedy/Introduce/img/graph3.png?raw=true" align="center" width="350px" >
 </p>
 
 그러나 잘 생각해보면 A->B->C->D->A 총 29 비용으로 모든 도시를 방문할 수 있습니다. 탐욕 알고리즘은 항상 최적의 해를 주지 않습니다.
