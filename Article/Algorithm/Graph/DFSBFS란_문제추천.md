@@ -3,15 +3,17 @@
 > 그래프의 모든 노드를 방문 하는 알고리즘으로 DFS와 BFS가 있습니다. 어려운 코딩테스트를 통과하고 나면 만나게 될 기업 기술 면접의 단골 주제입니다. 본 알고리즘에 대해서 알아봅시다.
 
 
-## [1] DFS(깊이 우선 탐색)란?
+## DFS(깊이 우선 탐색)란?
 
 ### 도입
 <p style="text-align: center;">
-<img src="./img/maze.jpg" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/maze.jpg?raw=true" align="center" width="800px" >
 </p>
-<center> 끝을 알 수 없는 미로를 빠져 나가는 방법은 무엇일까요? </center>
-위의 사진은 영화 메이즈 러너의 미로입니다. 이렇게 복잡한 미로에 갇혔다면 여러분은 어떻게 미로를 빠져나올건가요? 아마 더 이상 막혀서 깊이 들어갈 수 없는 길을 만날 때까지 깊이 깊이 들어갈 것입니다. 한 모퉁이만 돌면 출구가 나올 수 있기에 한 번 깊이 들어가면 더 이상 들어갈 수 없을 때까지 나오지 않을 것입니다.
-DFS는 미로 탐색과 같습니다. 미로에서 끝이 나올때까지 깊이 깊이 들억나느 것처럼 DFS 또한 더 깊이 들어갈 수 없을때까지 탐색합니다. 
+<center> Figure 1. 끝을 알 수 없는 미로를 빠져 나가는 방법은 무엇일까요? </center>
+<br>
+
+ &nbsp; 위의 사진은 영화 메이즈 러너의 미로입니다. 이렇게 복잡한 미로에 갇혔다면 여러분은 어떻게 미로를 빠져나올건가요? 아마 더 이상 막혀서 깊이 들어갈 수 없는 길을 만날 때까지 깊이 깊이 들어갈 것입니다. 한 모퉁이만 돌면 출구가 나올 수 있기에 한 번 깊이 들어가면 더 이상 들어갈 수 없을 때까지 나오지 않을 것입니다.
+ &nbsp; DFS는 미로 탐색과 같습니다. 미로에서 끝이 나올때까지 깊이 깊이 들억나느 것처럼 DFS 또한 더 깊이 들어갈 수 없을때까지 탐색합니다. 
 
 
 ### 구현
@@ -46,43 +48,43 @@ init()
 ### 그림으로 보기
 
 <p style="text-align: center;">
-<img src="./img/dfs_1.png" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_1.png?raw=true" align="center" width="800px" >
 </p>
 A를 시작노드로 하곘습니다. 
 
 <p style="text-align: center;">
-<img src="./img/dfs_2.png" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_2.png?raw=true" align="center" width="800px" >
 </p>
 A에 인접한 B, C가 스택에 저장됩니다.
 
 <p style="text-align: center;">
-<img src="./img/dfs_3.png" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_3.png?raw=true" align="center" width="800px" >
 </p>
 스택의 맨 위에 있는 C를 꺼내서 Visited 배열에 넣습니다. C의 인접한 노드인 D, F가 스택에 저장됩니다. 
 
 
 <p style="text-align: center;">
-<img src="./img/dfs_4.png" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_4.png?raw=true" align="center" width="800px" >
 </p>
 스택의 맨 위에 있는 F를 꺼내서 Visited 배열에 넣습니다. F에 인접한 노드인 D는 이미 Stack에 있으므로 넘어갑니다.
 
 <p style="text-align: center;">
-<img src="./img/dfs_5.png" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_5.png?raw=true" align="center" width="800px" >
 </p>
 스택의 맨 위에 있는 D를 꺼내서 Visited 배열에 넣습니다. D에 인접한 C, F는 Visited 배열에 있으며 B는 스택에 있으므로 넘어갑니다.
 
 <p style="text-align: center;">
-<img src="./img/dfs_6.png" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_6.png?raw=true" align="center" width="800px" >
 </p>
 스택의 맨 위에 있는 B를 꺼내서 Visited 배열에 넣습니다. 스택이 비어있으므로 탐색을 종료합니다.
 
 
-### DFS 장점
+### ⭕ DFS 장점
 - 현 경로상의 노드를 기억하기 때문에 적은 메모리를 사용합니다. 
 - 찾으려는 노드가 깊은 단계에 있는 경우 BFS 보다 빠르게 찾을 수 있습니다. 
 
 
-### DFS 단점
+### ❌ DFS 단점
 - 해가 없는 경로를 탐색 할 경우 단계가 끝날 때까지 탐색합니다. 효율성을 높이기 위해서 미리 지정한 임의 깊이까지만 탐색하고 해를 발견하지 못하면 빠져나와 다른 경로를 탐색하는 방법을 사용합니다.
 - DFS를 통해서 얻어진 해가 최단 경로라는 보장이 없습니다. DFS는 해에 도착하면 탐색을 종료하기 때문입니다.
 
@@ -111,41 +113,53 @@ while Q is non-empty
 ### 그림으로 보기
 
 <p style="text-align: center;">
-<img src="./img/bfs_1.png" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_1.png?raw=true" align="center" width="800px" >
 </p>
 A노드 부터 탐색을 시작할 것입니다.
 
 <p style="text-align: center;">
-<img src="./img/bfs_2.png" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_2.png?raw=true" align="center" width="800px" >
 </p>
 A노드를 Visited 리스트에 넣습니다. A노드에 인접한 B, C를 큐에 넣습니다.
 
 <p style="text-align: center;">
-<img src="./img/bfs_3.png" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_3.png?raw=true" align="center" width="800px" >
 </p>
 큐의 맨 앞에 있는 B를 Visited 리스트에 넣습니다. B에 인접한 노드 D를 큐에 넣습니다.
 
 <p style="text-align: center;">
-<img src="./img/bfs_4.png" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_4.png?raw=true" align="center" width="800px" >
 </p>
 큐의 맨 앞에 있는 C를 Visited 리스트에 넣습니다. C에 인접한 노드 F를 큐에 넣습니다.
 
 <p style="text-align: center;">
-<img src="./img/bfs_5.png" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_5.png?raw=true" align="center" width="800px" >
 </p>
 큐의 맨 앞에 있는 D를 Visited 리스트에 넣습니다. D에 인접한 F는 이미 큐에 있으므로 넘어갑니다.
 
 <p style="text-align: center;">
-<img src="./img/bfs_6.png" align="center" width="800px" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_6.png?raw=true" align="center" width="800px" >
 </p>
 큐의 맨 앞에 있는 F를 Visited 리스트에 넣습니다. 큐는 비어있게 되므로 탐색을 종료합니다.
 
 
+### ⭕ BFS 장점
+- 답이 되는 경로가 여러 개인 경우에도 최단경로임을 보장한다.
+- 최단 경로가 존재하면 깊이가 무한정 깊어진다고 해도 답을 찾을 수 있다.
+
+
+### ❌ BFS 단점
+- 경로가 매우 길 경우에는 탐색 가지가 급격히 증가함에 따라 보다 많은 기억 공간을 필요로 하게 된다.
+- 해가 존재하지 않는다면 유한 그래프(finite graph)의 경우에는 모든 그래프를 탐색한 후에 실패로 끝난다.
+- 무한 그래프(infinite graph)의 경우에는 결코 해를 찾지도 못하고, 끝내지도 못한다.
+
+(Socurce: Wiki)
+
 ## DFS vs BFS 탐색 차이
 <p style="text-align: center;">
-<img src="https://ww.namu.la/s/1fe9246903b78fae07577b243a0b22791e02cb39640d5cbaae10d9849343b4ea6f162a9a677a5892fbf7819abd4ef7221ebd3608849cfb66793411fb5e643951201c95c3f1912cad515f593c9c12fb7c63fe3def22e2c1a095fccf06f322a3cd" align="center" width="800px" >
+<img src="https://ww.namu.la/s/1fe9246903b78fae07577b243a0b22791e02cb39640d5cbaae10d9849343b4ea6f162a9a677a5892fbf7819abd4ef7221ebd3608849cfb66793411fb5e643951201c95c3f1912cad515f593c9c12fb7c63fe3def22e2c1a095fccf06f322a3cd" align="center" width="6500px" >
 </p>
-<center> 트리에서 DFS, BFS 탐색 차이 </center>
+<center> Figure 2. 트리에서 DFS, BFS 탐색 차이 </center>
 
 - DFS는 스택(혹은 재귀), BFS 큐를 사용합니다.
 - BFS는 재귀적으로 동작하지 않습니다.
@@ -161,6 +175,7 @@ But 문제를 푸는 입장에서는 다음과 같은 구분점이 필요합니�
 DFS, BFS에 대해 알아보았으니 백준 문제를 추천해 드리겠습니다.
 난이도는 주관적인 기준입니다 : )
 
+<br>
 
 | No. | 난이도 | 백준 링크 | 문제 풀이 |
 |:--------:|:--------:|:--------:|:--------:|
@@ -174,12 +189,14 @@ DFS, BFS에 대해 알아보았으니 백준 문제를 추천해 드리겠습니
 | 8 | 🌕🌕🌗🌑🌑 | [토마토](https://www.acmicpc.net/problem/7575) | [풀이 준비중]()  |
 | 9 | 🌕🌕🌕🌑🌑 | [나이트의 이동](https://www.acmicpc.net/problem/7562) | [풀이 준비중]()  |
 
+<br><br>
 
 ----------------------
 
 ### 참고
-- 이미지 출처 Figure . [MAZE RUNNER](https://www.youtube.com/watch?time_continue=47&v=EQWqsdOjvG8&feature=emb_title)
-- 이미지 출처 Figure . [나무위키 BFS](https://namu.wiki/w/BFS)
+- 이미지 출처 Figure 1. [MAZE RUNNER](https://www.youtube.com/watch?time_continue=47&v=EQWqsdOjvG8&feature=emb_title)
+- 이미지 출처 Figure 2. [나무위키 BFS](https://namu.wiki/w/BFS)
+- [너비 우선 탐색 (위키백과)](https://ko.wikipedia.org/wiki/%EB%84%88%EB%B9%84_%EC%9A%B0%EC%84%A0_%ED%83%90%EC%83%89)
 - [Depth First Search (DFS): Concept, Implementation, Advantages, Disadvantages](https://www.brainkart.com/article/Depth-First-Search-(DFS)--Concept,-Implementation,-Advantages,-Disadvantages_8877/)
 - [DFS algorithm - www.programiz.com](www.programiz.com)
 - [[자료구조 알고리즘] Graph 검색 DFS, BFS 구현 in Java (by. 엔지니어대한민국)](https://www.youtube.com/watch?v=_hxFgg7TLZQ)
