@@ -14,11 +14,7 @@
 DFS는 미로 탐색과 같습니다. 미로에서 끝이 나올때까지 깊이 깊이 들억나느 것처럼 DFS 또한 더 깊이 들어갈 수 없을때까지 탐색합니다. 
 
 
-### [1-2] 백문이 불여일견
-
-
-
-### [1-1] 구현
+### 구현
 
 __Step 1:__ 스택에 시작 노드를 넣습니다.
 
@@ -31,6 +27,7 @@ __Step 4:__ Step 3에서 스택의 맨 위 노드가 찾고자 하는 노드가 
 __Step 5:__ Step 3로 돌아갑니다. 
 
 
+### 구현 (Pseudo code)
 
 ``` python
 DFS(G, u)
@@ -46,18 +43,52 @@ init()
        DFS(G, u)
 ```
 
+### 그림으로 보기
 
-### [1-3] DFS 장점
+<p style="text-align: center;">
+<img src="./img/dfs_1.png" align="center" width="800px" >
+</p>
+A를 시작노드로 하곘습니다. 
+
+<p style="text-align: center;">
+<img src="./img/dfs_2.png" align="center" width="800px" >
+</p>
+A에 인접한 B, C가 스택에 저장됩니다.
+
+<p style="text-align: center;">
+<img src="./img/dfs_3.png" align="center" width="800px" >
+</p>
+스택의 맨 위에 있는 C를 꺼내서 Visited 배열에 넣습니다. C의 인접한 노드인 D, F가 스택에 저장됩니다. 
+
+
+<p style="text-align: center;">
+<img src="./img/dfs_4.png" align="center" width="800px" >
+</p>
+스택의 맨 위에 있는 F를 꺼내서 Visited 배열에 넣습니다. F에 인접한 노드인 D는 이미 Stack에 있으므로 넘어갑니다.
+
+<p style="text-align: center;">
+<img src="./img/dfs_5.png" align="center" width="800px" >
+</p>
+스택의 맨 위에 있는 D를 꺼내서 Visited 배열에 넣습니다. D에 인접한 C, F는 Visited 배열에 있으며 B는 스택에 있으므로 넘어갑니다.
+
+<p style="text-align: center;">
+<img src="./img/dfs_6.png" align="center" width="800px" >
+</p>
+스택의 맨 위에 있는 B를 꺼내서 Visited 배열에 넣습니다. 스택이 비어있으므로 탐색을 종료합니다.
+
+
+### DFS 장점
 - 현 경로상의 노드를 기억하기 때문에 적은 메모리를 사용합니다. 
 - 찾으려는 노드가 깊은 단계에 있는 경우 BFS 보다 빠르게 찾을 수 있습니다. 
 
-### [1-4] DFS 단점
+
+### DFS 단점
 - 해가 없는 경로를 탐색 할 경우 단계가 끝날 때까지 탐색합니다. 효율성을 높이기 위해서 미리 지정한 임의 깊이까지만 탐색하고 해를 발견하지 못하면 빠져나와 다른 경로를 탐색하는 방법을 사용합니다.
 - DFS를 통해서 얻어진 해가 최단 경로라는 보장이 없습니다. DFS는 해에 도착하면 탐색을 종료하기 때문입니다.
 
 
-
 ## BFS(너비 우선 탐색)란?
+
 
 ### 사용 
 - 웹 크롤링 - 동적으로  생성되는 무한한 인터넷 페이지를 구글이 크롤링 하기 위해서는 BFS를 합니다. 
@@ -65,6 +96,49 @@ init()
 - 가비지 컬렉션 - [Article](https://www.quora.com/What-kind-of-graph-theory-is-used-in-automatic-garbage-collection-How-is-it-used)
 
 자세한 설명은 [MIT BFS 강의 6:00](https://www.youtube.com/watch?v=s-CYnVz-uh4) 에서 확인 하실 수 있습니다.
+
+
+### 구현
+
+```
+create a queue Q 
+mark v as visited and put v into Q 
+while Q is non-empty 
+    remove the head u of Q 
+    mark and enqueue all (unvisited) neighbours of u
+```
+
+### 그림으로 보기
+
+<p style="text-align: center;">
+<img src="./img/bfs_1.png" align="center" width="800px" >
+</p>
+A노드 부터 탐색을 시작할 것입니다.
+
+<p style="text-align: center;">
+<img src="./img/bfs_2.png" align="center" width="800px" >
+</p>
+A노드를 Visited 리스트에 넣습니다. A노드에 인접한 B, C를 큐에 넣습니다.
+
+<p style="text-align: center;">
+<img src="./img/bfs_3.png" align="center" width="800px" >
+</p>
+큐의 맨 앞에 있는 B를 Visited 리스트에 넣습니다. B에 인접한 노드 D를 큐에 넣습니다.
+
+<p style="text-align: center;">
+<img src="./img/bfs_4.png" align="center" width="800px" >
+</p>
+큐의 맨 앞에 있는 C를 Visited 리스트에 넣습니다. C에 인접한 노드 F를 큐에 넣습니다.
+
+<p style="text-align: center;">
+<img src="./img/bfs_5.png" align="center" width="800px" >
+</p>
+큐의 맨 앞에 있는 D를 Visited 리스트에 넣습니다. D에 인접한 F는 이미 큐에 있으므로 넘어갑니다.
+
+<p style="text-align: center;">
+<img src="./img/bfs_6.png" align="center" width="800px" >
+</p>
+큐의 맨 앞에 있는 F를 Visited 리스트에 넣습니다. 큐는 비어있게 되므로 탐색을 종료합니다.
 
 
 ## DFS vs BFS 탐색 차이
@@ -78,7 +152,8 @@ init()
 
 But 문제를 푸는 입장에서는 다음과 같은 구분점이 필요합니다.
 - 최단 거리 문제를 푼다면 BFS를 사용합니다.
-- 이동할 때마다 가중치가 붙어서 이동한다거나, 이동 과정에서 여러 제약이 있을 경우, DFS로 구현하는 것이 좋습니다.
+- 이동할 때마다 가중치가 붙어서 이동한다거나 이동 과정에서 여러 제약이 있을 경우 DFS로 구현하는 것이 좋습니다.
+
 
 
 ## 🎁 백준 문제 추천
@@ -89,16 +164,15 @@ DFS, BFS에 대해 알아보았으니 백준 문제를 추천해 드리겠습니
 
 | No. | 난이도 | 백준 링크 | 문제 풀이 |
 |:--------:|:--------:|:--------:|:--------:|
-| 1 | 🌕🌑🌑🌑🌑 | [](https://www.acmicpc.net/problem/) | []()  | 
-| 2 | 🌕🌗🌑🌑🌑 | [](https://www.acmicpc.net/problem/) | []()  | 
-| 3 | 🌕🌗🌑🌑🌑 | [](https://www.acmicpc.net/problem/) | []()  | 
-| 4 | 🌕🌗🌑🌑🌑 | [](https://www.acmicpc.net/problem/) | []()  |
-| 5 | 🌕🌗🌑🌑🌑 | [](https://www.acmicpc.net/problem/) | []()  | 
-
-
-<br>
-
-### 사족
+| 1 | 🌕🌑🌑🌑🌑 | [DFS와 BFS](https://www.acmicpc.net/problem/1260) | [풀이 준비중]()  | 
+| 2 | 🌕🌗🌑🌑🌑 | [미로 탐색](https://www.acmicpc.net/problem/2178) | [풀이 준비중]()  | 
+| 3 | 🌕🌗🌑🌑🌑 | [숨바꼭질](https://www.acmicpc.net/problem/1697) | [풀이 준비중]()  |
+| 4 | 🌕🌗🌑🌑🌑 | [유기농 배추](https://www.acmicpc.net/problem/1012) | [풀이 준비중]()  |
+| 5 | 🌕🌗🌑🌑🌑 | [연결 요소의 개수](https://www.acmicpc.net/problem/11724) | [풀이 준비중]()  |  
+| 6 | 🌕🌗🌑🌑🌑 | [단지번호붙이기](https://www.acmicpc.net/problem/2667) | [풀이 준비중]()  | 
+| 7 | 🌕🌗🌑🌑🌑 | [로또](https://www.acmicpc.net/problem/6603) | [풀이 준비중]()  | 
+| 8 | 🌕🌕🌗🌑🌑 | [토마토](https://www.acmicpc.net/problem/7575) | [풀이 준비중]()  |
+| 9 | 🌕🌕🌕🌑🌑 | [나이트의 이동](https://www.acmicpc.net/problem/7562) | [풀이 준비중]()  |
 
 
 ----------------------
@@ -111,15 +185,5 @@ DFS, BFS에 대해 알아보았으니 백준 문제를 추천해 드리겠습니
 - [[자료구조 알고리즘] Graph 검색 DFS, BFS 구현 in Java (by. 엔지니어대한민국)](https://www.youtube.com/watch?v=_hxFgg7TLZQ)
 - [Python｜탐색 알고리즘 뿌시기 (1) DFS, BFS 의 개념과 구현](https://jeinalog.tistory.com/18)
 - [HI-ARC 정기모임 #7 BFS (Slide Share)](https://www.slideshare.net/JaeyeolLee4/hiarc-7-bfs)
-
-
-
-
-
-
-
-
-
-BFS vs DFS #
-그렇다면 BFS(너비우선탐색)과 DFS(깊이 우선탐색)은 언제 쓰는것이 옳을까? BFS와 DFS모두 Time Complexity는 O(N)으로 같으나, Space Complexity는 DFS 의 경우 Tree의 최대 깊이( O(log(N)) ), BFS의 경우 큐에 쌓이는 용량 O(logN)만큼의 공간복잡도를 활용하므로 DFS가 좀더 유리하다. 하지만, DFS는 웹페이지, SNS의 연결망 같은 무한대에 가까운 깊이를 가지는 Tree(혹은 Graph)의 경우 정답이 되는 Path를 찾아가지 못하는 경우에는 정답을 찾을 수 있다는 보장을 할 수 없다. 이러한 경우에는 컴퓨터의 자원만 보장된다면, 얼마의 시간이 걸릴지는 모르지만 BFS를 이용해 정답을 찾을 수 있다.
-http://www.incodom.kr/BFS
+- [BFS & DFS 구분하자!](https://haams704.tistory.com/75)
+- [Breadth first search (programiz)](https://www.programiz.com/dsa/graph-bfs)
