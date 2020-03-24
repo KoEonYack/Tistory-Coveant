@@ -45,3 +45,17 @@ public class Start5 {
         share = 55;
     }
 }
+
+
+
+public class Car {
+    int fuel;
+    int velocity;
+
+    void doAccel(){
+        System.out.println("달려~");
+    }
+    void doBreak(){
+        System.out.println("멈춰~")
+    }
+}
