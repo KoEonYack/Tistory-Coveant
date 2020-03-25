@@ -1,9 +1,16 @@
-# 한 눈에 확인하는 컴퓨터 구조
+# 👀 한 눈에 확인하는 컴퓨터 구조
 -------
 * 본 포스트는 지금은 사라져버린 교육기관인 아이엘아이티 네트워크 강의를 수강후 재구성하였습니다.
 
+<br/>
+
+
 ### 도입
-![이미지1](./Data/1.JPG)
+
+<p style="text-align: center;">
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/1.JPG?raw=true" align="center" >
+</p>
+
 * [이미지 출처 unsplash.com](https://unsplash.com/photos/8n9npBvQUWg)
 * 여러 층(Layer)로 이루어진 멋진 건물이 있다.
 * 컴퓨터에서 층(Layer)이 그림이 나오면 **존립 의존**과 **상호 독립** 2가지를 생각해야 한다.  
@@ -13,20 +20,36 @@
   * 내용적 측면에서 **상호 독집적**이다.
     같은 회사의 부서라고해서 경영지원부에서 생긴 문제는 연구부와 별 관계가 없다.
 
+<br/>
+
 
 ### 비유
-![이미지2](./Data/2.JPG)
+
+<p style="text-align: center;">
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/2.JPG?raw=true" align="center">
+</p>
+
 * 나라는 3가지로 나눌 수 있는데 **(1)영토**  **(2)정부** **(3)국민**으로 나눌 수 있다.
 
-![이미지3](./Data/3.JPG)
+<p style="text-align: center;">
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/3.JPG?raw=true" align="center"  >
+</p>
+
 * 한 가족이 살아가기 위해서 집이라는 공간이 필요하다. 한 나라에는 이런 집이 괭장히 무수히 많을 것이다.
 * 영희가 급한 볼일이 생겨서 철수네 집에 화장실을 갈 수 없다. 그런 짓을 하면 안된다고 법으로 주거침입으로 정해놨다.
 * 집과 정부 사이에 공간을 띄워놨는데, 이 사이 공간은 에매함을 표현하기 위함다. 정부와 민간인 역할의 중간 사이에 있는 경우가 있다. 이를 공무원이라고 한다. 이들은 민간에 속하지만 하는 일은 정부의 일이기 때문이다.
 * 남의 집에 진입하면 안되지만 정부로 부터 권한을 이양받은, 거기서 물건을 합법적으로 싹 들고 나와버릴 수도 있는 '검,경'이 있다.
 
 
+<br/>
+
+
 ### 유저, 커널, 하드웨어
-![이미지4](./Data/4.JPG)
+
+<p style="text-align: center;">
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/4.JPG?raw=true" align="center" >
+</p>
+
 * **영토**는 **하드웨**어(=물리적)로 볼 수 있다. **정부**는 __소프트웨어__(=논리적, virtual)로 볼 수 있다. 소프트웨어에서 virtual이 논리적이라는 말과 거의 똑같이 사용한다. 논리적이라는 말은 진짜가 아니라는 뜻이다. 그렇다라고 믿는 일종의 신앙적인 의미이다. 이 사실은 보안을 공부할 사람에게 중요하다.
 * **정부** 영역은 **커널**이다. **민간**은 **유저** 영역이다. 점선 위로 올라가면 제대로 민간 영역이다.
 * **개인**은 쓰레드로 볼 수 있다. 쓰레드는 프로세스 안으로 행동반경이 제한된다.
@@ -41,7 +64,14 @@
 * 검경 = 디버거. 디버거라는 것은 소프트웨어가 가지고 있는 결함을 해결하기 위해서 만들어진 또 다른 체계이다.
   * 이것을 잘 쓰면 결함을 찾는게 되고 나쁘게 사용하면 메모리를 위변조하는 메모리 해킹도구가 된다.
 
-![이미지5](./Data/5.JPG)
+
+<br/>
+
+
+<p style="text-align: center;">
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/5.JPG?raw=true" align="center"  >
+</p>
+
 * 컴퓨터에 하드웨어 장치(Device)를 설치하면, 이를 구동하기 위해서 소프트웨어가 필요한데 커널영역에서 필요하다.
   * 참고적로 커널 영역에서 fault가 나면 블루스크린이 나온다.
 * 장치를 구동시키기 위한 소프트웨어가 있는데, **디바이스 드라이버**라고 한다. 장치가 무엇이냐에 따라 상황이 달라지겠지만 특별한 일이 없다면 운영체제의 구성요소가 Driver안에 잇을 것이다.
@@ -52,7 +82,13 @@
   * 파일은 대상체, 프로세스는 주체이다. 주체가 대상체를 상대로 무엇인가를 한다.
   * 프로세서가 파일에 대해서 하는 흔한 일이 (1) 생성(열기) (2) 읽기 / 쓰기 (3) 삭제 / 닫기 쉽게 말하면 IO가 될 것이다. 그러면 입출을 하면 IO에 따른 형식이 있을 것이다. 이런 Format을 읽기 형식, 쓰기형식을, 프로토콜이라고 한다. 내가 아는 프로토콜과 정의가 다른데? 내 말이 맞다. 구성요소와 Driver하고 공간이 있는데 Filter가 들어갈 수 있다.
 
-![이미지6](./Data/6.JPG)
+<br/>
+
+
+<p style="text-align: center;">
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/6.JPG?raw=true" align="center"  >
+</p>
+
 * 하드 디스크와 SSD가 있다. 이를 움직이기 위한 Device Drivere가 있다. 그 위에 파일 시스템이 있다.(NTFS) 파일 시스템이 있으면 여기하고 연결된 다리가 파일의 형태로 있을 것이다.
 * 윈도우 탐색기가 있는데, 어떤 파일을 클릭을 하면 파일을 거쳐서 Disk로 아래로 내려가는 것이다. 이때 말하는 파일은 두 종류이다. 커널과 인터페이싱을 하기 위한 파일과 디스크 안에 파일이 들어있다.
 즉 파일은 정보의 단위이다. 그 파일이나 저 파일이나 본질은 파일이다.
@@ -64,7 +100,15 @@
   * V3를 하면 실시간 감시를 한다는 것이다.
   * 입출력하는 과정에서 필터가 들어가고 감시하니깐 속도가 떨어질 수 밖에 없다.
 
-![이미지7](./Data/7.JPG)
+
+<br/>
+
+
+<p style="text-align: center;">
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/7.JPG?raw=true" align="center"  >
+</p>
+
+
  * 하드웨어 레이어에 NIC(Network Interface Card, LAN카드)가 있다.
     * 여기서 네트워크선이 쭉 빠져서 L2스위치로 간다. 라우터를 거쳐 인터넷으로 갈 것이다.
     * 이 장치를 작동하기 위한 디바이스 드라이버가 있다.
@@ -79,8 +123,17 @@
     * 왓다갔다 하는 데이터를 WinPcap이 카피를 해서 와이어 샤크로 보낸다.
 
 
+<br/>
+
+
 ### 발상의 전환
-![이미지8](./Data/8.JPG)
+
+<p style="text-align: center;">
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/8.JPG?raw=true" align="center" >
+</p>
+
+<br/>
+
 * 컴퓨터 구조 책에 등장하는 원형 모양의 3개의 레이어를 쭉 피면 위에서 설명한 3개의 층(유저, 커널, 하드웨어)이 나온다.
 
 ### 참고 문헌 및 이미지 출처
