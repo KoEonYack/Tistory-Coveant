@@ -58,3 +58,11 @@ print("hello")
 </div>
 </div>
 
+
+
+
+<pre class="css"><code>#code {
+/* 코드 언어에 맞춰서 텍스트의 모양새가 변경됩니다. */
+display: flex;
+flex-flow: column-reverse;
+}</code></pre>
