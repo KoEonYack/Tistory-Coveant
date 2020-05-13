@@ -24,9 +24,9 @@
 <img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/2.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
-- 개발자가 3명이 되었을 때 각자가 로컬에서 톰캣으로 실행합니다.
-- 개발DB로 로컬에 공유하여 저장할 것입니다.
+- 개발자가 3명이 되었습니다. 개발할 때 각자가 로컬에서 톰캣으로 실행합니다.
 - 여러 명의 개발자인 경우 형상관리를 위해서 SVN, Github과 같은 SCM(Source Code Management)로 관리합니다.
+- 개발DB로 로컬에 공유하여 저장할 것입니다.
 
 <br />
 <br />
@@ -57,7 +57,7 @@
 <br />
 
 - 그러다가 동시접속자가 1000명을 넘겼습니다. 
-- 서버가 많아지니 빠짐없이 배포하기 우해서 Jenkins, Ansible, Chef를 사용했을 것입니다. 
+- 서버가 많아지니 빠짐없이 배포하기 위해서 Jenkins, Ansible, Chef를 사용했을 것입니다. 
 - 전체 배포 시간이 늘어나지만 서비스에는 문제가 없을 것입니다.
 - 이쯤 되면 서비스 유지를 위해서 신규채용을 해야 합니다.
 
@@ -72,7 +72,7 @@
 - 이때는 여러 문제가 발생합니다.
     - 문제 1. Branch Merge시 Conflict
     - 문제 2. QA를 어디까지 하지? --> 정기 배포일을 정합니다.
-    - 문제 3. 주문팀과 상품팀의 각자 다른 일정이 있습니다.
+    - 문제 3. 주문팀과 상품팀의 각자 다른 일정이 있습니다. --> 빨리 배포해야하는데..
     - 문제 4. 주문팀과 같이 운영하기에 상품팀이 서버를 마음대로 재시작할 수 없습니다.
 
 
