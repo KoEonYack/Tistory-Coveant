@@ -2,7 +2,7 @@
 
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/%EB%8C%80%ED%95%99%EC%9B%90%EC%83%9D_%EC%84%B8%EA%B8%88%ED%99%98%EA%B8%89/img/login.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/PracticeCoding/tree/master/Article/Note/Line_dev_meetup_5/img/line_logo.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 <br />
 
 LINE 개발자, 그리고 개발 문화라는 주제로 LINE Tech Evangelist Minwoo Park님이 진행하셨습니다. Zoom 웨비나로 진행되었으며 약 100명 이상 시청하였습니다.
@@ -26,9 +26,10 @@ LINE 개발자, 그리고 개발 문화라는 주제로 LINE Tech Evangelist Min
 # 라인 개발
 
 <br />
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/3.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
 
 
-- [3p]
 - 라인 전체는 8천명 이중에서 엔지니어 2천 5백명, 한국 1천명, 일본 1천명 기타 국가에서 500명 
 - 한국(서현, 판교), 일본에 등 개발센터가 있다.  
 - 자체 클라우드 인프라 Verda에서 VM, Object Storage, CDN, Load Balancer, Managed Kafka, Kubernetes, 등등 있다. 개발자들이 요구에 맞는 서비스를 제공하고 있다. 
@@ -43,7 +44,9 @@ LINE 개발자, 그리고 개발 문화라는 주제로 LINE Tech Evangelist Min
 - 데이터 플랫폼팀이 빠르게 분석하고 결정할 수 있기에 중요하다. data goverance, 보안을 중요하게 생각한다. 이런 플랫폼에서 최적화 하는 조직이 잘 되어있다.
 - Clova AI랑 협업하거나 자체 ML 조직과 협업하여 이미지 인식, 라인에도 카메라 인식과 글자 인식이 잘 되어있다. 협업해서 잘 구현된 서비스를 만들 수 있다. 
 
-[4p]
+<br />
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/4.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
 
 - 라인 스피커도 클로바와 협업해서 만든 작품이다.
 - 레스토랑에서 AI가 주문하고 주문 받는 실제 B2B 서비스가 나와있다. 
@@ -60,7 +63,10 @@ LINE 개발자, 그리고 개발 문화라는 주제로 LINE Tech Evangelist Min
 <br />
 
 
-5p
+
+<br />
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/5.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
 
 - 사용자에 도움이 되는가?
 - 데이타 플랫폼팀 기준으로 A/B 테스트, 시각화 도구가 있다. 
@@ -77,18 +83,25 @@ LINE 개발자, 그리고 개발 문화라는 주제로 LINE Tech Evangelist Min
 
 
 
-[6p]
+
+<br />
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/6.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
 
 - 개발에 필요하면 소프트웨어, 하드웨어를 다 빠르게 지원해준다.
 
-[7p]
+
+<br />
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/7.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
 
 - 회사가 커지면 누가 어떤 일을 하는지 알기 쉽지 않다. 한달에 한번으로 어떤 일을 하게 입력한다.
   - 안드로이드 개발자인데 Ios를 했다. 블로그를 했다. 등등 
 
 
-
-[8p]
+<br />
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/8.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
 
 - 라인 디벨로퍼데이 크게 하고 있다.
 - 일본쪽 유튜브에도 잘 올라가있다.
@@ -148,7 +161,8 @@ LINE 개발자, 그리고 개발 문화라는 주제로 LINE Tech Evangelist Min
   - 대규모 서비스이기에 조심스럽다.
 - 회사업무를 통해 지식, 역량 쌓는 법?
   - 개인 블로그를 활용하라.
-- 
 
 
 
+<br />
+<br />
