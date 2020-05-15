@@ -14,6 +14,9 @@ LINE 개발자, 그리고 개발 문화라는 주제로 LINE Tech Evangelist Min
 
 <br />
 
+<br />
+<img src="https://github.com/KoEonYack/PracticeCoding/tree/master/Article/Note/Line_dev_meetup_5/img/2.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<br />
 
 - 라인에 개발자 1000명이 있으며 많은 일을 하고 어떤 일을 하는지 소개하는 자리
 - 라인은 한국보다는 해외에서 많은 서비스를 하고 있다.
