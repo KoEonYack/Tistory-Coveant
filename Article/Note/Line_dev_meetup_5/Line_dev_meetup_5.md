@@ -103,7 +103,7 @@ LINE 개발자, 그리고 개발 문화라는 주제로 LINE Tech Evangelist Min
 
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/8.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/9.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 - 라인 디벨로퍼데이 크게 하고 있다.
