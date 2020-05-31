@@ -20,6 +20,7 @@
 </details>
 ```
 
+-----------------------------------
 
 
 ## 프라치노 공간을 이용한 접기, 펼치기 버튼
@@ -37,6 +38,8 @@ print("hello")
 </div>
 
 
+
+-----------------------------------
 
 
 
@@ -68,8 +71,22 @@ flex-flow: column-reverse;
 }</code></pre>
 
 
+-----------------------------------
 
 
 # 마크다운을 HTML로
 
 - F1 -> Copy
+
+
+-----------------------------------
+
+
+# README.md 스킬. 이미지를 택스트와 나란히 넣는 방법
+
+
+<a href="#">
+    <img src="https://github.com/verhagen/get-programming-with-nodejs/blob/master/image/Wexler_GetProg-nodejs_hiresmeap-w180.png?raw=true"
+         title="get Programming with Node.js" align="right" />
+</a>
+
