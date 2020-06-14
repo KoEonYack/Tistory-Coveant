@@ -1,5 +1,10 @@
 # Go 언어로 네트워크 프로그래밍하기
 
+
+
+<br />
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/GO/Golang%EC%9C%BC%EB%A1%9C_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%ED%95%98%EA%B8%B0/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
 <br />
 
 최흥배(컴투스)님께서 NDC에서 18년 7월 발표하신 [Go 언어로 네트워크 프로그래밍하기](https://youtu.be/5NsUPbdKOF8) 내용을 정리한 것입니다. 
@@ -8,7 +13,7 @@
 <br />
 
 
-## 결론부터 이야기한다면?
+# 결론부터 이야기한다면?
 
 <br />
 
@@ -19,7 +24,7 @@
 - 고루틴은 stateless에서 아주 좋지만 statefull 에서는 한계가 있다.
 
 <br />
-<img src="./img/game_server.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/GO/Golang%EC%9C%BC%EB%A1%9C_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%ED%95%98%EA%B8%B0/img/game_server.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center>Source. 18 NDC 발표자료</center>
 <br />
@@ -31,7 +36,7 @@
 <br />
 
 
-## GO가 무엇인가?
+# GO가 무엇인가?
 
 <br />
 
@@ -50,7 +55,7 @@
 <br />
 <br />
 
-## Go 잘하는것
+# Go 잘하는것
 
 <br />
 
@@ -64,7 +69,7 @@
 - Thread를 막 만들어도 괜찮다.
 
 <br />
-<img src="./img/channel.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/GO/Golang%EC%9C%BC%EB%A1%9C_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%ED%95%98%EA%B8%B0/img/channel.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center>Source. geeksforgeeks.com</center>
 <br />
@@ -83,7 +88,7 @@
 <br />
 
 
-## 쓸만한 프로그래밍 언어 조건
+# 쓸만한 프로그래밍 언어 조건
 
 <br />
 
@@ -96,7 +101,7 @@
 <br />
 <br />
 
-## GO로 게임 서버를 개발하려면?
+# GO로 게임 서버를 개발하려면?
 
 <br />
 
@@ -121,7 +126,7 @@
 <br />
 <br />
 
-## 실시간 통신 게임 서버
+# 실시간 통신 게임 서버
 
 <br />
 
@@ -132,7 +137,7 @@
 <br />
 <br />
 
-## Go는 빠르지만..
+# Go는 빠르지만..
 
 <br />
 
@@ -141,8 +146,12 @@
 - C++은 세밀하게 하나 내가 괸라한다. Go는 세밀하게 관리할 수 없다.
 
 
+<br />
+<br />
 
-## 공부는 어떻게?
+# 공부는 어떻게?
+
+<br />
 
 - 물어볼 곳이 별로 없다.
 - 그러나 stack overflow에 답이 다 있다. 
