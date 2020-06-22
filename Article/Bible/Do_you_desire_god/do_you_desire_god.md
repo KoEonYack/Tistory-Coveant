@@ -8,13 +8,20 @@
 # 출근길 명설교?
 
 <br />
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT6ZuNIk50PRZEFmaCuFDf9ffKG6ss2mYwEeOVjBcweayaSGwNf&usqp=CAU" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://58.234.158.21:8081/Upload/Image/20200503/00000000000000201449.JPG" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center>사진은 본 상황을 설명하기 위한 이미지입니다. Source. TBS </center>
 <br />
 
-14년 공군 헌병으로 군 복무 당시 교대 근무로 인하여 교회를 참석 못할 때가 있습니다. 지금의 스마트폰을 부내내에 쓸 수 있던 시절이 아니라 일병 달고 어느정도 시간이 지나야 PMP를 반입할 수 있던 시절이었습니다. 교회에 참석하지 못한 아쉬운 마음을 달래고자 휴가를 나오면 하루종일 '마커스 김남국' 목사님 설교를 전문 녹취록을 만들었습니다. 6개월간 총 3번의 9박 10일 휴가동안 23편의 설교를 전문 타이핑했습니다. 
+14년 군 복무 시절 공군 헌병 특기를 배정받아 교대 근무로 인해 교회를 참석 못할 때가 있습니다. 지금의 스마트폰을 부내내에 쓸 수 있던 시절이 아니라 일병 달고 어느정도 시간이 지나야 PMP를 반입할 수 있던 시절이었습니다. 교회에 참석하지 못한 아쉬운 마음을 달래고자 휴가를 나오면 하루종일 '마커스 김남국' 목사님 설교를 전문 녹취록을 만들었습니다. 6개월간 총 3번의 9박 10일 휴가동안 23편의 설교와 신앙 메시지를 400p 분량 타이핑했습니다. 
 
+<br />
+
+
+<br />
+<img src="https://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2014/05/07010000/no-other-name-times-square-shoot-card-hillsong-collected.jpg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
+<center> 다른 이름은 없습니다. Hillsong Time Square </center>
 <br />
 
 어떠한 장소여도 하나님의 말씀이 선포되기를 원합니다. 사회생활을 시작한 지금 출근길 위해서 다시 하나님의 말씀위에 서기를 원하기에 출근길 명설교 시리즈를 시작합니다.
@@ -78,7 +85,7 @@ Young lady, young man, elderly woman, elderly man, middle-aged man in the prime 
 <br />
 <br />
 
-# DO YOU HAVE THE RIGHT ANSWER? (옳은 답을 가지고 있습니까?)
+# DO YOU HAVE THE RIGHT ANSWER? 
 
 <br />
 
@@ -198,50 +205,12 @@ Do you desire him?
 
 <br />
 <br />
-<img src="/img/end.png" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Bible/Do_you_desire_god/img/end.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 
+## 출처
+- [한글자막 Do You Desire God - Paul Washer(하나님을 갈망하십니까 - 폴 워셔)](https://youtu.be/wmIGVtZ70cM)
+- [Do You Desire God? - Paul Washer](https://youtu.be/ngSq7mABZGE)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
