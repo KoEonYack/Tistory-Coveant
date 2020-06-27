@@ -10,7 +10,7 @@
 <br />
 <img src="http://58.234.158.21:8081/Upload/Image/20200503/00000000000000201449.JPG" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
-<center>사진은 본 상황을 설명하기 위한 이미지입니다. Source. TBS </center>
+<center>Source. TBS </center>
 <br />
 
 14년 군 복무 시절 공군 헌병 특기를 배정받아 교대 근무로 인해 교회를 참석 못할 때가 있습니다. 지금의 스마트폰을 부내내에 쓸 수 있던 시절이 아니라 일병 달고 어느정도 시간이 지나야 PMP를 반입할 수 있던 시절이었습니다. 교회에 참석하지 못한 아쉬운 마음을 달래고자 휴가를 나오면 하루종일 '마커스 김남국' 목사님 설교를 전문 녹취록을 만들었습니다. 6개월간 총 3번의 9박 10일 휴가동안 23편의 설교와 신앙 메시지를 400p 분량 타이핑했습니다. 
