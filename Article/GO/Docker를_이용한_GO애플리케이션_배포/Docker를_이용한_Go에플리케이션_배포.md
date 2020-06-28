@@ -5,7 +5,7 @@
 <img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/GO/Docker%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_GO%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EB%B0%B0%ED%8F%AC/img/main.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
-본 글에서 사용할 기술스택인 Docker, Docker-compose, Gin, MySQL, Naver Cloud Platform입니다.Docker와 GO(Gin-Gonic)를 이용해서 클라우드(NCloud-MiniServer)에 배포해보겠습니다. NCloud가 아니더라도 사용하는 클라우드 인스턴스를 사용하면 됩니다.
+본 글에서 사용할 기술스택인 Docker, Docker-compose, Gin, MySQL, Naver Cloud Platform입니다. Docker와 GO(Gin-Gonic)를 이용해서 클라우드(NCloud-MiniServer)에 배포해보겠습니다. NCloud가 아니더라도 사용하는 클라우드 인스턴스를 사용하면 됩니다.
 
 
 <br />
@@ -33,7 +33,7 @@ wget https://dl.google.com/go/go1.14.4.linux-amd64.tar.gz
 tar -C /usr/local -xzf go1.14.4.linux-amd64.tar.gz
 ```
 
-이 글을 20년 6월 현재 `apt-get install golang`으로 설치면 Go 1.10 버전이 설치됩니다. 이렇게 설치할 경우 본 글의 Docker 설정에 맞지 않습니다. [https://golang.org/dl/](https://golang.org/dl/) Golang 공식 홈페이지에는 go 1.14.4가 stable version입니다. 따라서 wget 명려어를 이용하여 설치하겠스빈다.
+이 글을 20년 6월 현재 `apt-get install golang`으로 설치면 Go 1.10 버전이 설치됩니다. 이렇게 설치할 경우 본 글의 Docker 설정에 맞지 않습니다. [https://golang.org/dl/](https://golang.org/dl/) Golang 공식 홈페이지에는 go 1.14.4가 stable version입니다. 따라서 wget 명려어를 이용하여 설치하겠습니다.
 
 
 <br />
