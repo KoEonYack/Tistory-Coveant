@@ -71,7 +71,7 @@ hot loading을 감지하고 싶은 main.go가 있는 GO 프로젝트의 루트 �
     "watch": ["*"],
     "ext": "go graphql",
     "exec": "go run main.go && killall -9 | go run main.go "
-  }
+}
 ```
 TCP:1111에서 1111은 현재 실행하는 Go의 포트 번호를 입력하면 됩니다. 
 
