@@ -2,7 +2,12 @@
 <h1 align="center"> Welcome to Covenant Tistory  👋</h1>
 
 <br />
-<img src="./img/main.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+
+<br />
+<img src="./img/main.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
+
+
 <br />
 
 - [covenant.tistory.com](https://covenant.tistory.com/) 원고를 저장하는 곳입니다.
