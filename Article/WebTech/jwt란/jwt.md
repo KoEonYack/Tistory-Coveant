@@ -2,18 +2,31 @@
 
 <br />
 <br />
-<img src="./img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
 <br />
 
 # 시작하며..
 
 
 <br />
-<img src="./img/t_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/t_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
 <br />
-<img src="./img/t_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+
+사용자가 ID, PW를 입력하면 서버로 전송이 됩니다. 서버에서는 ID, PW를 DB에 조회하고 회원이면 로그인처리합니다.
+
 <br />
-<img src="./img/t_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/t_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+<br />
+
+그런데 문제가 있습니다. HTTP는 Stateless, 즉 사용자가 새로운 요청을 한다면 과거에 로그인한 사실을 기억하지 못합니다. 이 문제를 해결하기 위해서 예전에는 로그인 할 때 DB에 누가 로그인했는지 기록했습니다.  
+
+<br />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/t_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+<br />
+
+로그인을 하면 로그인한 사용자를 위한 토큰을 발급합니다. 이 토큰을 가지고 물건 구입, 구입 내역 조회와 같이 계정 정보가 필요한 요청을 할 때 이 토큰과 함께 요청합니다. 토큰에는 요청한 사람의 정보가 담겨있기에 서버는 DB를 조회하지 않고 누가 요청하는지 알 수 있습니다.
+
+<br />
 <br />
 
 
@@ -25,12 +38,17 @@ HTTP는 다음 특징을 가지고 있습니다.
 따라서 위의 특징으로 인해 로그인을 하고 상품 구매하기 버튼을 클릭하면 누가 구매하기 버튼을 클릭한지 알 수 없습니다. 따라서 세션, JWT 등 인증 방법이 필요합니다.
 
 
+
+<br />
+<br />
+
+
 # 서버 기반 인증
 
 <br />
 
 <br />
-<img src="./img/c_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/c_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
 <br />
 
 - 서버 기반 인증 방식의 핵심은 서버측에서 유저 정보를 저장하는 것입니다.
@@ -47,10 +65,15 @@ HTTP는 다음 특징을 가지고 있습니다.
 
 <br />
 <br />
-<img src="./img/c_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/c_2.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
 <br />
 
-- Header(헤더), Payload(내용), Signature(서명)
+JWT를 복호화 하면 헤더, 내용, 서명으로 구분할 수 있습니다.
+
+<br />
+
+
+- __Header(헤더), Payload(내용), Signature(서명)__
     - [Base64(HEADER)].[Base64(PAYLOAD)].[Base64(SIGNATURE)]
         - xxxxxx.yyyyy.zzzzz
             - JWT는 .을 구분자로 3가지 문자열로 구성됩니다.
@@ -61,7 +84,7 @@ HTTP는 다음 특징을 가지고 있습니다.
         - typ, alg 두 가지 정보로 구성됩니다.
         - JWT 헤더를 디코딩했을 때 보여지는 예시입니다.
 
-        ```json
+        ```text
         { 
         	 "alg": "HS256",
         	 "typ": JWT
@@ -71,7 +94,7 @@ HTTP는 다음 특징을 가지고 있습니다.
         - alg: 알고리즘 장식을 지정, 서명 및 토큰 검증에 사용합니다.
         - typ: 토큰의 타입을 지정합니다.
 
-    - Payload(내용)
+    - __Payload(내용)__
         - name / value 쌍으로 이루어져 있습니다.
             - 페이로드에 있는 속성들을 클레임 셋(Claim Set)이라고 부릅니다.
             - 페이로드는 등록된 클레임(Registered claims), 공개 클래임(Public claims), 비공개 클래임(Private claims)으로 구분됩니다.
@@ -88,7 +111,7 @@ HTTP는 다음 특징을 가지고 있습니다.
         - Payload 종류 2: 공개 클래임(Public Claim)
             - 사용자 정의 클레임으로 공개용 정보를 위해 사용된다. 충돌 방지를 위해 URI 포맷을 이용해야 한다.
 
-            ```json
+            ```text
             {
                 "https://tandohak.co.kr/is_authenticated": true
             }
@@ -97,7 +120,7 @@ HTTP는 다음 특징을 가지고 있습니다.
         - Payload 종류 3: 비공개 클래임(Private Claim)
             - 등록된 클레임도 아니며, 공개 클래임도 아닌 서버와 클라이언트 사이에 임의로 지정한 정보를 저장하기 위해 만들어진 사용자 지정 클레임입니다.
 
-            ```json
+            ```text
             {
                 "username": "tandohak"
             }
@@ -105,7 +128,7 @@ HTTP는 다음 특징을 가지고 있습니다.
 
             - 비공개 클래임을 조심해서 사용하지 않으면 등록된 클래임과 공개 클래임과 다르게 충돌이 일어날 수 있기에 주의해야 합니다.
 
-    - Signature(서명)
+    - __Signature(서명)__
         - 헤더와 페이로드는 암호화 한 것이 아니라 단순히 JSON 문자열을 base64로 인코딩한 것입니다.
         - 누구나 디코딩을 한다면 헤더와 페이로드의 내용을 볼 수 있습니다.
         - 누군가 JWT를 탈취하여 수정한 후 서버로 보낼 수 있습니다. 이 경우에 대비해 다른 사람이 위변조 했는지 검증하기 위한 부분입니다.
@@ -124,11 +147,14 @@ HTTP는 다음 특징을 가지고 있습니다.
 
 JWT를 이용한 인증을 살펴보기 전에 액세스 토큰와 리프래시 토큰에 대해서 알아보겠습니다. 
 
-- Access Token
+<br />
+
+
+- 액세스 토큰(Access Token)
     - 리소스에 직접 접근할 수 있도록 해주는 정보만을 갖고 있습니다.
     - Refresh Token에 비해서 짧은 만료 기간을 갖습니다.
     - 주로 세션에 담아서 관리한다.
-- Refresh Token
+- 리프래시 토큰(Refresh Token)
     - 새로운 Access Token을 발급받기 위한 정보를 갖습니다.
     - 클라이언트가 Access Token이 없거나 만료되면 Refresh Token을 통해 Auth Server에 요청해서 새로운 Access Token을 발급 받을 수 있습니다.
     - Access Token에 비해서 긴 만료 기간을 갖습니다.
@@ -136,10 +162,7 @@ JWT를 이용한 인증을 살펴보기 전에 액세스 토큰와 리프래시 
 
 
 <br />
-<img src="./img/c_4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
-<br />
-<br />
-
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/c_4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
 
 웨일 브라우저는 URL에 whale://signin-internals/ 을 입력하면 여기서 액세스, 리프래시 토큰을 확인할 수 있습니다.
 
@@ -150,7 +173,7 @@ JWT를 이용한 인증을 살펴보기 전에 액세스 토큰와 리프래시 
 # JWT를 이용한 인증 과정
 
 <br />
-<img src="./img/c_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/c_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
 <br />
 
 1. 사용자가 ID, PW를 입력하여 서버에 로그인 인증을 요청합니다.
@@ -185,13 +208,15 @@ JWT를 이용한 인증을 살펴보기 전에 액세스 토큰와 리프래시 
     - 클라이언트가 서버로 요청할 때 쿠키를 전달하지 않기 때문에 쿠키를 사용함으로써 발생하는 취약점이 사라집니다. 그러나 토큰을 사용했을 때 발생하는 취약점에 대해서 대비해야 합니다.
 - 여러 도메인
     - 서버 기반 인증 시스템의 문제인 CORS 문제를 해결합니다. 쿠키는 발행한 서버에서만 유효합니다. www.server-1.covenant.com에서 발행한 토큰은 www.server-2.covenant.com에서 사용할 수 없습니다. 그러나 JWT는 어떤 도메인에서도 토큰만 유효하다면 처리가 가능합니다.
-    - 서버측에서 어플리케이션 응답 부분에 아래의 헤더를 포함시키면 된다.
+    - 서버측에서 어플리케이션 응답 부분에 아래의 헤더를 포함시키면 됩니다.
 
-    ```json
+    ```text
     Access-Control-Allow-Origin: *
     ```
 - 웹 앱 간의 상이한 쿠키 세션 처리
     - 스마트폰이 없던 시절 클라이언트는 웹 브라우저가 유일했습니다. 그러나 이제 스마트폰, 태블릿과 같이 다양한 모바일 기기로 접근하는 경우를 생각해야 합니다. 브라우저의 쿠키 처리 방법과 모바일 기기의 쿠키 처리 방법은 다릅니다. 따라서 JWT를 이용하는 것이 다양한 디바이스 지원에서 유리합니다.
+
+<br />
 <br />
 <br />
 
@@ -212,11 +237,13 @@ JWT를 이용한 인증을 살펴보기 전에 액세스 토큰와 리프래시 
 
 <br />
 <br />
+<br />
 
 
 # JWT와 보안
 
 <br />
+
 공격자에 의해서 토큰이 하이재킹 당할 수 있습니다. JWT를 보호하기 위한 HTTP 헤더 플래그를 설정해야 합니다.
 
 - Secure 쿠키
@@ -230,6 +257,8 @@ JWT를 이용한 인증을 살펴보기 전에 액세스 토큰와 리프래시 
 - Prefix
     - 브라우저에게 특정 속성이 필요하다고 이야기하는 역할입니다.
     - 예시로 Secure-, Host- 가 있습니다.
+
+<br />
 <br />
 <br />
 
@@ -238,23 +267,33 @@ JWT를 이용한 인증을 살펴보기 전에 액세스 토큰와 리프래시 
 
 <br />
 
-저의 git 저장소 [Git JWT - Go](https://github.com/KoEonYack/jwt-simple-go) 을 가시면 Go를 이용하여 JWT 구현을 볼 수 있습니다. [https://www.sohamkamani.com/golang/2019-01-01-jwt-authentication/](https://www.sohamkamani.com/golang/2019-01-01-jwt-authentication/)을 참고하였습니다.
+저의 git 저장소 [Git JWT - Go](https://github.com/KoEonYack/jwt-simple-go) 을 가시면 Go를 이용하여 JWT 구현을 볼 수 있습니다. 
+[www.sohamkamani.com/golang/2019-01-01-jwt-authentication/](https://www.sohamkamani.com/golang/2019-01-01-jwt-authentication/)을 참고하였습니다.
 
 <br />
 <br />
 <br />
+
+
+### 참고
+
 <br />
 
 
-### Reference
+- JWT를 구현하면서 마주치게 되는 고민들 
+    - [https://blog.hwarf.com/2009/06/howto-set-sshd-idle-timeout.html](https://blog.hwarf.com/2009/06/howto-set-sshd-idle-timeout.html)
+- JWT (토큰 기반 인증 방식) 의 이해 
+    - [https://kimyhcj.tistory.com/350](https://kimyhcj.tistory.com/350)
+- Security On JSON Web Token
+    - [https://code-machina.github.io/2019/09/01/Security-On-JSON-Web-Token.html](https://code-machina.github.io/2019/09/01/Security-On-JSON-Web-Token.html)
+- JWT(JSON Web Token) 란 무엇인가? 
+    - [https://velog.io/@ypo09/JWTJSON-Web-Token-란-무엇인가](https://velog.io/@ypo09/JWTJSON-Web-Token-%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
+- JSON Web Token (JWT) 
+    - [https://tools.ietf.org/html/rfc7519](https://tools.ietf.org/html/rfc7519)
+- Implementing JWT based authentication in Golang 
+    - [https://www.sohamkamani.com/golang/2019-01-01-jwt-authentication/](https://www.sohamkamani.com/golang/2019-01-01-jwt-authentication/)
+- 액세스 토큰 재발급 cafe24
+    - [https://developers.cafe24.com/app/front/develop/oauth/retoken](https://developers.cafe24.com/app/front/develop/oauth/retoken)
 
 <br />
-
-
-- [Tech Interview JWT (JSON Web Token)| https://github.com/gyoogle/tech-interview-for-developer/blob/master/Web/JWT(JSON Web Token).md](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Web/JWT(JSON%20Web%20Token).md)
-- [JWT를 구현하면서 마주치게 되는 고민들| https://blog.hwarf.com/2009/06/howto-set-sshd-idle-timeout.html](https://blog.hwarf.com/2009/06/howto-set-sshd-idle-timeout.html)
-- [JWT (토큰 기반 인증 방식)의 이해| https://kimyhcj.tistory.com/350](https://kimyhcj.tistory.com/350)
-- [https://code-machina.github.io/2019/09/01/Security-On-JSON-Web-Token.html](https://code-machina.github.io/2019/09/01/Security-On-JSON-Web-Token.html)
-- [JWT(JSON Web Token)란 무엇인가?| https://velog.io/@ypo09/JWTJSON-Web-Token-란-무엇인가](https://velog.io/@ypo09/JWTJSON-Web-Token-%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
-- [hJSON Web Token (JWT)| ttps://tools.ietf.org/html/rfc7519](https://tools.ietf.org/html/rfc7519)
-- [Implementing JWT based authentication in Golang| https://www.sohamkamani.com/golang/2019-01-01-jwt-authentication/](https://www.sohamkamani.com/golang/2019-01-01-jwt-authentication/)
+<br />
