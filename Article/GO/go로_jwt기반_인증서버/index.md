@@ -1,5 +1,10 @@
 # GO 언어로 JWT 인증서버 만들기 
 
+
+<br />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
+
 <br />
 <br />
 
@@ -52,14 +57,14 @@ JWT는 세 부분으로 구성됩니다.
 
 헤더, 페이로드, 서명이 토큰에 어떻게 담기는지 토큰을 살펴봅시다.
 
-```
+```text
 Token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX3V1aWQiOiIxZGQ5MDEwYy00MzI4LTRmZjMtYjllNi05NDRkODQ4ZTkzNzUiLCJhdXRob3JpemVkIjp0cnVlLCJ1c2VyX2lkIjo3fQ.Qy8l-9GUFsXQm4jqgswAYTAX9F4cngrl28WJVYNDwtM
 ```
 
 위의 토큰을 복사하여 [jwt.io]([https://jwt.io/](https://jwt.io/)) 의 Encoded에 붙여넣고, HEADER에 HS512를 입력하면 “Signature Verified” 메시지를 볼 수 있습니다.
 
 <br />
-<img src="./img/jwt.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/jwt.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 키를 이용하여 서명을 하면 JWT를 안전하게 유지할 수 있습니다. 심지어 JWT가 디코딩된 경우에도 서명이 암호화된 상태로 유지됩니다. JWT를 만들 때 키가 노출되지 않아야 합니다. 
@@ -298,7 +303,7 @@ go run main.go
 Postman을 이용해서 로그인해 보겠습니다.
 
 <br />
-<img src="./img/postman_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 15분간 유효한 JWT 토큰을 얻을 수 있습니다. (개발 끝?)
@@ -317,6 +322,8 @@ Postman을 이용해서 로그인해 보겠습니다.
 1. JWT는 유효 기간이 지나야지 JWT가 무효화 됩니다. 사용자가 로그인한 후 즉시 로그아웃을 할 수 있지만 사용자의 JWT는 만료 시간에 도달할 때까지 유효합니다. (로그아웃이 소용이 없네요!)
 2. JWT는 토큰이 만료될 때까지 해커에 의해 탈취되어 사용될 수 있습니다.
 3. 토큰이 만료되면(15분) 사용자는 다시 로그인해야 합니다.
+
+<br />
 
 다음 두 가지 방법으로 위의 문제를 해결할 수 있습니다. 
 
@@ -393,6 +400,8 @@ Redis 클라이언트는 init()함수에서 초기화 합니다. 이렇게 하�
 
 1. 액세스 토큰(The Access Token)
 2. 리프래시 토큰(The Refresh Token)
+
+<br />
 
 다음과 같은 토큰 정의, 만료 기간 및 UUID를 포함하는 구조체를 정의하겠습니다.
 
@@ -485,7 +494,7 @@ func CreateAuth(userid uint64, td *TokenDetails) error {
 P3X Redis UI를 이용해서 JWT 메타데이터가 키-값 쌍에 어떻게 저장되는지 아래를 살펴보세요!
 
 <br />
-<img src="./img/p3x.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/p3x.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 login 기능을 테스트하기 전에 `Login()`함수 안에 `CreateAuth()` 함수를 호출할 것입니다. 
@@ -522,7 +531,7 @@ func Login(c *gin.Context) {
 Postman으로 테스트하면 다음과 같은 결과를 볼 수 있습니다.
 
 <br />
-<img src="./img/postman_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 지금까지의 구현을 통해서 access_token, refresh_token를 생성했으며, 토큰의 메타데이터를 Redis에 저장하였습니다. 
@@ -693,7 +702,7 @@ func main() {
 `CreateToDo`를 테스트하기 위해서 발급받은 `access_token`을 복사하여 Authorization의 Bearer Token에 입력합니다.
 
 <br />
-<img src="./img/postman_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 입력을 완료 했다면 Body탭으로 이동합니다. 그리고 다음의 JSON 값을 요청 바디에 보냅니다. 
@@ -705,7 +714,7 @@ func main() {
 ```
 
 <br />
-<img src="./img/postman_4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 새로운 메모를 생성하였습니다!
@@ -767,7 +776,7 @@ func main() {
 ```
 
 <br />
-<img src="./img/postman_5.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_5.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 Postman에서 성공적으로 로그아웃 한 것을 확인할 수 있습니다.
@@ -907,6 +916,8 @@ func Refresh(c *gin.Context) {
 – 생성된 토큰은 응답합니다.
 – [1] 혹은 [2]에서 토큰의 유효성 검사에 실패한다면(리프래시 토큰이 유효하지 않은 경우) 사용자가 새 토큰 쌍을 만들 수 없습니다. 다시 로그인하여 새로운 토큰을 발급 받아야 합니다. 
 
+<br />
+
 `main()` 함수에 라우터를 추가해 줍니다. 
 
 ```go
@@ -916,7 +927,7 @@ router.POST("/token/refresh", Refresh)
 이렇게 구현한 것을 다음과 같이 테스트 해 보곘습니다.
 
 <br />
-<img src="./img/postman_6.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_6.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
@@ -927,9 +938,7 @@ router.POST("/token/refresh", Refresh)
 
 원 저작자의 저장소 [https://github.com/victorsteven/jwt-best-practices](https://github.com/victorsteven/jwt-best-practices) 에 게시글에서 구현한 코드를 볼 수 있습니다. 
 
-제가 직접 돌려보면서 발생한 오류를 수정하여 [저장소] 에 올렸습니다. 
-
-원 저작자의 코드와 다른 부분은 다음과 같습니다. 
+제가 직접 돌려보면서 발생한 오류를 수정하여 [저장소] 에 올렸습니다. 원 저작자의 코드와 다른 부분은 다음과 같습니다. 
 
 - 원 저작자의 오류 해결
 - 하나의 main.go를 router, model, controller, request, response로 파일 분리
