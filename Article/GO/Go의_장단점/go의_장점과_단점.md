@@ -1,5 +1,9 @@
 # Go 언어의 장점과 단점
 
+
+<br />
+<br />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/Go%EC%9D%98_%EC%9E%A5%EB%8B%A8%EC%A0%90/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
@@ -48,7 +52,7 @@
 - 풍부한 기본 모듈을 제공합니다.
     - 자체 제공하는 패키지들이 강력해서 별도의 웹 프레임워크를 사용하지 않아도 웹을 개발할 수 있습니다.  파이썬으로 순수 웹 개발이 힘들기에 장고, 플라스크 프레임워크를 사용하는 것에 대조됩니다.
 - 신뢰할 수 있는 제작사, 대기업들의 사용합니다.
-    - 구글이 만들었고 YouTube 개발에 사용하는 언어입니다. 해외에는 우버, 넷플릭스, BBC 가 사용하고 있으며 도커 또한 Go로 개발하였습니다. 국내는 카카오엔터프라이즈,  당근마켓, 왓차, 버즈빌 등  대기업, 스타트업이 사용하는 언어입니다.
+    - 구글이 만들었고 YouTube 등 구글 내에서 사용하는 언어입니다. 해외에는 우버, 넷플릭스, BBC 가 사용하고 있으며 오픈소스로는 Github CLI, 도커 또한 Go로 개발되었습니다. 국내는 카카오엔터프라이즈,  당근마켓, 왓차, 버즈빌 등  대기업, 스타트업이 사용하는 언어입니다.
 - 컨벤션이 통일되어 있습니다.
     - 컨벤션에 맞추어 코드를 수정해주는 go fmt 기능이 있다.
     - VS Code에서 저장을 누르는 순간 formatter가 포멧을 바로 맞추어줍니다.
@@ -94,6 +98,9 @@
 <br />
 
 ## 참고자료
+
+<br />
+
 
 - [Go의 장단점 by seulgi.kim](https://blog.seulgi.kim/2016/07/go.html)
 - [웹 개발 언어로 Go까지 온 과정]([https://medium.com/slowalk-d/웹개발-언어로-go-까지-온-과정-4f04e14485cb](https://medium.com/slowalk-d/%EC%9B%B9%EA%B0%9C%EB%B0%9C-%EC%96%B8%EC%96%B4%EB%A1%9C-go-%EA%B9%8C%EC%A7%80-%EC%98%A8-%EA%B3%BC%EC%A0%95-4f04e14485cb))
