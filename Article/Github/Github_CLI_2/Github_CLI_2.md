@@ -4,6 +4,7 @@
 <br />
 <img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CLI_2/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
+<br />
 
 # gh repo clone
 
@@ -12,13 +13,13 @@
 
 git 명령어를 이용해서 클론하려고 하면 다음 명령어를 사용해서 클론을 했습니다. 
 
-<br />
-<br />
-
 
 ```text
 $ git clone https://github.com/cli/cli.git
 ```
+
+<br />
+
 
 gh 명령어를 통해서 [cil/cil]([https://github.com/cli/cli](https://github.com/cli/cli))을 클론해 보겠습니다. 다음과 같이 클론할 수 있습니다. 
 
@@ -155,7 +156,7 @@ fork를 하고자 하는 clone 저장소로 이동합니다.
 ~/cli$ gh repo fork 
 
 - Forking cli/cli...
-✓ Created fork koeonyack/cli
+✓ Created fork covenant/cli
 ? Would you like to add a remote for the fork? Yes
 ✓ Renamed origin remote to upstream
 ✓ Added remote origin
