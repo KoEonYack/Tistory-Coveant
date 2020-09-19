@@ -74,6 +74,7 @@ scoop를 통해서 다운로드 받을 수 있지만 간단하게 msi를 통해�
 
 <br />
 <br />
+<br />
 
 
 # Github CLI 버전 확인
@@ -114,13 +115,13 @@ gh auth login
 `one-time code`가 터미널에 생성됩니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CIL_1/img/auth_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CIL_1/img/auth_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70" >
 <br />
 
 웹 브라우저에 터미널에 나온 one-time code를 입력합니다. 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CIL_1/img/auth_4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CIL_1/img/auth_4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="60%" >
 <br />
 
 `Authorize github`을 클릭합니다. 
@@ -168,3 +169,6 @@ $ gh auth logout
 ```
 
 위의 명령어를 통해서 로그아웃 할 수 있습니다.
+
+<br />
+<br />
