@@ -2,7 +2,7 @@
 
 <br />
 <br />
-<img src="./img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CLI_2/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 # gh repo clone
@@ -11,6 +11,10 @@
 
 
 git 명령어를 이용해서 클론하려고 하면 다음 명령어를 사용해서 클론을 했습니다. 
+
+<br />
+<br />
+
 
 ```text
 $ git clone https://github.com/cli/cli.git
@@ -60,9 +64,14 @@ GitHub’s official command line tool
   other GitHub concepts to the terminal next to where you are already working
 ```
 
-cli/cli의 README.md가 보입니다. 
+cli/cli의 README.md를 기본 텍스트 편집기(vim or nano)로 보입니다. 
+
+<br />
+
 
 gh repo view OWNER/REPO 명령어는 클론한 저장소가 아니더라도 README.md를 보여줍니다. 개발자 행사를 보여주는 [Github. Dev-Event]([https://github.com/brave-people/Dev-Event](https://github.com/brave-people/Dev-Event))의 README.md를 다음의 명령어를 입력하면 터미널에서 볼 수 있습니다. 
+
+<br />
 
 ```text
 $ gh repo view brave-people/Dev-Event
@@ -78,7 +87,8 @@ $ gh repo view brave-people/Dev-Event --web
 ```
 
 <br />
-<img src="./img/github.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CLI_2/img/github.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
 <br />
 
 # gh repo create
@@ -99,6 +109,9 @@ $ gh repo create my-project
 $ gh repo create cli/my-project
 ```
 
+<br />
+
+
 두 번째 명령어를 예로 test-cli 저장소를 만들어 보곘습니다. 
 
 ```text
@@ -116,11 +129,14 @@ y
 상하 화살표와 엔터를 눌러서 Visibility 설정, 그리고 현재 디렉토리에 새 repo를 생성할 것인지 선택할 수 있습니다.
 
 <br />
-<img src="./img/repo.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CLI_2/img/repo.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 
 Github에 터미널에 입력한 test-cli 저장소가 생긴 것을 볼 수 있습니다. 
+
+<br />
+
 
 CLI를 사용하지 않았다면 Github에서 저장소를 만들고 git init, remote 명령어를 이용해서 설정해야 했습니다. 하지만 CLI를 입력하면 자동으로 이 모든 것을 해줍니다.
 
@@ -152,7 +168,7 @@ fork를 하고자 하는 clone 저장소로 이동합니다.
 ```
 
 <br />
-<img src="./img/repo2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CLI_2/img/repo3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 
