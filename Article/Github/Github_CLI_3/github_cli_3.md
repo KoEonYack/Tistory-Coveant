@@ -2,7 +2,12 @@
 
 
 <br />
-<img src="./img/issue_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CLI_3/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
+
+
+<br />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CLI_3/img/issue_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 
@@ -13,13 +18,19 @@
 ```
 
 <br />
-<img src="./img/terminal.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CLI_3/img/terminal.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 등록된 issue 목록을 볼 수 있습니다. 
 
+<br />
+<br />
+
 
 # 등록된 이슈 보기
+
+<br />
+
 
 앞서 등록된 이슈 목록을 보았으니 어떤 이슈인지 읽어보겠습니다. 
 
@@ -31,7 +42,7 @@ issue number를 지정하면 해당 이슈를 보여줍니다. 저는 cli의 177
 
 
 <br />
-<img src="./img/terminal_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CLI_3/img/terminal_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 그러나 마크다운 문법이 적용된 텍스트를 텍스트 에디터로 읽기가 쉽지 않습니다. 그런 분들을 위해서 웹으로 열 수 있습니다.  
@@ -45,7 +56,8 @@ issue number를 지정하면 해당 이슈를 보여줍니다. 저는 cli의 177
 —web옵션을 사용하면 해당하는 번호의 이슈 웹 페이지를 보여줍니다.
 
 <br />
-<img src="./img/issue_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CLI_3/img/issue_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
 <br />
 
 # 이슈 상태 분류해서 보기
@@ -67,7 +79,15 @@ Issues opened by you
 
 assigned, mentioning, opened 3가지 분류로 issue가 구분되어 나옵니다. 
 
+<br />
+<br />
+
+
 # 새로운 이슈 등록하기
+
+<br />
+
+
 
 ```text
 ~/repo$ gh issue create
@@ -94,10 +114,17 @@ http://github.com/owner/repo/issues/1
 —web 플래그를 입력하면 아래와 같이 새로운 issue를 틍록하는 창이 열립니다.
 
 <br />
-<img src="./img/issue_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CLI_3/img/issue_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
+<br />
+<br />
+
+
 # 등록된 이슈 닫기
+
+<br />
+
 
 ```text
 ~/repo$ gh issue close 2
@@ -106,7 +133,13 @@ http://github.com/owner/repo/issues/1
 
 `gh issue reopen {closed issue number}` 입력한 issue 숫자가 open 상태라면 issue를 close 합니다. 
 
+<br />
+<br />
+
 # 이슈 다시 열기
+
+<br />
+
 
 ```text
 ~/repo$ gh issue reopen 2
