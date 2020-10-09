@@ -11,8 +11,6 @@
 
 # PR 목록 보기
 
-<br />
-
 
 ```text
 # 현재 열려있는 PR 목록을 보여줍니다.
@@ -50,8 +48,6 @@ repo, issue와 같은 명령어와 마찬가지로 —web 플래그를 사용하
 
 # 등록한 PR 확인
 
-<br />
-
 
 ```text
 # 3번 PR을 텍스트 에디터로 엽니다. 
@@ -63,6 +59,9 @@ repo, issue와 같은 명령어와 마찬가지로 —web 플래그를 사용하
 # 자신의 PR을 보입니다. 
 ~/repo$ gh pr view
 ```
+
+`gh issue` 명령어와 마찬가지로 --web 옵션을 주면 해당하는 PR 번호에 맞는 웹 페이지가 열립니다.
+
 
 <br />
 <br />
@@ -95,14 +94,15 @@ http://github.com/owner/repo/pull/1
 
 # PR 닫기
 
-<br />
-
 
 ```text
 ~/repo$ gh pr close {PR Number}
 ```
 
 PR Number에 해당하는 PR을 닫습니다. 
+
+<br />
+
 
 PR 닫는 명령어에 `-d` or `--delete-branch` 옵션을 넣으면 PR을 닫으며, 로컬과 리모트 브랜치를 삭제합니다.
 
@@ -114,8 +114,6 @@ PR 닫는 명령어에 `-d` or `--delete-branch` 옵션을 넣으면 PR을 닫�
 <br />
 
 # PR 다시 열기
-
-<br />
 
 
 ```text
@@ -129,8 +127,6 @@ PR 닫는 명령어에 `-d` or `--delete-branch` 옵션을 넣으면 PR을 닫�
 
 
 # PR 상태 확인
-
-<br />
 
 
 ```text
@@ -151,3 +147,6 @@ Requesting a code review from you
 ```
 
 현재 브랜치에서 PR, 내가 생성한 PR 그리고 내가 코드리뷰를 요청한 PR 세 가지 항목으로 보여줍니다.
+
+<br />
+<br />
