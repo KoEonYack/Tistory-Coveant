@@ -14,7 +14,7 @@
 <br />
 
 
-본 글은 [https://www.nexmo.com/blog/2020/03/13/using-jwt-for-authentication-in-a-golang-application-dr](https://www.nexmo.com/blog/2020/03/13/using-jwt-for-authentication-in-a-golang-application-dr) 글을 번역한 글입니다. 하지만 다음과 같은 차이점이 있습니다.
+본 글은 [nexmo.com blog](https://www.nexmo.com/blog/2020/03/13/using-jwt-for-authentication-in-a-golang-application-dr) 글을 번역한 글입니다. 하지만 다음과 같은 차이점이 있습니다.
 
 1. 원글 글쓴이 코드의 버그를 수정하였습니다. 
 2. 원글에서 모든 구현이 하나의 main.go에 구현되었습니다. 역활에 맞추어 router, model, controller, request, response 파일로 분리하였습니다. 
@@ -31,13 +31,15 @@ JWT 기반 인증 서버를 구현하고 싶은 분들에게 가뭄에 단비 �
 <br />
 
 
-✨ 제 블로그 [Covenant. JWT란]([https://covenant.tistory.com/201](https://covenant.tistory.com/201))글에서 JWT에 대하 자세하게 써 두었습니다. 본 글에서 빠른 호흡으로 JWT를 정리해 보겠습니다. 
+✨ 제 블로그 [Covenant. JWT란]([https://covenant.tistory.com/201](https://covenant.tistory.com/201)글에서 JWT에 대하 자세하게 써 두었습니다. 본 글에서 빠른 호흡으로 JWT를 정리해 보겠습니다. 
 
-JWT(JSON Web Token, JWT)는 JSON 객체로서 당사자간 정보를 안전하게 전송하기 위한 컴팩트한 방법입니다. JWT는 다음과 같은 이유로 인기가 있다.
+JWT(JSON Web Token, JWT)는 JSON 객체로서 당사자간 정보를 안전하게 전송하기 위한 컴팩트한 방법입니다. JWT는 다음과 같은 이유로 인기가 있습니다.
 
-1. JWT는 상태 비저장이다. 즉, 불투명 토큰과 달리 데이터베이스(지속 계층)에 저장할 필요가 없다.
+1. JWT는 상태 비저장입니다. 즉, 불투명 토큰과 달리 데이터베이스(지속 계층)에 저장할 필요가 없습니다.
 2. JWT의 서명은 한번 절대 해독되지 않으므로 토큰이 안전하게 보호되도록 합니다.
 3. JWT는 일정 기간이 지나면 무효로 설정할 수 있습니다. 이것은 토큰이 탈취되었을 때 해커가 할 수 있는 피해를 최소화하는데 도움이 됩니다. 
+
+<br />
 
 본 튜토리얼에서 Go언어(Gin framework)를 이용한 간단한 RESTful API로 JWT의 생성, 사용, 무효화 기능을 구현해 보겠습니다.
 
@@ -54,6 +56,8 @@ JWT는 세 부분으로 구성됩니다.
 - 헤더: 사용된 토큰 유형 및 서명 알고리즘. 토큰 유형은 "JWT"일 수 있고, 서명 알고리즘은 HMAC 또는 SHA256 등등.. 일 수 있습니다.
 - 페이로드: 클레임이 포함된 토큰의 두 번째 부분. 애플리케이션별 데이터(예: 사용자 ID, 사용자 이름), 토큰 만료 시간(exp), 발급자(iss), 제목(sub) 등이 포함됩니다.
 - 서명: 인코딩된 헤더, 인코딩된 페이로드 및 사용자가 제공한 비밀이 서명을 작성하는 데 사용됩니다.
+
+<br />
 
 헤더, 페이로드, 서명이 토큰에 어떻게 담기는지 토큰을 살펴봅시다.
 
@@ -107,9 +111,11 @@ JWT는 브라우저 로컬 스토리지 또는 세션 스토리지에도 저장�
 
 애플리케이션을 개발하기 위해서 앞으로 작업할 코드가 담길 `jwt-todo` 디렉토리를 만드세요. 그리고 의존성 관리를 위해서 go.mod를 초기화 하겠습니다.  
 
-```go
+```text
 go mod init jwt-todo
 ```
+
+<br />
 
 이제 프로젝트의 루트 디렉토리(`/jwt-todo`)에 `main.go`파일을 만들고 아래 내용을 작성해 봅시다.
 
@@ -121,11 +127,15 @@ func main() {}
 
 본 프로젝트에서 gin을 이용해서 라우팅과 HTTP 요청을 처리할 것입니다. Gin 프레임워크를 이용하면 효율적이고 확장가능한 API를 쉽게 개발할 수 있습니다. 
 
+<br />
+
 터미널에 아래 명령어를 입력하여 gin을 설치할 수 있습니다. 
 
-```go
+```text
 go get github.com/gin-gonic
 ```
+
+<br />
 
 Gin설치를 마쳤다면 `main.go`파일에 아래 내용을 추가해 보세요.
 
@@ -197,9 +207,11 @@ func Login(c *gin.Context) {
 
 로그인 함수가 길어지지 않기 위해서 JWT를 생성하는 로직은 `Create`에 구현하였습니다. JWT생성할 때  userID는 클레임에 담깁니다. 
 
+<br />
+
 `CreateToken` 함수는 `dgrijalva/jwt-go` 패키지를 사용할 것이며, 다운로드는 아래의 명령어로 할 수 있습니다. 
 
-```go
+```text
 go get github.com/dgrijalva/jwt-go
 ```
 
@@ -296,7 +308,7 @@ func CreateToken(userId uint64) (string, error) {
 
 지금까지 작업한 애플리케이션을 실행해 봅시다. 
 
-```go
+```text
 go run main.go
 ```
 
@@ -342,9 +354,11 @@ Postman을 이용해서 로그인해 보겠습니다.
 
 Redis는 key-value 스토리지이기에 키가 고유해야 합니다. 고유한 key를 만들기 위해서 uuid를 키로, 사용자 ID를 값으로 저장할 것입니다.
 
+<br />
+
 구현을 위해서 아래 명령어를 터미널에 입력하여 두 가지 패키지를 추가로 설치해 봅시다. 
 
-```go
+```text
 go get github.com/go-redis/redis/v7
 go get github.com/twinj/uuid
 ```
@@ -707,7 +721,7 @@ func main() {
 
 입력을 완료 했다면 Body탭으로 이동합니다. 그리고 다음의 JSON 값을 요청 바디에 보냅니다. 
 
-```json
+```text
 {
 	"title": "test todo"
 }
@@ -936,17 +950,20 @@ router.POST("/token/refresh", Refresh)
 
 <br />
 
-원 저작자의 저장소 [https://github.com/victorsteven/jwt-best-practices](https://github.com/victorsteven/jwt-best-practices) 에 게시글에서 구현한 코드를 볼 수 있습니다. 
+원 저작자의 저장소 [github.com/victorsteven/jwt-best-practices](https://github.com/victorsteven/jwt-best-practices) 에 게시글에서 구현한 코드를 볼 수 있습니다. 
 
-제가 직접 돌려보면서 발생한 오류를 수정하여 [저장소] 에 올렸습니다. 원 저작자의 코드와 다른 부분은 다음과 같습니다. 
+<br />
 
-- 원 저작자의 오류 해결
+제가 직접 돌려보면서 발생한 오류를 수정하여 [Github Repo](https://github.com/golang-crew/Boilerplate-JWT-GO) 에 올렸습니다. 원 저작자의 코드와 다른 부분은 다음과 같습니다. 
+
+- 기존 코드 오류 해결
 - 하나의 main.go를 router, model, controller, request, response로 파일 분리
 - MySQL을 통한 회원 정보 조회
 - viper를 통한 환경변수 불러오기
 
-읽어주셔서 감사합니다.
+<br />
 
+읽어주셔서 감사합니다.
 
 <br />
 <br />
