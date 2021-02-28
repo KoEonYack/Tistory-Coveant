@@ -5,9 +5,12 @@
 # mongoDB 자격증 취득
 
 <br />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Note/mongodb/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
 
-*강의자의 허락하에 MongoDB University Webinar 마크업을 남깁니다. 
+*강의자의 허락을 받고 MongoDB University Webinar 마크업을 남깁니다. 
 
+<br />
 <br />
 
 # 강의 소개
@@ -94,25 +97,26 @@
 ## 학습 시간
 
 <br />
-<img src="./img/img1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Note/mongodb/img/img1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
-학습 시간이 있으니 강의 수강에 참고
+생각보다 강의, 실습시간이 꽤 있으니 자격증 준비에 참고!
 
 <br />
 <br />
 
-# 자격증
+# 두 종류의 자격증
 
 <br />
-<img src="./img/certificate.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Note/mongodb/img/certificate.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 - MongoDB 자격증으로 Developer Associate, DBA Associate 두 가지 자격증이 있다.
 - Online 강의(무료), Instructor-led Training: 전문가가 자격증 공부를 시켜줌(유료)를 통해서 자격증 공부를 할 수 있다.
 
 <br />
-<img src="./img/img4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Note/mongodb/img/img4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 - MongoDB Certification Pratice Exam
@@ -131,13 +135,14 @@
 # Developer Associate 자격증 강의 
 
 <br />
-<img src="./img/img2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Note/mongodb/img/img2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 <br />
-<img src="./img/img6.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="50%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Note/mongodb/img/img6.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="50%" >
 <br />
 
+- MongoDB for Developer(for any language), 프로그래밍 언어에 종속적인 문제가 나오지 않는다.
 - 시험 빈출 주제
     - Index를 활용한 filter & sort
     - Aggregation Operator
@@ -150,12 +155,15 @@
 # DBA Associate 자격증 강의
 
 <br />
-<img src="./img/img3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Note/mongodb/img/img3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 <br />
-<img src="./img/img5.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="50%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Note/mongodb/img/img5.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="50%" >
 <br />
+
+- DBA는 Developer와 다르게 과목수가 적다.
+- 개발자와 다르에 M312가 있다.
 
 <br />
 <br />
@@ -174,6 +182,8 @@
 <br />
 
 # Q&A
+
+<br />
 
 - Developer Associate에서 프로그래밍 언어를 알아야하는가?
     - MongoDB의 연산을 공부. 언어 베이스로 나오지는 않는다.
