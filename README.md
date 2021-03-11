@@ -8,7 +8,7 @@
 <br />
 
 <div align=center>
-  [covenant.tistory.com](https://covenant.tistory.com/) 원고를 저장하는 곳입니다.
+  <a href="https://covenant.tistory.com/"> covenant.tistory.com </a> 원고를 저장하는 곳입니다.
 </div>
 
 <br />
@@ -28,7 +28,7 @@
 - __21. 02. 22.__ 일 방문자 1392명 방문(최초 1300명대), 프로그래머스 피드에 소개
 - __21. 03. 04.__ 일 방문자 1598 방문(최초 1500명대)
 - __21. 03. 04.__ 일 방문자 1745 방문(최초 1700명대)
-
+- __21. 03. 08.__ 누적 방문 30만 달성
 
 <br />
 
