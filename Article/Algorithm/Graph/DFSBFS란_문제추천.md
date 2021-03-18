@@ -1,8 +1,10 @@
+<br />
+
 # DFS BFS란? 백준 문제추천
 
 > 그래프의 모든 노드를 방문 하는 알고리즘으로 DFS와 BFS가 있습니다. 어려운 코딩테스트를 통과하고 나면 만나게 될 기업 기술 면접의 단골 주제입니다. 본 알고리즘에 대해서 알아봅시다.
 
-
+<br />
 <br />
 
 ## DFS(깊이 우선 탐색)란?
@@ -10,34 +12,36 @@
 <br />
 
 ### 도입
+
+<br />
 <p style="text-align: center;">
 <img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/maze.jpg?raw=true" align="center" width="800px" >
 </p>
 <center> Figure 1. 끝을 알 수 없는 미로를 빠져 나가는 방법은 무엇일까요? </center>
 <br>
 
- &nbsp; 위의 사진은 영화 메이즈 러너의 미로입니다. 이렇게 복잡한 미로에 갇혔다면 여러분은 어떻게 미로를 빠져나올건가요? 아마 더 이상 막혀서 깊이 들어갈 수 없는 길을 만날 때까지 깊이 깊이 들어갈 것입니다. 한 모퉁이만 돌면 출구가 나올 수 있기에 한 번 깊이 들어가면 더 이상 들어갈 수 없을 때까지 나오지 않을 것입니다.
+ &nbsp; 위의 사진은 영화 메이즈 러너의 미로입니다. 이렇게 복잡한 미로에 갇혔다면 여러분은 어떻게 미로를 빠져나올건가요? 아마 더 이상 막혀서 깊이 들어갈 수 없는 길을 만날 때까지 깊이 깊이 들어갈 것입니다. 한 모퉁이만 돌면 출구가 나올 수 있기에 한 번 길을 정하고 막다른 골목이 나올때까지 깊게 들어갈 것입니다.
  &nbsp; DFS는 미로 탐색과 같습니다. 미로에서 끝이 나올때까지 깊이 깊이 들억나느 것처럼 DFS 또한 더 깊이 들어갈 수 없을때까지 탐색합니다. 
 
+<br />
 <br />
 
 ### 구현
 
-__Step 1:__ 스택에 시작 노드를 넣습니다.
+<br />
 
-__Step 2:__ 스택이 비어있으면 실행을 멈추고 False를 반환합니다.  
+- __Step 1:__ 스택에 시작 노드를 넣습니다.
+- __Step 2:__ 스택이 비어있으면 실행을 멈추고 False를 반환합니다.  
+- __Step 3:__ 스택의 맨 위 노드가 찾고자 하는 노드라면 탐색을 종료하고 True를 반환합니다.  
+- __Step 4:__ Step 3에서 스택의 맨 위 노드가 찾고자 하는 노드가 아니라면 해당 노드를 POP합니다. 스택에 들어온 적이 없는 POP한 노드의 모든 이웃 노드를 찾아서 순서대로 스택에 넣습니다.  
+- __Step 5:__ Step 3로 돌아갑니다. 
 
-__Step 3:__ 스택의 맨 위 노드가 찾고자 하는 노드라면 탐색을 종료하고 True를 반환합니다.  
-
-__Step 4:__ Step 3에서 스택의 맨 위 노드가 찾고자 하는 노드가 아니라면 해당 노드를 POP합니다. 스택에 들어온 적이 없는 POP한 노드의 모든 이웃 노드를 찾아서 순서대로 스택에 넣습니다.  
-
-__Step 5:__ Step 3로 돌아갑니다. 
-
+<br />
 <br />
 
 ### 구현 (Pseudo code)
 
-``` python
+```text
 DFS(G, u)
     u.visited = true
     for each v ∈ G.Adj[u]
@@ -60,43 +64,61 @@ init()
 <p style="text-align: center;">
 <img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_1.png?raw=true" align="center" width="800px" >
 </p>
-A를 시작노드로 하곘습니다. 
 
+__STEP 1:__ A를 시작노드로 하곘습니다.  
+
+<br />
+<br />
 <br />
 
 <p style="text-align: center;">
 <img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_2.png?raw=true" align="center" width="800px" >
 </p>
-A에 인접한 B, C가 스택에 저장됩니다.
 
+__STEP 2:__ A에 인접한 B, C가 스택에 저장됩니다.
+
+<br />
+<br />
 <br />
 
 <p style="text-align: center;">
 <img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_3.png?raw=true" align="center" width="800px" >
 </p>
-스택의 맨 위에 있는 C를 꺼내서 Visited 배열에 넣습니다. C의 인접한 노드인 D, F가 스택에 저장됩니다. 
 
+__STEP 3:__ 스택의 맨 위에 있는 C를 꺼내서 Visited 배열에 넣습니다. C의 인접한 노드인 D, F가 스택에 저장됩니다. 
+
+<br />
+<br />
 <br />
 
 <p style="text-align: center;">
 <img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_4.png?raw=true" align="center" width="800px" >
 </p>
-스택의 맨 위에 있는 F를 꺼내서 Visited 배열에 넣습니다. F에 인접한 노드인 D는 이미 Stack에 있으므로 넘어갑니다.
 
+__STEP 4:__ 스택의 맨 위에 있는 F를 꺼내서 Visited 배열에 넣습니다. F에 인접한 노드인 D는 이미 Stack에 있으므로 넘어갑니다.
+
+<br />
+<br />
 <br />
 
 <p style="text-align: center;">
 <img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_5.png?raw=true" align="center" width="800px" >
 </p>
-스택의 맨 위에 있는 D를 꺼내서 Visited 배열에 넣습니다. D에 인접한 C, F는 Visited 배열에 있으며 B는 스택에 있으므로 넘어갑니다.
 
+__STEP 5:__ 스택의 맨 위에 있는 D를 꺼내서 Visited 배열에 넣습니다. D에 인접한 C, F는 Visited 배열에 있으며 B는 스택에 있으므로 넘어갑니다.
+
+<br />
+<br />
 <br />
 
 <p style="text-align: center;">
 <img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_6.png?raw=true" align="center" width="800px" >
 </p>
-스택의 맨 위에 있는 B를 꺼내서 Visited 배열에 넣습니다. 스택이 비어있으므로 탐색을 종료합니다.
 
+__STEP 6:__ 스택의 맨 위에 있는 B를 꺼내서 Visited 배열에 넣습니다. 스택이 비어있으므로 탐색을 종료합니다.
+
+<br />
+<br />
 <br />
 
 ### ⭕ DFS 장점
@@ -116,7 +138,10 @@ A에 인접한 B, C가 스택에 저장됩니다.
 
 <br />
 
-### 사용 
+### 어디에 쓸까? 
+
+<br />
+
 - 웹 크롤링 - 동적으로  생성되는 무한한 인터넷 페이지를 구글이 크롤링 하기 위해서는 BFS를 합니다. 
 - 네트워크 브로드캐스트
 - 가비지 컬렉션 - [Article](https://www.quora.com/What-kind-of-graph-theory-is-used-in-automatic-garbage-collection-How-is-it-used)
@@ -127,7 +152,7 @@ A에 인접한 B, C가 스택에 저장됩니다.
 
 ### 구현
 
-```
+```text
 create a queue Q 
 mark v as visited and put v into Q 
 while Q is non-empty 
@@ -144,43 +169,61 @@ while Q is non-empty
 <p style="text-align: center;">
 <img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_1.png?raw=true" align="center" width="800px" >
 </p>
-A노드 부터 탐색을 시작할 것입니다.
 
+__STEP 1:__ A노드 부터 탐색을 시작할 것입니다.
+
+<br />
+<br />
 <br />
 
 <p style="text-align: center;">
 <img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_2.png?raw=true" align="center" width="800px" >
 </p>
-A노드를 Visited 리스트에 넣습니다. A노드에 인접한 B, C를 큐에 넣습니다.
 
+__STEP 2:__ A노드를 Visited 리스트에 넣습니다. A노드에 인접한 B, C를 큐에 넣습니다.
+
+<br />
+<br />
 <br />
 
 <p style="text-align: center;">
 <img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_3.png?raw=true" align="center" width="800px" >
 </p>
-큐의 맨 앞에 있는 B를 Visited 리스트에 넣습니다. B에 인접한 노드 D를 큐에 넣습니다.
 
+__STEP 3:__ 큐의 맨 앞에 있는 B를 Visited 리스트에 넣습니다. B에 인접한 노드 D를 큐에 넣습니다.
+
+<br />
+<br />
 <br />
 
 <p style="text-align: center;">
 <img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_4.png?raw=true" align="center" width="800px" >
 </p>
-큐의 맨 앞에 있는 C를 Visited 리스트에 넣습니다. C에 인접한 노드 F를 큐에 넣습니다.
 
+__STEP 4:__ 큐의 맨 앞에 있는 C를 Visited 리스트에 넣습니다. C에 인접한 노드 F를 큐에 넣습니다.
+
+<br />
+<br />
 <br />
 
 <p style="text-align: center;">
 <img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_5.png?raw=true" align="center" width="800px" >
 </p>
-큐의 맨 앞에 있는 D를 Visited 리스트에 넣습니다. D에 인접한 F는 이미 큐에 있으므로 넘어갑니다.
 
+__STEP 5:__ 큐의 맨 앞에 있는 D를 Visited 리스트에 넣습니다. D에 인접한 F는 이미 큐에 있으므로 넘어갑니다.
+
+<br />
+<br />
 <br />
 
 <p style="text-align: center;">
 <img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_6.png?raw=true" align="center" width="800px" >
 </p>
-큐의 맨 앞에 있는 F를 Visited 리스트에 넣습니다. 큐는 비어있게 되므로 탐색을 종료합니다.
 
+__STEP 6:__ 큐의 맨 앞에 있는 F를 Visited 리스트에 넣습니다. 큐는 비어있게 되므로 탐색을 종료합니다.
+
+<br />
+<br />
 <br />
 
 ### ⭕ BFS 장점
@@ -195,6 +238,7 @@ A노드를 Visited 리스트에 넣습니다. A노드에 인접한 B, C를 큐�
 - 무한 그래프(infinite graph)의 경우에는 결코 해를 찾지도 못하고, 끝내지도 못한다.
 
 <br />
+<br />
 
 ## DFS vs BFS 탐색 차이
 
@@ -202,6 +246,8 @@ A노드를 Visited 리스트에 넣습니다. A노드에 인접한 B, C를 큐�
 <img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfsbfs_animation_final.gif?raw=true" align="center" width="" >
 </p>
 <center> Figure 2. 트리에서 DFS, BFS 탐색 차이 </center>
+
+<br />
 
 - DFS는 스택(혹은 재귀), BFS 큐를 사용합니다.
 - BFS는 재귀적으로 동작하지 않습니다.
@@ -235,17 +281,22 @@ DFS, BFS에 대해 알아보았으니 백준 문제를 추천해 드리겠습니
 | 8 | 🌕🌕🌗🌑🌑 | [토마토](https://www.acmicpc.net/problem/7575) |
 | 9 | 🌕🌕🌕🌑🌑 | [나이트의 이동](https://www.acmicpc.net/problem/7562) | 
 
-<br>
+<br />
 
 ### 추가로!
 
 > 도움이 될만한 제가 쓴 글을 소개합니다!
 
-- [취업을 위한 코딩테스트 공부방법](https://covenant.tistory.com/220)
-- [코딩테스트 대비를 위한 백준 문제 추천](https://covenant.tistory.com/224)
-- [🏁 거침없는 코딩테스트 DFS BFS 문제 추천](https://covenant.tistory.com/147)
+<br />
 
-<br>
+- ⭐ [취업을 위한 코딩테스트 공부방법](https://covenant.tistory.com/220)
+- ⭐ [코딩테스트 대비를 위한 백준 문제 추천](https://covenant.tistory.com/224)
+- ⭐ [거침없는 코딩테스트 DFS BFS 문제 추천](https://covenant.tistory.com/147)
+
+<br />
+<br />
+<br />
+
 
 ### 참고
 - 이미지 출처 Figure 1. [MAZE RUNNER](https://www.youtube.com/watch?time_continue=47&v=EQWqsdOjvG8&feature=emb_title)
