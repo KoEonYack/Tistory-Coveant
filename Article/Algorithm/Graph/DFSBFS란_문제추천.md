@@ -278,7 +278,7 @@ DFS, BFS에 대해 알아보았으니 백준 문제를 추천해 드리겠습니
 | 5 | 🌕🌗🌑🌑🌑 | [연결 요소의 개수](https://www.acmicpc.net/problem/11724) | 
 | 6 | 🌕🌗🌑🌑🌑 | [단지번호붙이기](https://www.acmicpc.net/problem/2667) | 
 | 7 | 🌕🌗🌑🌑🌑 | [로또](https://www.acmicpc.net/problem/6603) | 
-| 8 | 🌕🌕🌗🌑🌑 | [토마토](https://www.acmicpc.net/problem/7575) |
+| 8 | 🌕🌕🌗🌑🌑 | [토마토](https://www.acmicpc.net/problem/7576) |
 | 9 | 🌕🌕🌕🌑🌑 | [나이트의 이동](https://www.acmicpc.net/problem/7562) | 
 
 <br />
