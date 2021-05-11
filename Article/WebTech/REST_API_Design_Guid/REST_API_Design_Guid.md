@@ -4,9 +4,19 @@
 
 <br />
 <br />
-<img src="./cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/REST_API_Design_Guid/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
+
+## 시작하며
+
+<br />
+
+작년 저의 커리어의 첫 번째 회사인 스타트업 입사 첫날 사수님이 REST API를 구현해본적이 있냐고 물어보셨습니다. 그런 경험이 없다고 하니 [REST API 디자인 가이드](https://bcho.tistory.com/914) 글을 읽어보라고 주셨고 이렇게 REST API의 첫 만남을 시작하여 퇴사하기 전까지 주어진 중요한 일은 프론트와 API 스팩을 정하는 것이었습니다. 한번 스팩을 정하면 벡엔드 개발자인 저만 바꾸어야 하는 것이 아닌 프론트에도 영향이가니 신중함과 검토와 소통의 연속이었습니다. 당시 어떻게 개발해야할까 검색과 고민한 내용을 재구성하여 작성해봅니다. 참고 링크는 글의 후미에 작성하였습니다.
+
+<br />
+<br />
+
 
 ## REST란?
 
@@ -26,6 +36,10 @@
 
 <br />
 <br />
+<br />
+
+# REST API 디자인 가이드
+
 <br />
 
 ## 1. URL에 케밥케이스(kebab-case)를 사용하자
