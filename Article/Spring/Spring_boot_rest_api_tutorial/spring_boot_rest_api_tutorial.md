@@ -7,8 +7,11 @@
 <br />
 <br />
 <br />
-<img src="./img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
+<center>
+로켓처럼 빠르게 만나는 스프링부트!!
+</center>
 <br />
 <br />
 
@@ -16,7 +19,15 @@
 
 <br />
 
-코드는 [javatodev.com](https://javatodev.com/spring-boot-mysql/)를 따랐지만 설명은 공감이 되지 않은 부분이 있기에 제가 새로 작성하였습니다. 
+17년 처음 Django로 서버 사이드 개발을 접하였습니다. 당시 장고걸즈 튜토리얼을 따라하며 공부했습니다. DB도 모르던 시절이라 ORM도 생소하였고 템플릿 언어를 사용한 서버사이드 랜더링 모든게 낯설었습니다. 우선 튜토리얼로 따라서 게시판을 만들어보고 궁금했던 부분을 찾아서 공부하는게 도움이 되었습니다. Spring 공부 전략도 이와 마찬가지일 것입니다. Spring Boot 공부에 한세월, JPA 공부에 한세월 그리고 뭔가를 만들어보려고 하면 다시 새로운게 나오고 다시 공부하는데 한세월... 이러다가 흥미를 잃어버리거나 정년퇴직이 눈 앞에 다가올 것입니다. 
+
+<br />
+
+도서 예약 시스템 API 개발을 통하여 스프링 부트에서 기본적인 생성, 수정, 삭제, 조회에 대한 API를 만들것입니다. 중간에 있는 설명을 참고하여 간단한 API를 만들어보고 동작을 눈으로 확인하면서 하나씩 파악해 나가는 Top Down 공부법으로 Spring Boot를 정복해보세요.
+
+<br />
+
+수록된 코드는 [javatodev.com](https://javatodev.com/spring-boot-mysql/)를 따랐지만 설명은 공감이 되지 않은 부분이 있기에 제가 새로 작성하였습니다. 
 
 <br />
 
@@ -34,11 +45,11 @@ spring initializer는 초기 설정된 스프링 부트 프로젝트를 원하�
 
 <br />
 <br />
-<img src="./img/init.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/init.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
-본 프로젝트를 위해서 추가한 의존성은 네 가지 입니다. 각각 역활은 다음과 같습니다. 
+본 프로젝트를 위해서 네 개의 스프링부트 의존성은 추가했습니다. 각각 역활은 다음과 같습니다. 
 
 <br />
 
@@ -91,11 +102,11 @@ dependencies {
 
 <br />
 <br />
-<img src="./img/flow.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/flow.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
-우리가 만들고자하는 스프링 부트 프로젝트의 아키텍처는 이렇습니다. 
+우리가 만들고자하는 스프링 부트 프로젝트의 아키텍처는 위와 같습니다. 
 
 <br />
 <br />
@@ -110,8 +121,6 @@ dependencies {
 <br />
 
 MySQL을 설치하여 주시고 터미널에 다음의 명령어를 입력하여 MySQL에 접속합니다. 
-
-<br />
 
 ```text
 $ mysql -uroot -p
@@ -787,7 +796,7 @@ public List<String> lendABook (List<BookLendRequest> list) {
     List<String> booksApprovedToBurrow = new ArrayList<>();
     list.forEach(bookLendRequest -> {
         Optional<Book> bookForId = 
-                       bookRepository.findById(bookLendRequest.getBookId());
+                bookRepository.findById(bookLendRequest.getBookId());
         if (!bookForId.isPresent()) {
             throw new EntityNotFoundException(
                         "Cant find any book under given ID");
@@ -1105,49 +1114,54 @@ Postman을 이용해서 지금까지 개발한 API를 테스트해보겠습니�
 ## 9-1. 저자 추가
 
 <br />
-<img src="./img/postman_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
+
+POST, PUT, PATCH 메소드인 경우 Request Body에 JSON을 선택해서 body에 요청값을 담아야합니다.
+
 <br />
 <br />
 
 ## 9-2. 도서 추가
 
 <br />
-<img src="./img/postman_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
 ## 9-3. 회원 추가
 
 <br />
-<img src="./img/postman_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
 ## 9-4. 도서 조회
 
 <br />
-<img src="./img/postman_4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
 ## 9-5. ISBN번호로 도서조회
 
 <br />
-<img src="./img/postman_5.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_5.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
 ## 9-6. ID로 도서 조회
 
 <br />
-<img src="./img/postman_6.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_6.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
 ## 9-7. 도서 대출
 
 <br />
-<img src="./img/postman_7.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_7.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<br />
 <br />
 <br />
 
@@ -1155,7 +1169,7 @@ Postman을 이용해서 지금까지 개발한 API를 테스트해보겠습니�
 
 <br />
 
-- javatodev: [javatodev.채ㅡ](javatodev.com/spring-boot-mysql)
+- javatodev: [javatodev.com](javatodev.com/spring-boot-mysql)
 - 부스트코스 Spring: [www.boostcourse.org](https://www.boostcourse.org/web316/lecture/20655?isDesc=false)
 - Spring에서 JPA / Hibernate 초기화 전략: [pravusid.kr](https://pravusid.kr/java/2018/10/10/spring-database-initialization.html)
 - Spring Data JPA: [spring.io](https://spring.io/projects/spring-data-jpa)
