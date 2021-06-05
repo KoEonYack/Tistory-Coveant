@@ -6,6 +6,11 @@
 
 <br />
 <br />
+
+# 🚀 [로켓 학습] 스프링부트 CRUD REST API (JPA, MySQL, Gradle)
+
+<br />
+<br />
 <br />
 <img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
@@ -55,7 +60,7 @@ spring initializer는 초기 설정된 스프링 부트 프로젝트를 원하�
 
 - **Spring Web:** HTTP클라이언트와 Spring의 원격 지원을 위한 웹 관련 부분을 제공합니다.
 - **Spring Data JPA:** JPA기반 repository를 쉽게 만들 수 있도록 다양한 기능을 제공합니다.
-- **MySQL Driver:** MySQL 데이터베이스에 접근하기 위한 드라이버이빈다.
+- **MySQL Driver:** MySQL 데이터베이스에 접근하기 위한 드라이버입니다.
 - **Lombok:** 반복적인 개발을 줄일 수 있는 여러 기능을 제공하는 자바 라이브러리입니다. (Ref. [lombok](https://projectlombok.org/))
 
 <br />
