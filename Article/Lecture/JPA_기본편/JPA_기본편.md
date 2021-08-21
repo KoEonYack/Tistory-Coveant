@@ -13,7 +13,7 @@ JPA 기본편 스터디 강의자료
 
 <br />
 
-지난 3개월간 총 404장, 12화로 제작한 사내 스프링 스터디를 마쳤습니다. (스터디 자료 보러가기! 👉 [11번가 스프링 & 오브젝트 스터디 강의자료](https://covenant.tistory.com/246))
+지난 3개월간 총 404장, 12화로 제작한 (사내) 스프링 스터디를 마쳤습니다. (스터디 자료 보러가기! 👉 [11번가 스프링 & 오브젝트 스터디 강의자료](https://covenant.tistory.com/246))
 
 <br />
 
@@ -21,7 +21,7 @@ JPA 기본편 스터디 강의자료
 
 <br />
 
-ORM을 공부하는데 2달의 시간을 쓴다는게 가성비가 좋지 않아 보일 수 있지만 할애한 시간을 십분 활용하여 JPA, 디자인 패러다임, Best Practice Case Study 등.. 다양한 이야기를 담을 예정입니다.
+ORM을 공부하는데 두 달의 시간을 할애하는것이 가성비가 좋지 않아 보일 수 있습니다. 시간을 십분 활용하여 JPA, 디자인 패러다임, Best Practice Case Study, Testing 등.. 다양한 이야기를 담을 예정입니다.
 
 <br />
 
@@ -43,16 +43,19 @@ ORM을 공부하는데 2달의 시간을 쓴다는게 가성비가 좋지 않아
 </div>
 <br />
 
-기존에 접한 ORM과 JPA를 비교하며 JPA의 장점을 이야기로 스터디를 시작합니다. 데이터베이스는 소중한 자원이지만 실무에서 사용하기에 주저되는 부분이 있습니다. 이를 극복하기 위해서 어떻게 공부해야할지 살펴봅니다. 
+__Week1 개요__
 
 <br />
 
-면접 단골 주제인 Hibernate, JPA, Spring Data JPA 관계를 살펴봅니다. 
-인프런 강의에 다루지 않은 하이버네이트 라이프 싸이클에 관한 코드를 살펴보면서 JPA와 연관성을 갖고 살펴봅니다. 
+기존에 접한 ORM과 JPA를 비교하며 JPA의 장점을 이야기로 스터디를 시작합니다. 장점이 많은 JPA, 그러나 실무에서 사용하기에 주저되는 부분이 있습니다. 이를 극복하기 위해서 어떻게 공부해야할지 살펴봅니다. 
 
 <br />
 
-1차 캐시, 2차 캐시를 살펴보고 MSA 환경에서 어떻게 2차 캐시 동기화 문제를 극복할 수 있는지 Case Study를 통해서 살펴보겠습니다.
+Hibernate, JPA, Spring Data JPA 관계, 인프런 강의에 다루지 않은 하이버네이트 라이프 싸이클에 관한 코드를 살펴보면서 JPA와 연관성을 갖고 살펴봅니다. 
+
+<br />
+
+1차 캐시, 2차 캐시를 살펴보고 MSA 환경에서 2차 캐시 동기화 문제를 해결 방법에 대해서 Case Study로 살펴보겠습니다.
 
 <br />
 
@@ -62,8 +65,39 @@ ORM을 공부하는데 2달의 시간을 쓴다는게 가성비가 좋지 않아
 <br />
 <br />
 <br />
+
+# Week2 - Object Relational Mapping
+
 <br />
-<img src="./img/home.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<div align=center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/5xMnEBUt83zWQI" width="595" height="385" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
+<div style="margin-bottom:5px">
+<center>
+<strong> <a href="//www.slideshare.net/ssuser8f4c99/jpa-week2-object-relational-mapping" title="JPA 스터디 Week2 - Object Relational Mapping" target="_blank">JPA 스터디 Week2 - Object Relational Mapping</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser8f4c99" target="_blank">Covenant Ko</a></strong> 
+</center>
+</div>
+</div>
+<br />
+
+__Week2 개요__
+
+<br />
+
+ORM과 데이터페이스의 패러다음은 전혀 다릅니다. (마치 강아지와 고양이처럼요^^) 데이터베이스를 오브젝트에 매핑해야합니다. 앤터프라이즈 애플리케이션 아키텍처 패턴에서는 4가지를 소개합니다. 본 스터디에서는 Active Record, Data Mapper에 대해서 알아볼 것입니다. 
+
+<br />
+
+ActiveRecord Pattern은 도메인 안에서 데이터베이스에 객체를 컨트롤을 합니다. 즉 findByName 메서드가 엔티티 객체안에 있는 셈입니다.DataMapper Pattern은 Domain과 Mapper가 분리되도록 구현합니다. 
+
+<br />
+
+Case 스터디로 Layered Architecture의 단점을 짚어봅니다. 테이블 주도 개발, 변경의 전파, 테스트가 힘들어지는 비대해지는 코드의 사례를 살펴볼 것입니다.
+
+<br />
+<br />
+<br />
+<br />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Lecture/JPA_%EA%B8%B0%EB%B3%B8%ED%8E%B8/img/home.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center>
 허전해서 넣어본 동네 사진입니다.. :)
