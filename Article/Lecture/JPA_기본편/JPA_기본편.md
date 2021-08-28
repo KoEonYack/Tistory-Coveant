@@ -83,7 +83,7 @@ __Week2 개요__
 
 <br />
 
-ORM과 데이터페이스의 패러다음은 전혀 다릅니다. (마치 강아지와 고양이처럼요^^) 데이터베이스를 오브젝트에 매핑해야합니다. 앤터프라이즈 애플리케이션 아키텍처 패턴에서는 4가지를 소개합니다. 본 스터디에서는 Active Record, Data Mapper에 대해서 알아볼 것입니다. 
+ORM과 데이터페이스의 패러다임은 전혀 다릅니다. (마치 강아지와 고양이처럼요^^) 데이터베이스를 오브젝트에 매핑해야합니다. 앤터프라이즈 애플리케이션 아키텍처 패턴에서는 4가지를 소개합니다. 본 스터디에서는 Active Record, Data Mapper에 대해서 알아볼 것입니다. 
 
 <br />
 
@@ -92,6 +92,42 @@ ActiveRecord Pattern은 도메인 안에서 데이터베이스에 객체를 컨�
 <br />
 
 Case 스터디로 Layered Architecture의 단점을 짚어봅니다. 테이블 주도 개발, 변경의 전파, 테스트가 힘들어지는 비대해지는 코드의 사례를 살펴볼 것입니다.
+
+<br />
+
+- 일시: 21. 08. 21(토) 10:30 ~ 12:00
+- 범위 
+    - 섹션 4. 엔티티 매핑 필드와 컬럼 매핑
+    - 섹션 5. 양방향 연관관계와 연관관계의 주인 1- 기본
+
+<br />
+<br />
+<br />
+
+# Week3 - Entity Mapping / Hexagonal Architecture
+
+<br />
+<div align=center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/j7Hq0olSjesOrS" width="595" height="385" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> 
+<center>
+<strong> <a href="//www.slideshare.net/ssuser8f4c99/jpa-week3-entity-mapping-hexagonal-architecture-250068805" title="JPA Week3 Entity Mapping / Hexagonal Architecture" target="_blank">JPA Week3 Entity Mapping / Hexagonal Architecture</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser8f4c99" target="_blank">Covenant Ko</a></strong> 
+</center>
+</div>
+</div>
+<br />
+
+__Week3 개요__
+
+<br />
+
+지난 Case Study에서 레이어 아키텍처의 문제에 대해서 살펴보았습니다. 핵사고날 아키텍처를 살펴보며 레이어 아키텍처의 문제를 극복할 수 있는지, 테이블 주도 개발에서 벗어나 ORM을 잘 활용할 수 있을지 고민하는 시간을 갖어보겠습니다.
+
+<br />
+
+- 일시: 21. 08. 28(토) 10:30 ~ 12:00
+- 범위 
+    - 섹션 5. 양방향 연관관계와 연관관계의 주인 2 - 주의점, 정리
+    - 섹션 6. 다양한 연관관계 매핑 전체
 
 <br />
 <br />
