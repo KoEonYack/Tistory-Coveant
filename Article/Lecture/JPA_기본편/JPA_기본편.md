@@ -132,6 +132,31 @@ __Week3 개요__
 <br />
 <br />
 <br />
+
+# Week4 - GREAT STEP 1. 테스트 코드를 향한 위대한 발걸음
+
+<br />
+<div align=center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/rAy97oNnMZRYAQ" width="595" height="385" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser8f4c99/great-step-1" title="GREAT STEP 1. 테스트 코드를 향한 위대한 발걸음" target="_blank">GREAT STEP 1. 테스트 코드를 향한 위대한 발걸음</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser8f4c99" target="_blank">Covenant Ko</a></strong> 
+</div>
+</div>
+
+<br />
+
+__Week4 개요__
+
+<br />
+
+아키텍처 변환을 하지 않는다면 테이블 주도 개발을 피할 수 없을까요? TDD, DDD 등등의 방법을 선택할 수 있습니다. 테스트 코드를 막상 작성하려니 두려움이 따릅니다. 가장 좋은 방법은 지금 공부하고 있는 부분, 즉 JPA 그리고 영속 계층에 대해서 어떻게 테스트 코드를 작성하는지를 시작으로 좋은 테스트 코드 작성법에 대해서 공부하는 것입니다. 본 슬라이드에서 테스트 코드의 전반적 내용 그리고 Mokito를 통해서 간단한 테스트코드를 작성해보겠습니다.
+
+<br />
+
+- 일시: 21. 09. 04(토) 10:30 ~ 12:30
+- 범위: 섹션 7. 고급 매핑
+
+<br />
+<br />
+<br />
 <br />
 <img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Lecture/JPA_%EA%B8%B0%EB%B3%B8%ED%8E%B8/img/home.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
