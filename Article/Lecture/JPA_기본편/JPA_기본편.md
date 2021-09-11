@@ -157,6 +157,31 @@ __Week4 개요__
 <br />
 <br />
 <br />
+
+# Week5 - GREAT STEP 2. TDD, MockMVC
+
+<br />
+<div align=center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/nBgxuxu0mpX3gC" width="595" height="385" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser8f4c99/great-step-2-tdd-mockmvc" title="GREAT STEP 2. TDD &amp; MockMVC" target="_blank">GREAT STEP 2. TDD &amp; MockMVC</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser8f4c99" target="_blank">Covenant Ko</a></strong> 
+</div>
+</div>
+
+<br />
+
+__Week5 개요__
+
+<br />
+
+테이블 주도 개발을 벗어나기 위해서 TDD, DDD 등등의 방법을 사용할 수 있습니다. 이중에서 TDD가 무엇인지 살펴보겠습니다. 컨트롤러 테스트를 하기 위해서 MockMVC를 사용합니다. 단위 테스트에 만족하고 MockMVC에 대한 관심이 덜 할 수 있습니다. MockMVC를 사용하면 Swagger보다 장점이 많은 Spring REST Docs 문서를 만들 수 있습니다. 케이스 스터디로 API 문서화 도구로 Wiki에서 Spring Rest Docs로 전환한 우아한형제들 사례를 살펴보겠습니다.
+
+<br />
+
+- 일시: 21. 09. 11(토) 10:30 ~ 12:30
+- 범위: 섹션 7. 고급 매핑
+
+<br />
+<br />
+<br />
 <br />
 <img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Lecture/JPA_%EA%B8%B0%EB%B3%B8%ED%8E%B8/img/home.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
