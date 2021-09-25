@@ -182,6 +182,31 @@ __Week5 개요__
 <br />
 <br />
 <br />
+
+# Week6 - VALUE TYPES / CQRS
+
+<br />
+<div align=center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/yrTUTnrWZqaJKz" width="595" height="385" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser8f4c99/jpa-week4-value-types-cqrs-250291440" title="JPA Week4. VALUE TYPES / CQRS" target="_blank">JPA Week4. VALUE TYPES / CQRS</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser8f4c99" target="_blank">Covenant Ko</a></strong> 
+</div>
+</div>
+
+<br />
+
+__Week6 개요__
+
+<br />
+
+하이버네이트 타입 중에서 하나인 값 타입과 실제 코드의 어디에서 활용할 수 있을지 확인해봅니다. JPQL은 Where의 서브쿼리를 지원하지 않기에 Join으로 풀어야합니다. 간단한 예제를 통해서 Join으로 변환 전략에대해서 살펴봅니다. 마지막으로 CQRS 패턴에 대해 살펴봅니다. CQRS의 장점과 우아한형제들의 활용 사례를 케이스 스터디로 살펴보겠습니다.
+
+<br />
+
+- 일시: 21. 09. 25(토) 10:30 ~ 11:30
+- 범위: 섹션 10. 객체지향 쿼리 언어1 - 기본 문법
+
+<br />
+<br />
+<br />
 <br />
 <img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Lecture/JPA_%EA%B8%B0%EB%B3%B8%ED%8E%B8/img/home.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
