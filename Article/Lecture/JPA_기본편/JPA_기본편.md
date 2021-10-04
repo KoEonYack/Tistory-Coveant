@@ -207,6 +207,39 @@ __Week6 개요__
 <br />
 <br />
 <br />
+
+# Week7 - JOIN FETCH / Special Topic
+
+<br />
+<div align=center>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/tPIWEfZlzq13xs" width="595" height="385" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser8f4c99/jpa-week5-join-fetch-250352341" title="JPA Week5. Join Fetch" target="_blank">JPA Week5. Join Fetch</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser8f4c99" target="_blank">Covenant Ko</a></strong> </div>
+
+<br />
+<br />
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/toBNIhKO6Ar2ld" width="595" height="385" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/ssuser8f4c99/ss-250352367" title="왜 개발자는 컴퓨터공학을 공부해야 할까? (비전공자는 컴퓨터공학 과목에서 무엇을 알아야할까?)" target="_blank">왜 개발자는 컴퓨터공학을 공부해야 할까? (비전공자는 컴퓨터공학 과목에서 무엇을 알아야할까?)</a> </strong> from <strong><a href="https://www.slideshare.net/ssuser8f4c99" target="_blank">Covenant Ko</a></strong> </div>
+</div>
+</div>
+
+<br />
+
+__Week7 개요__
+
+<br />
+
+JPQL의 Fecth Join은 카티시안 곱으로 데이터를 Join합니다. 데이터가 뻥튀기될 수 있는데 언제 이 문제가 발생하는지 문제를 해결하는 방법을 살펴봅니다.
+
+<br />
+
+특별한 강의로 비전공자에게 알려주는 개발자로 일할때 필요한 컴퓨터 공학 지식이 무엇인지 컴퓨터공학 5대 과목을 기준으로 설명합니다. 
+
+<br />
+
+컴퓨터 공학 전공이 개발자 인생에 도움이 되는지 혼란스럽고 정립되지 않는 문제로 보입니다. 그럼에도  좋은 개발자가 되기 위해서 컴퓨터 공학 공부는 선택이 아닌 필수입니다. 본 슬라이드에서 어떤 내용을 배우고 어떤곳에, 왜 필요한지 맛보기로 보여줍니다.
+
+<br />
+<br />
+<br />
 <br />
 <img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Lecture/JPA_%EA%B8%B0%EB%B3%B8%ED%8E%B8/img/home.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
