@@ -7,7 +7,7 @@
 # 0. 시작하며
 
 <br />
-<img src="./img/architecture.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Netflix_Eureka_Service_Discovery/img/architecture.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 MSA구조에서 인스턴스 상태는 동적으로 변합니다. 이러한 변경 사항을 서비스 관리자가 실시간으로 변경하는 것은 어렵습니다. 
@@ -28,7 +28,7 @@ MSA구조에서 인스턴스 상태는 동적으로 변합니다. 이러한 변�
 
 <br />
 
-본 글에서는 넷플릭스 유레카를 이용하여 스프링부트 디스커버리 서버를 만들어보고 스프링부트, Go, 파이썬을 이용하여 유레카 서버 클라이언트르 만들어 디스커버리 서버에 등록해보겠습니다.
+본 글에서는 넷플릭스 유레카를 이용하여 스프링부트 디스커버리 서버를 만들어보고 스프링부트, Go, 플라스크를 이용하여 유레카 서버 클라이언트르 만들어 디스커버리 서버에 등록해보겠습니다.
 
 <br />
 
@@ -60,14 +60,14 @@ MSA구조에서 인스턴스 상태는 동적으로 변합니다. 이러한 변�
 # 1. 넷플릭스 유레카(Netflix Eureka) 서비스 디스커버리 생성
 
 <br />
-<img src="./img/eureka_intelij.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Netflix_Eureka_Service_Discovery/img/eureka_intelij.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center> 인텔리제이 의존성 선택
 </center>
 <br />
 
 
-이 글을 작성하는 시점의 최신 버전인 스프링부트 2.5.5 입니다. 의존성은 `Eureka Server`만 추가하면 됩니다.
+이 글을 작성하는 시점의 최신 버전인 스프링부트 2.5.5로 설정하였습니다. 의존성은  `Eureka Server`만 추가하면 됩니다.
 
 <br />
 <br />
@@ -116,7 +116,7 @@ eureka:
 ## 실행
 
 <br />
-<img src="./img/.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Netflix_Eureka_Service_Discovery/img/init-ui.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 애플리케이션을 실행하고 브라우저에서 `http://localhost:8761/`에 접속하면 유래카 대시보드에 접속할 수 있습니다.
@@ -176,7 +176,7 @@ eureka:
 ## Service Discovery 등록 확인
 
 <br />
-<img src="./img/eureka_boot_register_ui.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Netflix_Eureka_Service_Discovery/img/eureka_boot_register_ui.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 앞서 작업한 스프링부트 실행하고 `http://localhost:8761/`의 __Instances currently registered with Eureka__ 에서 등록된 것을 확인할 수 있습니다.
@@ -211,7 +211,7 @@ $ go get -u github.com/xuanbo/eureka-client
 <br />
 <br />
 
-## Go 서비스 코드
+## Go 코드
 
 ```go
 package main
@@ -244,7 +244,8 @@ func main() {
 
 	client.Start()
 
-	http.HandleFunc("/services", func(writer http.ResponseWriter, request *http.Request) {
+    http.HandleFunc("/services", 
+    func(writer http.ResponseWriter, request *http.Request) {
 		apps := client.Applications
 
 		b, _ := json.Marshal(apps)
@@ -264,10 +265,9 @@ func main() {
 - __Port:__  GO 서비스 개방 포트
 
 <br />
+<br />
 
 ## Service Discovery 등록 확인
-
-<br />
 
 ```text
 $ go run go-client.go
@@ -275,7 +275,7 @@ $ go run go-client.go
 
 <br />
 <!-- <div align="center"> -->
-<img src="./img/go_log.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Netflix_Eureka_Service_Discovery/img/go_log.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 <!-- </div> -->
 <br />
 <center>
@@ -287,7 +287,7 @@ Go서비스를 유레카 서버에 등록 성공시 로그
 __register application instance successful__ 로그가 나오면 등록에 성공하였습니다. 주기적으로 heartbeat, refresh로그가 찍힙니다.
 
 <br />
-<img src="./img/go_register_ui.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Netflix_Eureka_Service_Discovery/img/go_register_ui.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 `http://localhost:8761/`의 __Instances currently registered with Eureka__ 에서 Go 서비스가 등록된 것을 확인할 수 있습니다.
@@ -310,9 +310,7 @@ pip3 명령어를 통해서 flask와 eureka_client를 설치합니다.
 <br />
 <br />
 
-## Flask 서비스 코드
-
-<br />
+## Flask 코드
 
 ```python
 from flask import Flask, request
@@ -351,7 +349,7 @@ $ python3 flask_app.py
 ```
 
 <br />
-<img src="./img/flask_register_ui.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Netflix_Eureka_Service_Discovery/img/flask_register_ui.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center>
 <a href="http://localhost:8761/">http://localhost:8761/</a> 에서 서비스 등록 확인
