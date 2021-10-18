@@ -342,8 +342,6 @@ if __name__ == "__main__":
 
 ## Service Discovery 등록 확인
 
-<br />
-
 ```text
 $ python3 flask_app.py
 ```
