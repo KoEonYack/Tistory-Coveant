@@ -4,11 +4,17 @@
 
  -->
 
+<br />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_scheduling/img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="95%" >
+<br />
+<br />
+<br />
+
 # 시작하며
 
 <br />
 
-백엔드에서 특정 시간에 주기적으로 해야하는 일이 있습니다. 뉴스레터와 같은 이메일 발송, 주기적으로 데이터베이스 동기화 등등의 일이 그 예시가 될 것입니다. 
+백엔드에서 특정 시간에 주기적으로 해야 하는 일이 있습니다. 뉴스레터와 같은 이메일 발송, 주기적으로 데이터베이스 동기화 등등의 일이 그 예시가 될 것입니다. 
 
 스프링 부트에서 이런 작업을 `@Schedule` 어노테이션을 사용하면 쉽게 할 수 있습니다. 본 글에서 `@Schedule` 활용을 살펴보겠습니다.
 
@@ -17,6 +23,8 @@
 <br />
 
 # 의존성 추가
+
+<br />
 
 `@Schedule`은 org.springframework.scheduling 패키지에 있습니다. 다음과 같이 의존성을 추가하면 됩니다.
 
@@ -47,7 +55,7 @@ implementation 'org.springframework.boot:spring-boot-starter-web'
 
 <br />
 
-스케줄링 기능을 활성화하기 위해서는 configuration 클래스 혹은 지금처럼 에플리케이션 매인 클래스에 `@EnableScheduling`를 추가합니다.
+스케줄링 기능을 활성화하기 위해서는 configuration 클래스 혹은 지금처럼 애플리케이션 매인 클래스에 `@EnableScheduling`를 추가합니다.
 
 ```java
 @EnableScheduling // 추가!!
@@ -60,7 +68,7 @@ public class ScheduleApplication {
 }
 ```
 
-이로서 스프링부트에서 스케줄을 사용하기위한 모든 준비를 마쳤습니다.
+이로써 스프링 부트에서 스케줄을 사용하기 위한 모든 준비를 마쳤습니다.
 
 <br />
 <br />
@@ -83,8 +91,8 @@ public class ScheduledTasks {
 
 <br />
 
-1. 메서드의 리턴값은 void여야한다. (그러나 리턴값이 있더라도 동작합니다.)
-2. 메서드의 인자는 없어야한다. (인자가 있으면 컴파일시 BeanCreationException 발생)
+1. 메서드의 리턴값은 void여야 한다. (그러나 리턴값이 있더라도 동작합니다.)
+2. 메서드의 인자는 없어야 한다. (인자가 있으면 컴파일시 BeanCreationException 발생)
 
 <br />
 <br />
@@ -162,6 +170,8 @@ fixedDelay는 작업 종료 후 1초 뒤 주기적으로 실행되는 것을 확
 
 # Initial Delay
 
+<br />
+
 첫 작업이 실행되기 전까지 대기할 시간을 지정할 수 있습니다. 
 
 initialDelay는 fixedRate, fixedDelay 모두 사용할 수 있습니다. 
@@ -194,24 +204,24 @@ public void fixedRateAndInitialDelay() {
 
 <br />
 
-그러나 현실은 ms로 지정하는 fixedRate, fixedDelay보다 더 구체적인 조건을 주어야합니다. 매일 아침 8시 뉴스레터를 보내기, 매일 새벽 03시 00분 로그전송 등등일 것입니다. 이럴떄는 크론 표현식이 유용합니다. 
+그러나 현실은 ms로 지정하는 fixedRate, fixedDelay보다 더 구체적인 조건을 주어야 합니다. 매일 아침 8시 뉴스레터를 보내기, 매일 새벽 03시 00분 로그전송 등등일 것입니다. 이럴 때는 크론 표현식이 유용합니다. 
 
 <br />
 <br />
-<img src="./img/chron.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_scheduling/img/chron.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="95%" >
 <br />
 <center>
 크론식 의미를 실시간으로 확인 하고싶다면? <a href="crontab.guru/">crontab.guru</a>
 </center>
 <br />
 
-다만 <a href="crontab.guru/">crontab.guru</a>를 볼때 조심해야할점은 맨 앞 글자인 초 단위가 없는 5글자이기에 실제 스프링부트에서 크론식에 작성할때는 앞에 초 글자까지 포함해야합니다. 5글자만 넣으면 BeanCreationException이 발생합니다.
+다만 <a href="crontab.guru/">crontab.guru</a>를 볼 때 조심해야 할 점은 맨 앞글자인 초 단위가 없는 5글자이기에 실제 스프링부트에서 크론식에 작성할때는 앞에 초 글자까지 포함해야합니다. 5글자만 넣으면 BeanCreationException이 발생합니다.
 
 <br />
 
 ```text
 *           *　　　　　　*　　　　　　*　　　　　　*　　　　　　*
-초(0-59)   분(0-59)　　시간(0-23)　　일(1-31)　　월(1-12)　　요일(0-7)
+초(0-59)    분(0-59)　　시간(0-23)　일(1-31)　　월(1-12)　　요일(0-7)
 
 ```
 - 총 6글자 (초/분/시간/일/월/요일)
@@ -234,9 +244,13 @@ public void cronExpression() {
 
 # 쓰레드 풀 설정
 
-기본적으로 `@EnableScheduling` 어노테이션을 사용시 작업을 실행할 스케줄링을 위해서 스레드가 하나만 있는 스레드 풀을 만듭니다. @Scheduled 작업은 대기열에 쌓이게 되며 단일 스레드에 의해서만 실행됩니다. 
+<br />
 
-여러 작업을 제 시간에 맞추어서 실행하기 위해서는 스레드를 늘릴필요가 있을 것입니다. `SchedulingConfigurer` 인터페이스를 구현하여 설정을 변경할 수 있습니다.
+기본적으로 `@EnableScheduling` 어노테이션을 사용 시 작업을 실행할 스케줄링을 위해서 스레드가 하나만 있는 스레드 풀을 만듭니다. @Scheduled 작업은 대기열에 쌓이게 되며 단일 스레드에 의해서만 실행됩니다. 
+
+<br />
+
+여러 작업을 제시간에 맞추어서 실행하기 위해서는 스레드를 늘릴 필요가 있을 것입니다. SchedulingConfigurer 인터페이스를 구현하여 설정을 변경할 수 있습니다.
 
 
 ```java
@@ -273,24 +287,28 @@ thread:
 
 <br />
 
-```
+```text
 [    현재 쓰레드-2] com.covenant.schedule.ScheduledTasks     : 현재시간 - 50:12:760
 [    현재 쓰레드-3] com.covenant.schedule.ScheduledTasks     : 현재시간 - 50:13:763
 [    현재 쓰레드-1] com.covenant.schedule.ScheduledTasks     : 현재시간 - 50:13:763
 [    현재 쓰레드-1] com.covenant.schedule.ScheduledTasks     : 현재시간 - 50:13:766
 ```
 
+setThreadNamePrefix 지정한 이름으로 현재 쓰레드라는 쓰레드 명이 추가되었으며 쓰레드 3개로 작업을 수행하는 것을 확인할 수 있습니다.
+
 <br />
 <br />
+<br />
+
+# 마치며
+
 <br />
 
 본 글에서 사용한 플레이그라운드 코드는 [Github. Tistory-Covenant-Code](https://github.com/KoEonYack/Tistory-Covenant-Code/tree/main/spring-schedule)에서 확인할 수 있습니다.
 
 <br />
-<br />
-<br />
 
-## 참고
+본 글 작성을 위해서 참고한 글 링크를 남깁니다.
 
 - [attacomsian.com](https://attacomsian.com/blog/task-scheduling-spring-boot)
 - [callicoder.com](https://www.callicoder.com/spring-boot-task-scheduling-with-scheduled-annotation/)
