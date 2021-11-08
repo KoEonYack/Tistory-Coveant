@@ -5,14 +5,16 @@
 -->
 
 <br />
-<img src="./img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="95%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/LocalDateTime_%EC%82%AC%EC%9A%A9%EB%B2%95_%EC%A0%95%EB%A6%AC/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<br />
 <br />
 
 # 시작하며
 
 <br />
 
-Go 언어로 개발하다가 스프링으로 넘어와서 의외로 헷갈렸던 부분이 시간을 다루는 것이었습니다. Go에서는 time, Month 패키지명 부터 시작해서 함수 이름이 상당히 명확한데 LocalDateTime이라는 이름부터 이상했으며 또 Java 8 이후로는 Date는 사용안한다고하니 레거시는 Date를 사용하고.. 더욱 헷갈렸습니다. 본 글에서는 LocalDateTime을 정리해보겠습니다.
+Go 언어로 개발하다가 스프링으로 넘어와서 의외로 헷갈렸던 부분이 시간을 다루는 것이었습니다. Go에서는 time, Month 패키지명 부터 시작해서 함수 이름이 상당히 명확한데 LocalDateTime 이라는 이름부터 이상했으며 또 Java 8 이후로는 Date는 사용 안 한다고 하니 레거시는 Date를 사용하고.. 더욱 헷갈렸습니다. 본 글에서는 LocalDateTime을 정리해보겠습니다.
+
 
 <br />
 <br />
@@ -96,7 +98,7 @@ LocalDateTime.of(2021, 1, 1, 0, 0, 0);
     - dd: 일
     - ss: 초
     - SSS: 밀리세컨드
-- __ofPattern__ 인자로 "yyyyMMddHHmmssSSS", "yyyy-MM-dd HH:mm:ss:SSS", "yyyy-MM-dd HH:mm:ss" 등 다양하게 활용할 수 있습니다.
+- __ofPattern__ 인자로 "yyyy-MM-dd HH:mm:ss:SSS", "yyyy-MM-dd HH:mm:ss" 등 다양하게 활용할 수 있습니다.
 
 <br />
 
@@ -109,7 +111,9 @@ String localDateTimeFormat1
     = localDateTime.format(DateTimeFormatter.ofPattern("yyyyMMddHHmmssSSS"));
 
 String localDateTimeFormat2 
-    = localDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss:SSS"));
+    = localDateTime.format(
+            DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss:SSS")
+        );
 
 System.out.println("localDateTime = " + localDateTime);
 System.out.println("localDateTimeFormat1 = " + localDateTimeFormat1);
@@ -215,12 +219,12 @@ getNano() = 180343000
 
 - __LocalDateTime plusYears(long years)__ - 인자만큼 년도 추가
 - __LocalDateTime plusMonths(long months)__ - 인자만큼 달 추가
+- __LocalDateTime plusWeeks(long weeks)__ - 인자만큼 주 추가
 - __LocalDateTime plusDays(long days)__ - 인자만큼 일 추가
 - __LocalDateTime plusHours(long hours)__ - 인자만큼 시간 추가
 - __LocalDateTime plusMinutes(long minutes)__ - 인자만큼 분 추가
-- __LocalDateTime plusNanos(long nanos)__ - 인자만큼 나노세컨드 추가
 - __LocalDateTime plusSeconds(long seconds)__ - 인자만큼 초 추가
-- __LocalDateTime plusWeeks(long weeks)__ - 인자만큼 주 추가
+- __LocalDateTime plusNanos(long nanos)__ - 인자만큼 나노세컨드 추가
 
 ```java
 // now: 2021년 9월 9일 10시 0분 0초
@@ -243,20 +247,19 @@ plusSeconds(3) = 2021-09-09T10:00:03
 
 <br />
 <br />
-<br />
 
 ## Minus
 
 <br />
 
+- __LocalDateTime minusYears(long years)__ - 인자만큼 년도 감소
+- __LocalDateTime minusMonths(long months)__ - 인자만큼 달 감소
 - __LocalDateTime minusDays(long days)__ - 인자만큼 일 감소
+- __LocalDateTime minusWeeks(long weeks)__ - 인자만큼 주 감소
 - __LocalDateTime minusHours(long hours)__ - 인자만큼 시간 감소
 - __LocalDateTime minusMinutes(long minutes)__ - 인자만큼 분 감소
-- __LocalDateTime minusMonths(long months)__ - 인자만큼 달 감소
 - __LocalDateTime minusNanos(long nanos)__ - 인자만큼 나노세컨드 감소
 - __LocalDateTime minusSeconds(long seconds)__ - 인자만큼초 감소
-- __LocalDateTime minusWeeks(long weeks)__ - 인자만큼 주 감소
-- __LocalDateTime minusYears(long years)__ - 인자만큼 년도 감소
 
 <br />
 
@@ -336,6 +339,8 @@ localDateTime1 is equal to localDateTime2
 
 # 6. LocalDateTime을 LocalDate로 변환
 
+<br />
+
 - __LocalDate toLocalDate()__ - 시간 단위(시간, 분, 초, 나노세컨드)가 없는 LocalDate로 반환합니다.
 
 ```java
@@ -370,17 +375,3 @@ System.out.println(localDateTime.toLocalDate());
 <br />
 <br />
 
-<!--
-
-
-비교: https://codechacha.com/ko/java-compare-date-and-time/
-https://docs.oracle.com/javase/8/docs/api/java/time/LocalDateTime.html
-https://www.javaguides.net/2018/08/java-8-localdatetime-class-api-guide.html
-
-```java
-
-```
-```text
-```
-
- -->
