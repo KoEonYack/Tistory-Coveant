@@ -5,7 +5,8 @@
 -->
 
 <br />
-<img src="./img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_exception_test/img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<br />
 <br />
 
 # 환경 구성
@@ -49,7 +50,7 @@ RuntimeException이 발생하는 func 메소드를 만들었습니다. 그러면
 <br />
 <br />
 
-# 방법1. assertThrows
+# 방법 1. assertThrows
 
 ```java
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -64,13 +65,13 @@ public void junit5에서_exception_테스트_1() {
 
 <br />
 
-Assertions.assertThrows의 두 번째 인자인 DoSomething.func()를 실행하여 첫 번째 인자인 예외 타입과 같은지(혹은 부모 타입의 예외인지) 검사합니다. 
+Assertions.assertThrows의 두 번째 인자인 DoSomething.func()를 실행하여 첫 번째 인자인 예외 타입과 같은지(혹은 캐스팅이 가능한 상속 관계의 예외인지) 검사합니다. 
 
 <br />
 <br />
 <br />
 
-# 방법2. assertj의 assertThatThrownBy
+# 방법 2. assertj의 assertThatThrownBy
 
 ```text
 testImplementation 'org.assertj:assertj-core:3.21.0' 
@@ -147,7 +148,7 @@ public void junit5에서_exception_테스트_4() {
 <br />
 <br />
 
-# 좀더 깊은 이야기
+# 좀 더 깊은 이야기
 
 <br />
 
@@ -155,7 +156,7 @@ public void junit5에서_exception_테스트_4() {
 
 <br />
 
-위에서 assertThrows는 인자로 넘어온 예외 타입 혹은 부모 타입의 예외를 검사한다고 하였는데 어떤 의미인지 살펴보겠습니다.
+위에서 assertThrows는 인자로 넘어온 예외 타입 혹은 부모 타입의 예외를 상속한 예외인지 검사한다고 하였는데 어떤 의미인지 살펴보겠습니다.
 
 
 ```java
@@ -179,7 +180,7 @@ public void junit5에서_exception_테스트_1_2() {
 }
 ```
 
-그리고 assertThrows를 사용하여 RuntimeException 타입인지 테스트를 합니다. 그러면 이 테스트는 통과할까요? 위에서 설명한대로 부모 예외를 상속한 경우이기에 정답은 테스트를 통과합니다. 테스트를 통과하는 이유는 Assertions.assertThrows 내부 구현에 비밀이 있습니다.
+그리고 assertThrows를 사용하여 RuntimeException 타입인지 테스트를 합니다. 그러면 이 테스트는 통과할까요? 위에서 설명한 대로 부모 예외를 상속한 경우이기에 정답은 테스트를 통과합니다. 테스트를 통과하는 이유는 Assertions.assertThrows 내부 구현에 비밀이 있습니다.
 
 <br />
 
@@ -201,13 +202,13 @@ private static <T extends Throwable> T assertThrows(
 
 <br />
 
-executable인자로 넘어온 DoSomething.func2()를 실행합니다. SomeException이 발생하면 isInstance를 검사하게 되며 이 조건문은 참이되기에 return (T) actualException; 이 실행됩니다. 
+executable인자로 넘어온 DoSomething.func2()를 실행합니다. SomeException이 발생하면 isInstance를 검사하게 되며 이 조건문은 참이되기에 return (T) actualException; 이 실행됩니다. 발생한 예외와 기대하는 예외 타입 검사를 isInstance로 검사하기에 기대하는 예외 타입을 상속받은 예외라면 테스트를 통과할 수 있습니다.
 
 <br />
 <br />
 <br />
 
-## 실패 테스트를 꼭 해야하는가?
+## 예외 테스트를 꼭 해야하는가?
 
 ```java
 public class TestCsv extends TestDb {
@@ -227,7 +228,7 @@ h2.test.db.TestCsv.java <br />
 </center>
 <br />
 
-위 코드는 스프링으로 웹 서비스를 만들면 애용할 h2의 Csv 테스트 코드입니다. 사실 실패 테스트를 하지 않고 유닛테스트를 구성할 경우 통합 테스트에서(속칭 서버 올리고 UI 클릭하며 진행하는 테스트) 시간을 많이 소요됩니다. 
+위 코드는 스프링으로 웹 서비스를 만들면 필수인 h2의 CSV 테스트 코드입니다. 사실 실패 테스트를 하지 않고 유닛테스트를 구성할 경우 통합 테스트에서(속칭 서버 올리고 UI 클릭하며 진행하는 테스트) 시간을 많이 소요됩니다. 
 
 <br />
 
@@ -235,15 +236,15 @@ h2.test.db.TestCsv.java <br />
 
 <br />
 
-- 메일을 보낼 수 없는 인증메일을 입력한 경우
+- 메일을 보낼 수 없는 인증 메일을 입력한 경우
 - 이메일 인증하지 않고 재가입 시도하는 경우
 - 유효기간이 만료된 인증 토큰을 사용하는 경우
-- 내부에서의 잘못된 암호화 키 값으로 사용자의 비밀번호를 암호화 하는 경우
+- 내부에서의 잘못된 암호화 키값으로 사용자의 비밀번호를 암호화하는 경우
 - 등등..
 
 <br />
 
-이 모든 테스트를 통합 테스트에서 테스트하려면 정말 힘들것입니다.
+이 모든 테스트를 통합 테스트에서 테스트하려면 정말 힘들것입니다. 예외에 대한 단위 테스트는 애플리케이션에 대해 빠르게 견고하게 만들어 줄 것입니다.
 
 <br />
 <br />
