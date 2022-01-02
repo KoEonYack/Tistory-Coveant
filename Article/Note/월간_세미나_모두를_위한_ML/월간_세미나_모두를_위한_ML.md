@@ -1,6 +1,6 @@
 <br />
 <br />
-<img src="./img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Note/%EC%9B%94%EA%B0%84_%EC%84%B8%EB%AF%B8%EB%82%98_%EB%AA%A8%EB%91%90%EB%A5%BC_%EC%9C%84%ED%95%9C_ML/img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
@@ -8,15 +8,15 @@
 
 <br />
 
-지난 12월 29일 박종천 님의 ML 기초 웨비나가 있었습니다. (행사 링크 [[OKKY 12월 세미나] 모두를 위한 ML / Data, ML, Service, and Platform](https://okky.kr/article/1123562)) 해당 웨비나 내용을 간략하게 마크다운으로 남깁니다. 
+지난 12월 29일 박종천 님의 ML 기초 세미나가 있었습니다. (행사 링크 [[OKKY 12월 세미나] 모두를 위한 ML / Data, ML, Service, and Platform](https://okky.kr/article/1123562)) 해당 웨비나 내용을 간략하게 마크다운으로 남깁니다. 
 
 <br />
 
-박종천님은 유튜브 [개발자가 갖추어야 할 9가지 기술](https://youtu.be/fHyTA-UIcqs) 10만뷰 영상으로 유명하시며 과거 한글과컴퓨터에 한글 개발에 참여하셨으며 블리자드 재직시절 스타크래프트 한글화 지원 패치를 하신분입니다.
+박종천님은 유튜브 [개발자가 갖추어야 할 9가지 기술](https://youtu.be/fHyTA-UIcqs) 10만뷰 영상으로 유명하시며 과거 한글과컴퓨터에 한글 개발에 참여하셨으며 블리자드 재직시절 스타크래프트 한글화 지원 패치를 하신분입니다. 
 
 <br />
 
-*강연 자료는 okky에 아직 업로드되지 않은 상태라 추후 업로드되면 본 글에 링크를 남기겠습니다. 본문의 삽화는 강연 슬라이드에서 언급하신 자료의 원본 자료입니다.
+강연 일부 내용을 간략하게 남깁니다. 강연 자료는 okky에 아직 업로드되지 않은 상태라 추후 업로드되면 본 글에 링크를 남기겠습니다. 본문의 삽화는 강연 슬라이드에서 언급하신 자료의 원본 자료입니다.
 
 <br />
 
@@ -29,7 +29,7 @@ __발표자 박종천님__
 
 <br />
 
-행사를 주관해주시고 제 블로그에 남길 수 있도록 허락해주신 okky 관계자분들께 감사의 말씀을 남깁니다.
+행사를 주관해주시고 웨비나 요약을 블로그에 남길 수 있도록 허락해주신 okky 관계자분들께 감사의 말씀을 남깁니다.
 
 <br />
 <br />
@@ -92,7 +92,7 @@ __발표자 박종천님__
 - 최근의 머신러닝은 다 딥러닝이다.
 
 <br />
-<img src="./img/what_is_ml.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Note/%EC%9B%94%EA%B0%84_%EC%84%B8%EB%AF%B8%EB%82%98_%EB%AA%A8%EB%91%90%EB%A5%BC_%EC%9C%84%ED%95%9C_ML/img/what_is_ml.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center>
 <a href="https://www.guru99.com/data-science-vs-machine-learning.html"> Difference Between Data Science and Machine Learning </a>
@@ -126,7 +126,7 @@ __발표자 박종천님__
 ## 머신러닝의 세 가지 학습 타입
 
 <br />
-<img src="./img/supervsied_unsupervised_reinforcement.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Note/%EC%9B%94%EA%B0%84_%EC%84%B8%EB%AF%B8%EB%82%98_%EB%AA%A8%EB%91%90%EB%A5%BC_%EC%9C%84%ED%95%9C_ML/img/supervsied_unsupervised_reinforcement.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center>
 <a href="http://solarisailab.com/archives/1785"> 머신 러닝(Machine Learning) 알고리즘 분류 </a>
@@ -263,7 +263,7 @@ __발표자 박종천님__
 ## 좋은 ML 플랫폼 기준
 
 <br />
-<img src="./img/ml-process.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Note/%EC%9B%94%EA%B0%84_%EC%84%B8%EB%AF%B8%EB%82%98_%EB%AA%A8%EB%91%90%EB%A5%BC_%EC%9C%84%ED%95%9C_ML/img/ml-process.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center>
 <a href="https://www.accenture.com/th-en/insights/security/board-primer-artificial-intelligence"> A board primer on artificial intelligence </a>
@@ -301,7 +301,7 @@ __발표자 박종천님__
 ## ML 산업
 
 <br />
-<img src="./img/industry.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Note/%EC%9B%94%EA%B0%84_%EC%84%B8%EB%AF%B8%EB%82%98_%EB%AA%A8%EB%91%90%EB%A5%BC_%EC%9C%84%ED%95%9C_ML/img/industry.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center>
 <a href="http://aict.kr/en_aitop/01_aix/aix02.asp"> 지식정보산업협회 </a>
@@ -313,7 +313,7 @@ __발표자 박종천님__
 - ML 산업은 발전하는 중
 
 <br />
-<img src="./img/k-ml.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="50%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Note/%EC%9B%94%EA%B0%84_%EC%84%B8%EB%AF%B8%EB%82%98_%EB%AA%A8%EB%91%90%EB%A5%BC_%EC%9C%84%ED%95%9C_ML/img/k-ml.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="50%" >
 <br />
 <center>
 <a href="https://magazine.hankyung.com/business/article/202010225784b"> 경희대 빅데이터 연구센터 </a>
