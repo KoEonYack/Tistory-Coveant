@@ -1,4 +1,6 @@
+<!-- 
 # Redis 데이터 한번에 삭제하기
+-->
 
 <br />
 <br />
@@ -35,7 +37,7 @@ Biggest set found so far 'spring:session:index:org.springframework.session.FindB
 
 <br />
 
-레디스는 복수개의 키를 한 번에 삭제하는(벌크 삭제) 방법을 제공하지 않습니다. 
+레디스는 복수개의 키를 한 번에 삭제하는(벌크 삭제) 방법을 제공하지 않습니다. 하지만 약간의 커멘드 조합으로 복수의 값을 삭제할 수 있습니다.
 
 <br />
 
