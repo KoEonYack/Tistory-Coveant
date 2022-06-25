@@ -8,6 +8,8 @@ Junit5 테스트 이름을 지정하는 4가지 방법 (DisplayName, DisplayName
 
 # 시작하며 
 
+<br />
+
 Junit5에서는 다양한 방법으로 클래스와 테스트 메서드에 이름을 지정할 수 있습니다. 본 글에서는 DisplayName 뿐만 아니라 이 글을 작성하는 기준 Junit5 최신 버전인 5.8 버전에서 추가된 테스트 이름을 지정하는 방법을 살펴보겠습니다.
 
 <br />
@@ -22,15 +24,18 @@ public static String emailMasking(String email){
     email = StringUtils.trim(email);
     String localPart = StringUtils.split(email, "@")[0];
     String emailDomain = StringUtils.split(email, "@")[1];
-    return localPart.substring(0, localPart.length() - maxVisibleLength) + "**@" + emailDomain;
+    return localPart.substring(0, localPart.length() - maxVisibleLength) 
+            + "**@" + emailDomain;
 }
 ```
+
+<br />
 
 살짝 복잡해 보이는 정적 메서드 하나가 있습니다. 이메일 마스킹하는 메서드로 인자로 apple@naver.com이 넘어오면 로컬 파트(Local Part)인 apple을 app**로 마스킹하는 코드입니다. 
 
 <br />
 
-동작은 간단하나 쫌 복잡해 보이기에 잘 동작하는지 테스트 코드를 작성해봅시다.
+사뭇 정신없어 보이는 구현이 잘 동작하는지 테스트 코드를 작성해봅시다.
 
 <br />
 <br />
@@ -55,13 +60,13 @@ class EmailMaskingBasicTest {
 ```
 
 <br />
-<img src="./img/way1_default_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way1_default_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
 <br />
 <center>
 Junit5의 테스트 결과
 </center>
 <br />
-<img src="./img/way1_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way1_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
 <br />
 <center>
 @DisplayName을 지정한 테스트 결과
@@ -106,10 +111,10 @@ class EmailMaskingDisplayNameSimpleGeneratorTest {
 ```
 
 <br />
-<img src="./img/way2_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way2_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
 <br />
 
-@DisplayNameGeneration을 사용하여 테스트 메서드 이름을 변경할 수 있습니다. DisplayNameGenerator.ReplaceUnderscores.class은 테스트 메서드의 _를 공백으로 변경하여 테스트 메서드 이름으로 보여줍니다.
+@DisplayNameGeneration을 사용하여 테스트 메서드 이름을 변경할 수 있습니다. DisplayNameGenerator . ReplaceUnderscores.class은 테스트 메서드의 _를 공백으로 변경하여 테스트 메서드 이름으로 보여줍니다.
 
 <br />
 <br />
@@ -119,7 +124,7 @@ class EmailMaskingDisplayNameSimpleGeneratorTest {
 
 ```java
 @DisplayNameGeneration(
-    EmailMaskingDisplayNameCustomGeneratorTest.CustomDisplayNameGenerator.class
+EmailMaskingDisplayNameCustomGeneratorTest.CustomDisplayNameGenerator.class
 )
 class EmailMaskingDisplayNameCustomGeneratorTest {
 
@@ -132,7 +137,8 @@ class EmailMaskingDisplayNameCustomGeneratorTest {
         Assertions.assertEquals("app**@apple.com", maskingEmail);
     }
 
-    static class CustomDisplayNameGenerator extends DisplayNameGenerator.Standard {
+    static class CustomDisplayNameGenerator 
+            extends DisplayNameGenerator.Standard {
 
         @Override
         public String generateDisplayNameForClass(Class<?> testClass) {
@@ -140,21 +146,26 @@ class EmailMaskingDisplayNameCustomGeneratorTest {
         }
 
         @Override
-        public String generateDisplayNameForNestedClass(Class<?> nestedClass) {
+        public String generateDisplayNameForNestedClass(
+                                            Class<?> nestedClass) {
             return super.generateDisplayNameForNestedClass(nestedClass);
         }
 
         @Override
-        public String generateDisplayNameForMethod(Class<?> testClass, Method testMethod) {
+        public String generateDisplayNameForMethod(
+                    Class<?> testClass, Method testMethod) {
+
             String name = testMethod.getName();
-            return Arrays.stream(name.split("_")).collect(Collectors.joining(" "));
+            return Arrays.stream(
+                    name.split("_")).collect(Collectors.joining(" ")
+                );
         }
     }
 }
 ```
 
 <br />
-<img src="./img/way3_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way3_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
 <br />
 
 DisplayNameGeneration.Standard를 상속하여 원하는 대로 테스트 이름을 변경할 수 있습니다. 방법 2에서 봤던 것과 다르게 클레스에 @DisplayName이 사라졌습니다. generateDisplayNameForClass에 지정한 클래스 이름이 표시됩니다.
@@ -185,7 +196,7 @@ void email_param_masking_test(String email, String expectMaskingEmail) {
 ```
 
 <br />
-<img src="./img/way4_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way4_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
 <br />
 
 @ParameterizedTest에 표현 식을 지정할 수 있습니다. {0}, {1}은 파라미터값을 테스트 이름에 넣을 수 있습니다.
@@ -214,10 +225,10 @@ class EmailMaskingParamTest {
 
     private static Stream<Arguments> emailMaskingParam() {
         return Stream.of(
-                arguments(named("로컬 파트의 길이 5는", "apple@apple.com")
-                        , named("로컬파트 끝 두자리 마스킹", "app**@apple.com")),
-                arguments(named("공백으로 시작하는 로컬 파트의 길이 5는", " apple@apple.com")
-                        , named("로컬파트 끝 두자리 마스킹", "app**@apple.com"))
+        arguments(named("로컬 파트의 길이 5는", "apple@apple.com")
+                , named("로컬파트 끝 두자리 마스킹", "app**@apple.com")),
+        arguments(named("공백으로 시작하는 로컬 파트의 길이 5는", " apple@apple.com")
+                , named("로컬파트 끝 두자리 마스킹", "app**@apple.com"))
         );
     }
 
@@ -233,15 +244,18 @@ class EmailMaskingParamTest {
 ```
 
 <br />
-<img src="./img/way5_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way5_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
 <br />
 
-Named에 대한 제안은 어떤 개발자의 [Github Junit5 issue](https://github.com/junit-team/junit5/issues/2301) 부터 시작합니다. 
-Junit5에서 추가된 Named.named를 사용하면 파라미터에 이름을 지정할 수 있습니다. 
+Junit5.8에서 추가된 Named.named를 사용하면 파라미터에 이름을 지정할 수 있습니다. 
 
 <br />
 
 이게 왜 필요한가 생각이 들 수 있지만, 생각보다 개발을 하다 보면 테스트하는 파라미터에 상세한 코멘트를 추가하고 싶을 때가 있습니다. 특히 Mocking 값을 파라미터값으로 넘겨준다면 어떤 Mocking인지 상술하면 더욱더 명확한 테스트가 될 것입니다.
+
+<br />
+
+Named에 대한 제안은 어떤 개발자의 [Github Junit5 issue](https://github.com/junit-team/junit5/issues/2301) 부터 시작합니다.
 
 <br />
 <br />
