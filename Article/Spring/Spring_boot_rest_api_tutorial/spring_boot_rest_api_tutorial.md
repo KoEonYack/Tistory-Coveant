@@ -997,7 +997,7 @@ public ResponseEntity readBooks(@RequestParam(required = false) String isbn) {
 
 <br />
 
-*주의! 실제 서비스를 개발할때는 Repository에서 반환하는 ResponseEntity를 응답값으로 반환하면 안됩니다. RepositoryEntity 스팩이 변경되면 API의 응답값이 변경되기 때문입니다. 조회한 객체를 응답값으로 매핑하는 로직이 필요하지만 해당 예제에서는 생략하겠습니다. 
+*주의! 실제 서비스를 개발할때는 Repository에서 반환하는  Entity를 응답값으로 반환하면 안됩니다. Entity의 스팩이 변경되면 API의 응답값이 변경되기 때문입니다. 이렇게되면 API를 사용하는 쪽에서 응답값이 바뀌게되는 황당한 일이 생깁니다. 조회한 객체를 API의 응답값으로 매핑하는 로직이 필요하지만 해당 예제에서는 생략하겠습니다. 
 
 <br />
 
