@@ -5,12 +5,15 @@ WebSecurityConfigurerAdapter Deprecated 대응법
 -->
 
 <br />
-<img src="./img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringSecurity/WebSecurityConfigurerAdapter_deprecated/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 <br />
 
 # WebSecurityConfigurerAdapter란?
 
+<br />
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringSecurity/WebSecurityConfigurerAdapter_deprecated/img/deprecaed.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<br />
 <br />
 
 스프링 시큐리티를 사용하면 기본적인 시큐리티 설정을 하기 위해서 WebSecurityConfigurerAdapter라는 추상 클래스를 상속하고, configure 메서드를 오버라이드하여 설정하였습니다. 그러나 스프링 시큐리티 5.7.0-M2 부터 WebSecurityConfigurerAdapter는 deprecated 되었습니다. 
@@ -87,6 +90,7 @@ WebSecurityConfigurerAdapter를 제거한 코드에서는 @Bean 에노테이션�
 
 <br />
 <br />
+<br />
 
 ## 2. AuthenticationManager
 
@@ -100,8 +104,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     UserDetailsService userDetailsService;
 
     @Override
-    public void configure(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
-        authenticationManagerBuilder.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder());
+    public void configure(
+        AuthenticationManagerBuilder authenticationManagerBuilder) 
+                                                        throws Exception {
+
+        authenticationManagerBuilder.userDetailsService(userDetailsService)
+                                    .passwordEncoder(passwordEncoder());
     }
 
     @Bean
@@ -120,7 +128,8 @@ __WebSecurityConfigurerAdapter 제거 코드__
 public class WebSecurityConfig {
 
     @Bean
-    AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception { 
+    AuthenticationManager authenticationManager(
+    AuthenticationConfiguration authenticationConfiguration) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
     }
 }
@@ -134,6 +143,7 @@ public class WebSecurityConfig {
 
 그러나 변경된 설정에서는 AuthenticationManager 빈 생성 시 스프링의 내부 동작으로 인해 위에서 작성한 UserSecurityService와 PasswordEncoder가 자동으로 설정됩니다. 
 
+<br />
 <br />
 <br />
 
@@ -168,8 +178,9 @@ public class SecurityConfiguration {
 ```
 
 
-WebSecurity를 커스텀 설정하기 위해서 WebSecurityCustomizer라는 콜백 인터페이스를 사용합니다. /ignore1, /ignore2 요청에 대해서 스프링 시큐리티 적용하지 않는 설정입니다.
+WebSecurity를 커스텀 설정하기 위해서 WebSecurityCustomizer라는 콜백 인터페이스를 사용합니다. /ignore1, /ignore2 요청에 대해서 스프링 시큐리티 적용하지 않는 설정입니다. webSecurityCustomizer 빈을 등록하면 됩니다.
 
+<br />
 <br />
 <br />
 
@@ -183,7 +194,8 @@ __WebSecurityConfigurerAdapter 코드__
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+    protected void configure(AuthenticationManagerBuilder auth) 
+                                                throws Exception {
         UserDetails user = User.withDefaultPasswordEncoder()
             .username("user")
             .password("password")
@@ -218,9 +230,13 @@ public class SecurityConfiguration {
 
 <br />
 <br />
+<br />
 
 
 ## 참고. 
+
+<br />
+
 - [Spring Blog. Spring Security without the WebSecurityConfigurerAdapter](https://spring.io/blog/2022/02/21/spring-security-without-the-websecurityconfigureradapter)
 - [Medium. Spring Security — H2 Database — Without WebSecurityConfigurerAdapter](https://medium.com/@gurkanucar/spring-security-h2-database-without-websecurityconfigureradapter-fc4a83b6f60d)
 
