@@ -19,7 +19,7 @@ JPA 1대 N 양방향 연관관계 매핑 및 API 설계
 <br />
 <br />
 
-# 1. 1-N 모델
+# 1. 1-N 모델
 
 <br />
 <img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/JPA_1_N_%EC%96%91%EB%B0%A9%ED%96%A5/img/total.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
