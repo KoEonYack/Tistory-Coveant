@@ -5,7 +5,7 @@
 -->
 
 <br />
-<img src="./img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/%EB%A1%AC%EB%B3%B5%EC%97%90%EC%84%9C_record%EB%A1%9C_%EB%A6%AC%ED%8C%A9%ED%84%B0%EB%9E%91%ED%95%98%EB%8A%94_%EB%B0%A9%EB%B2%95/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 <br />
 
@@ -72,7 +72,7 @@ void memberTest() {
 ## STEP 2. 롬복 제거
 
 <br />
-<img src="./img/delombok.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/%EB%A1%AC%EB%B3%B5%EC%97%90%EC%84%9C_record%EB%A1%9C_%EB%A6%AC%ED%8C%A9%ED%84%B0%EB%9E%91%ED%95%98%EB%8A%94_%EB%B0%A9%EB%B2%95/img/delombok.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 <br />
 
@@ -176,7 +176,7 @@ void createMemberTest() {
 ## STEP 4. 사용하지 않는 Setter 제거
 
 <br />
-<img src="./img/remove_setter.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/%EB%A1%AC%EB%B3%B5%EC%97%90%EC%84%9C_record%EB%A1%9C_%EB%A6%AC%ED%8C%A9%ED%84%B0%EB%9E%91%ED%95%98%EB%8A%94_%EB%B0%A9%EB%B2%95/img/remove_setter.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 <br />
 
@@ -242,7 +242,7 @@ member = member.withUsername("apple");
 ## STEP 6. final로 필드 변경
 
 <br />
-<img src="./img/final.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/%EB%A1%AC%EB%B3%B5%EC%97%90%EC%84%9C_record%EB%A1%9C_%EB%A6%AC%ED%8C%A9%ED%84%B0%EB%9E%91%ED%95%98%EB%8A%94_%EB%B0%A9%EB%B2%95/img/final.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 이제 불변 필드로 변경할 수 있습니다. Option + Enter(Alt + Enter)를 누르면 final 필드를 만들 수 있다고 제안해줍니다. final로 변경해줍니다.
@@ -268,7 +268,7 @@ public class Member {
 이제 클래스를 record로 변경할 수 있는 모든 조건을 만들었습니다. 클래스 이름에 밑줄로 record로 변경할 수 있다고 추천을 해줄 것입니다.
 
 <br />
-<img src="./img/record.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/%EB%A1%AC%EB%B3%B5%EC%97%90%EC%84%9C_record%EB%A1%9C_%EB%A6%AC%ED%8C%A9%ED%84%B0%EB%9E%91%ED%95%98%EB%8A%94_%EB%B0%A9%EB%B2%95/img/record.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 Option + Enter(Alt + Enter)를 누르면 record로 변경할 것을 제안해줍니다. record로 변경해줍니다.
@@ -295,8 +295,6 @@ record를 사용하기에 사용하지 않는 equals, canEqual, hashCode, toStri
 
 롬복을 제거하기 전 코드와 record 코드를 비교함으로 본 글을 마칩니다. <><.
 
-
-<br />
 <br />
 
 ```java
