@@ -41,13 +41,10 @@ sys.setrecursionlimit(1000000)
 
 def DFS(v):
     print(str(v), end=" ")
-    if v == M:
-        return
-    else:
-        for i in range(1, N+1):
-            if MAP[v][i] == 1 and check[i] is False:
-                check[i] = True
-                DFS(i)
+    for i in range(1, N+1):
+        if MAP[v][i] == 1 and check[i] is False:
+            check[i] = True
+            DFS(i)
 
 def BFS(v):
     Q = deque([])
