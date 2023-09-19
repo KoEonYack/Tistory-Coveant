@@ -1,6 +1,6 @@
 <!-- 
 
-Mybatis의 위험한 where 1=1 사용, trim으로 해결될까?
+Mybatis의 where 1=1 사용, trim으로 해결될까?
 
 -->
 

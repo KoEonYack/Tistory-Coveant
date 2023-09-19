@@ -269,7 +269,7 @@ update라는 동작이 들어가서 안됩니다. PUT 메서드를 이용하여 
 - Client Error 4XX 
     - 클라이언트가 서버에게 잘못된 요청을 하는 경우
     - 401 Unauthorized: 인증이 필요한 페이지를 요청한 경우
-    - 403 Forbiden: 허용되지 않은 메소드가 있을 때
+    - 403 Forbidden: 허용되지 않은 메소드가 있을 때
     - 406 Not Acceptable: 허용 불가능
 - Server Error 5XX 
     - 서버에서 오류가 발생하여 정상적으로 요청을 처리할 수 없는 경우 
