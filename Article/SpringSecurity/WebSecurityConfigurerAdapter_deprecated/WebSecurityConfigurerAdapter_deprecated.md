@@ -141,7 +141,7 @@ public class WebSecurityConfig {
 
 <br />
 
-그러나 변경된 설정에서는 AuthenticationManager 빈 생성 시 스프링의 내부 동작으로 인해 위에서 작성한 UserSecurityService와 PasswordEncoder가 자동으로 설정됩니다. 
+그러나 변경된 설정에서는 AuthenticationManager 빈 생성 시 스프링의 내부 동작으로 인해 위에서 작성한 UserDetailsService와 PasswordEncoder가 자동으로 설정됩니다. 
 
 <br />
 <br />
