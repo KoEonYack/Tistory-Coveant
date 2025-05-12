@@ -5,7 +5,7 @@
 -->
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_exception_test/img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_exception_test/img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 <br />
 

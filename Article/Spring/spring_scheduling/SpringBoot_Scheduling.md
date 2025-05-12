@@ -5,7 +5,7 @@
  -->
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_scheduling/img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="95%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_scheduling/img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="95%" >
 <br />
 <br />
 <br />
@@ -209,7 +209,7 @@ public void fixedRateAndInitialDelay() {
 
 <br />
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_scheduling/img/chron.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="95%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_scheduling/img/chron.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="95%" >
 <br />
 <center>
 크론식 의미를 실시간으로 확인 하고싶다면? <a href="crontab.guru/">crontab.guru</a>

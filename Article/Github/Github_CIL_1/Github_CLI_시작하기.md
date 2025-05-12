@@ -1,7 +1,7 @@
 # Github CLI 시작하기 (1. 설치, 초기 설정)
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CIL_1/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CIL_1/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 <br />
@@ -66,7 +66,7 @@ brew install gh
 scoop를 통해서 다운로드 받을 수 있지만 간단하게 msi를 통해서 설치해 보겠습니다. [release]([https://github.com/cli/cli/releases/](https://github.com/cli/cli/releases)) 페이지로 이동합니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CIL_1/img/down.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CIL_1/img/down.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 스크롤을 내리면 하단에 msi가 있습니다. 다운로드 받아서 설치해 줍니다. 
@@ -115,19 +115,19 @@ gh auth login
 `one-time code`가 터미널에 생성됩니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CIL_1/img/auth_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CIL_1/img/auth_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100" >
 <br />
 
 웹 브라우저에 터미널에 나온 one-time code를 입력합니다. 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CIL_1/img/auth_4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="60%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CIL_1/img/auth_4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="60%" >
 <br />
 
 `Authorize github`을 클릭합니다. 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CIL_1/img/auth_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Github/Github_CIL_1/img/auth_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" >
 <br />
 
 위와 같은 화면이 나오면 성공한 것입니다. 지금 보고 있는 웹 창을 종료합니다. 

@@ -2,7 +2,7 @@
 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/gin-gonic_hot_reloading/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/gin-gonic_hot_reloading/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center> 칼퇴를 위해서 Gin이 빨리 리로딩되야한다... </center>
 
@@ -24,13 +24,13 @@ Gin은 Go의 웹 프레임워크 중 하나입니다. Go 프레임워크인 Beeg
 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/gin-gonic_hot_reloading/img/1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/gin-gonic_hot_reloading/img/1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 [https://github.com/codegangsta/gin](https://github.com/codegangsta/gin) 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/gin-gonic_hot_reloading/img/2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/gin-gonic_hot_reloading/img/2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 [https://github.com/johannesboyne/gomon](https://github.com/johannesboyne/gomon) 
@@ -48,7 +48,7 @@ Gin은 Go의 웹 프레임워크 중 하나입니다. Go 프레임워크인 Beeg
 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/gin-gonic_hot_reloading/img/3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/gin-gonic_hot_reloading/img/3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 Nodemon Github의 README.md를 보면 `.js` 파일 뿐만 아니라 다른 프로그램의 모니터링을 하는데 사용할 수 있으며 예시로 파이썬을 들고 있습니다. Gin-gonic의 hot reload를 위해서 nodemon을 준비해 봅시다.
@@ -77,7 +77,7 @@ TCP:1111에서 1111은 현재 실행하는 Go의 포트 번호를 입력하면 �
 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/gin-gonic_hot_reloading/img/4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/gin-gonic_hot_reloading/img/4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center>nodemon을 이용한 hot reloading 동작</center>
 
@@ -99,7 +99,7 @@ go run main.go && lsof -n -i4TCP:1111 | xargs killall -9 && go run main.go
 lsof 명령어로 1111 포트를 사용하는 PID를 추출합니다. 그다음 xargs 명령어로 추출한 PID를 killall 명령어로 넘깁니다. 그러면 포트 1111을 사용한 Go 프로세스가 죽게 되고 그 다음 go run으로 go 프로젝트가 실행됩니다.   
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/gin-gonic_hot_reloading/img/5.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/gin-gonic_hot_reloading/img/5.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center> 포트가 충돌이 일어나면 Go 프로세스를 죽이고 다시 시작합니다. </center>
 
@@ -142,7 +142,7 @@ nodejs 개발할때 처럼 nodemon.json을 똑같이 사용하면 됩니다. env
 
 <br />
 
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/gin-gonic_hot_reloading/img/6.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/gin-gonic_hot_reloading/img/6.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <center> 빌드에 실패하면 nodemon이 종료됩니다. </center>
 <br />
 

@@ -2,26 +2,26 @@
 
 <br />
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
 <br />
 
 # 시작하며..
 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/t_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/t_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
 <br />
 
 사용자가 ID, PW를 입력하면 서버로 전송이 됩니다. 서버에서는 ID, PW를 DB에 조회하고 회원이면 로그인처리합니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/t_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/t_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
 <br />
 
 그런데 문제가 있습니다. HTTP는 Stateless, 즉 사용자가 새로운 요청을 한다면 과거에 로그인한 사실을 기억하지 못합니다. 이 문제를 해결하기 위해서 예전에는 로그인 할 때 DB에 누가 로그인했는지 기록했습니다.  
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/t_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/t_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
 <br />
 
 로그인을 하면 로그인한 사용자를 위한 토큰을 발급합니다. 이 토큰을 가지고 물건 구입, 구입 내역 조회와 같이 계정 정보가 필요한 요청을 할 때 이 토큰과 함께 요청합니다. 토큰에는 요청한 사람의 정보가 담겨있기에 서버는 DB를 조회하지 않고 누가 요청하는지 알 수 있습니다.
@@ -52,7 +52,7 @@ HTTP는 다음 특징을 가지고 있습니다.
 <br />
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/c_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/c_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
 <br />
 
 - 서버 기반 인증 방식의 핵심은 서버측에서 유저 정보를 저장하는 것입니다.
@@ -69,7 +69,7 @@ HTTP는 다음 특징을 가지고 있습니다.
 
 <br />
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/c_2.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/c_2.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
 <br />
 
 JWT를 복호화 하면 헤더, 내용, 서명으로 구분할 수 있습니다.
@@ -198,7 +198,7 @@ JWT를 이용한 인증을 살펴보기 전에 액세스 토큰와 리프래시 
 
 <br />
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/c_4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/c_4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 웨일 브라우저는 URL에 whale://signin-internals/ 을 입력하면 여기서 액세스, 리프래시 토큰을 확인할 수 있습니다.
@@ -210,7 +210,7 @@ JWT를 이용한 인증을 살펴보기 전에 액세스 토큰와 리프래시 
 # JWT를 이용한 인증 과정
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/c_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/jwt%EB%9E%80/img/c_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
 <br />
 
 1. 사용자가 ID, PW를 입력하여 서버에 로그인 인증을 요청합니다.

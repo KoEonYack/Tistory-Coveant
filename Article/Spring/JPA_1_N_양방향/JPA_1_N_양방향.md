@@ -22,7 +22,7 @@ JPA 1대 N 양방향 연관관계 매핑 및 API 설계
 # 1. 1-N 모델
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/JPA_1_N_%EC%96%91%EB%B0%A9%ED%96%A5/img/total.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/JPA_1_N_%EC%96%91%EB%B0%A9%ED%96%A5/img/total.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 <center>
 좌. 오징어게임 - 구슬치기 장면 <br />
@@ -59,7 +59,7 @@ API에 주머니, 그리고 N개의 돌멩이 정보를 json으로 보내면 DB�
 ## 2-1. 연관관계의 주인
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/JPA_1_N_%EC%96%91%EB%B0%A9%ED%96%A5/img/schema.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/JPA_1_N_%EC%96%91%EB%B0%A9%ED%96%A5/img/schema.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 <br />
 
 일(1)-다(N) 관계에서 외래키는 연관관계의 다 쪽에 외래키가 있습니다. 이때 객체 양방향 관계에서 연관관계의 주인은 N(다) 쪽입니다. 본 예제에서는 N(다)에 해당하는 돌멩이가 연관관계의 주인입니다.
@@ -71,7 +71,7 @@ API에 주머니, 그리고 N개의 돌멩이 정보를 json으로 보내면 DB�
 ## 2-2. 돌멩이 엔티티 (1:`N`)
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/JPA_1_N_%EC%96%91%EB%B0%A9%ED%96%A5/img/stone.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/JPA_1_N_%EC%96%91%EB%B0%A9%ED%96%A5/img/stone.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 <br />
 
 ```java
@@ -160,7 +160,7 @@ __(5) @ManyToOne__ (fetch = FetchType.LAZY)
 ## 2-3. 주머니 엔티티 (`1`:N)
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/JPA_1_N_%EC%96%91%EB%B0%A9%ED%96%A5/img/pocket.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/JPA_1_N_%EC%96%91%EB%B0%A9%ED%96%A5/img/pocket.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 <br />
 
 ```java
@@ -286,7 +286,7 @@ forEach를 사용하면 위의 코드를 조금 더 줄일 수 있습니다.
 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/JPA_1_N_%EC%96%91%EB%B0%A9%ED%96%A5/img/table_v2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="50%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/JPA_1_N_%EC%96%91%EB%B0%A9%ED%96%A5/img/table_v2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="50%" >
 <br />
 
 요청한 json에 맞추어 Pocket, Stone의 값이 저장된 것을 확인할 수 있스빈다.

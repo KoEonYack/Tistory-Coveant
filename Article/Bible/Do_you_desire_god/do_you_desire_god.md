@@ -8,7 +8,7 @@
 # 출근길 명설교?
 
 <br />
-<img src="http://58.234.158.21:8081/Upload/Image/20200503/00000000000000201449.JPG" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=http://58.234.158.21:8081/Upload/Image/20200503/00000000000000201449.JPG" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center>Source. TBS </center>
 <br />
@@ -19,7 +19,7 @@
 
 
 <br />
-<img src="https://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2014/05/07010000/no-other-name-times-square-shoot-card-hillsong-collected.jpg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://d9nqqwcssctr8.cloudfront.net/wp-content/uploads/2014/05/07010000/no-other-name-times-square-shoot-card-hillsong-collected.jpg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center> 다른 이름은 없습니다. Hillsong Time Square </center>
 <br />
@@ -205,7 +205,7 @@ Do you desire him?
 
 <br />
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Bible/Do_you_desire_god/img/end.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Bible/Do_you_desire_god/img/end.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 

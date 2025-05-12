@@ -12,7 +12,7 @@
 <br />
 <br />
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center>
 로켓처럼 빠르게 만나는 스프링부트!!
@@ -50,7 +50,7 @@ spring initializer는 초기 설정된 스프링 부트 프로젝트를 원하�
 
 <br />
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/init.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/init.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
@@ -107,7 +107,7 @@ dependencies {
 
 <br />
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/flow.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/flow.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
@@ -1119,7 +1119,7 @@ Postman을 이용해서 지금까지 개발한 API를 테스트해보겠습니�
 ## 9-1. 저자 추가
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 POST, PUT, PATCH 메소드인 경우 Request Body에 JSON을 선택해서 body에 요청값을 담아야합니다.
@@ -1130,42 +1130,42 @@ POST, PUT, PATCH 메소드인 경우 Request Body에 JSON을 선택해서 body�
 ## 9-2. 도서 추가
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
 ## 9-3. 회원 추가
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
 ## 9-4. 도서 조회
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
 ## 9-5. ISBN번호로 도서조회
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_5.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_5.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
 ## 9-6. ID로 도서 조회
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_6.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_6.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
 ## 9-7. 도서 대출
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_7.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/Spring_boot_rest_api_tutorial/img/postman_7.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 <br />

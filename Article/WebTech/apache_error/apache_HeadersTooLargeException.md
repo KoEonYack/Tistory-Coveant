@@ -2,7 +2,7 @@
 
 <br />
 <!-- <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/90c453cf79054b0a0d096f2687d15a4cae8e1ec2/Article/WebTech/apache_error/img/cover.png?raw=true?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/90c453cf79054b0a0d096f2687d15a4cae8e1ec2/Article/WebTech/apache_error/img/cover.png?raw=true?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" ><br />
 <br /> -->
 <br />
 <br />
@@ -11,7 +11,7 @@
 
 <br />
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/90c453cf79054b0a0d096f2687d15a4cae8e1ec2/Article/WebTech/apache_error/img/error.png?raw=true" align="center" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/90c453cf79054b0a0d096f2687d15a4cae8e1ec2/Article/WebTech/apache_error/img/error.png?raw=true" align="center" width="" >
 </p>
 <br />
 

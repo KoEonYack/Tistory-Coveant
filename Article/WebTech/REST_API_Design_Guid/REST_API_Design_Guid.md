@@ -4,7 +4,7 @@
 
 <br />
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/REST_API_Design_Guid/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/WebTech/REST_API_Design_Guid/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 

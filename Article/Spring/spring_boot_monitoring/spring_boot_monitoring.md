@@ -5,7 +5,7 @@
 -->
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center>
 Cover Photo by <a href="https://unsplash.com/@tobiastu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Tobias Tullius</a> on <a href="https://unsplash.com/s/photos/monitoring?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -43,7 +43,7 @@ Cover Photo by <a href="https://unsplash.com/@tobiastu?utm_source=unsplash&utm_m
 # 1. 스프링 부트 애플리케이션
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/init.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/init.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 [start.spring.io](https://start.spring.io/) 에서 위와같이 Spring Boot Actuator, Prometheus, Spring Web 의존성을 추가한 후 GENERATE 버튼을 클릭합니다. 
@@ -90,7 +90,7 @@ Metrics for endPoint1
 ```
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/init_actuator.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/init_actuator.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
 <br />
 <center>
 http://localhost:8080/actuator
@@ -130,7 +130,7 @@ management:
 - __/actuator/prometheus__ :  Micrometer를 통해 수집된 metric들을 볼 수 있습니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/actuator.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/actuator.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
 <br />
 <center>
 http://localhost:8080/actuator
@@ -141,7 +141,7 @@ http://localhost:8080/actuator
 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/actuator_prometheus.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/actuator_prometheus.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
 <br />
 <center>
 http://localhost:8080/actuator/prometheus
@@ -205,13 +205,13 @@ docker run \
 <br />
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/pro_target.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/pro_target.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
 <br />
 
 [http://localhost:9090/targets](http://localhost:9090/targets) 혹은 Status > Targets을 선택합니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/prometheus_graph.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/prometheus_graph.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
 <br />
 
  `http_server_requests_seconds_max` 메트릭을 입력하여 Graph로 시각화하여 볼 수 있습니다.
@@ -237,62 +237,62 @@ $ docker run --name grafana -d -p 3000:3000 grafana/grafana
 docker run을 성공적으로 실행하면 [http://localhost:3000](http://localhost:3000/) 를 브라우저에 입력하여 그라파나에 접속할 수 있습니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_login.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_login.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" />
 <br />
 
 1. 초기 계정은 admin / admin 입니다. 처음 로그인하면 비밀번호를 변경하는 창이 나옵니다. 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_dashboard.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_dashboard.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
 <br />
 
 2. 데이터소스 추가를 위해 그라파나 첫 페이지에서 `DATA SOURCE`를 클릭합니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_add.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_add.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
 <br />
 
 3. `Prometheus`에 수집되는 메트릭을 시각화 할것이기에 최상단에 있는 `Prometheus`를 선택합니다.
 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_add_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_add_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
 <br />
 
 4. Data Source이름을 지정해주고 URL에 [http://host.docker.internal:9090/](http://host.docker.internal:9090/)를 입력합니다. Data Source 설정에 성공할 경우 성공을 알리는 녹색 상태창이 나옵니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_add_dashboard.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_add_dashboard.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
 <br />
 
 5. `Import`를 클릭하여 대시보드를 생성하겠습니다. 스프링부트 메트릭을 보여주는 유명한 대시보드로 [JVM dashboard](https://grafana.com/grafana/dashboards/4701)가 있습니다. 다양한 대시보드는 [Grafana Dashboards](https://grafana.com/grafana/dashboards)에서 확인할 수 있습니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_import.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_import.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
 <br />
 
 6. [https://grafana.com/grafana/dashboards/4701](https://grafana.com/grafana/dashboards/4701)를 입력하고 `Load`를 클릭합니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_import_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_import_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
 <br />
 
 7. 원하는 대시보드 이름을 입력하고 방금전에 생성한 Prometheus 데이터 소스를 선택한 후 `Import`를 선택합니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_dashboard_complete.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_dashboard_complete.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
 <br />
 
 8. 멋진 그라파나 대시보드를 만들어보았습니다. 스크린샷보다 더 많은 메트릭이 있으므로 스크롤하여 확인해보세요. 기본 범위는 24시간으로 설정되어있습니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_add_panel.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_add_panel.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
 <br />
 
 9. 대시보드에 커스텀 패널을 추가할 수 있습니다. 상단의 `Add panel`을 클릭하세요.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_add_panal_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/spring_boot_monitoring/img/grafana_add_panal_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" />
 <br />
 
 10. `Metrics` 필드에 `http_server_requests_seconds_max`를 입력해보세요. 

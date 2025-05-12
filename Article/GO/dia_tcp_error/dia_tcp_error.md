@@ -5,7 +5,7 @@
 # 오류 확인
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/dia_tcp_error/img/1-1.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/dia_tcp_error/img/1-1.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 MySQL docker와 GO docker project 파일을 연결하려고 할 때 Go docker의 빌드는 성공하였으나 실행(docker run)하려고 하면 dial tcp 127.0.0.1:3306: connect: connection refused 오류가 발생하는 것을 확인할 수 있습니다. 
@@ -33,7 +33,7 @@ if err != nil {
 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/dia_tcp_error/img/2-2.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/dia_tcp_error/img/2-2.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <center> 성공 </center>
 <br />
 

@@ -5,7 +5,7 @@
 -->
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/invalid_source_release_%EC%97%90%EB%9F%AC%ED%95%B4%EA%B2%B0/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/invalid_source_release_%EC%97%90%EB%9F%AC%ED%95%B4%EA%B2%B0/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 <br />
 
@@ -31,13 +31,13 @@ __[File] -> [Project Structure] -> [Project]__  선택합니다.
 - 윈도우 단축키: Shift + Ctrl + Alt + S
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/invalid_source_release_%EC%97%90%EB%9F%AC%ED%95%B4%EA%B2%B0/img/project_strusture_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/invalid_source_release_%EC%97%90%EB%9F%AC%ED%95%B4%EA%B2%B0/img/project_strusture_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 사진과 같이 클릭하여 JDK 다운로드 창으로 넘어갑니다. 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/invalid_source_release_%EC%97%90%EB%9F%AC%ED%95%B4%EA%B2%B0/img/project_strusture_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/invalid_source_release_%EC%97%90%EB%9F%AC%ED%95%B4%EA%B2%B0/img/project_strusture_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 <br />
 
 다운받고자 하는 JDK 버전을 선택해주고, JDK 제공 벤더를 선택합니다. 
@@ -49,7 +49,7 @@ __[File] -> [Project Structure] -> [Project]__  선택합니다.
 애플 실리콘칩(M1 칩)을 사용하고 있다면 aarch64로 다운받아줍시다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/invalid_source_release_%EC%97%90%EB%9F%AC%ED%95%B4%EA%B2%B0/img/project_strusture_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/invalid_source_release_%EC%97%90%EB%9F%AC%ED%95%B4%EA%B2%B0/img/project_strusture_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 <br />
 
 인텔리제이 21.2월 버전 이후부터 JDK 17을 지원합니다. 만약 JDK 17 이상의 버전이 보이지 않는다면 인텔리제이 업데이트가 필요합니다. 
@@ -77,7 +77,7 @@ CTRL+ALT+S
 ## 2-1. Java Compiler 설정
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/invalid_source_release_%EC%97%90%EB%9F%AC%ED%95%B4%EA%B2%B0/img/preferences_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="90%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/invalid_source_release_%EC%97%90%EB%9F%AC%ED%95%B4%EA%B2%B0/img/preferences_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="90%" >
 <br />
 
 __[Build, Execution, Deployment] -> [Compiler] -> [Java Compiler]__ 에서 Project bytecode version을 앞서 설정한 JDK과 일치시킵니다.
@@ -93,7 +93,7 @@ __[Build, Execution, Deployment] -> [Compiler] -> [Java Compiler]__ 에서 Proje
 스프링부트 그래들을 사용한다면 추가로 설정을 해야합니다. 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/invalid_source_release_%EC%97%90%EB%9F%AC%ED%95%B4%EA%B2%B0/img/preferences_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="90%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/invalid_source_release_%EC%97%90%EB%9F%AC%ED%95%B4%EA%B2%B0/img/preferences_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="90%" >
 <br />
 
 <br />

@@ -7,14 +7,14 @@ Spring Cloud Gateway를 이용하여 게이트웨이 구성 및 유레카 서버
 # 0. 시작하며
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/service-discovery.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/service-discovery.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 이전 글([넷플릭스 유레카를 이용한 서비스 디스커버리, 등록 구현(with 스프링부트, GO, 플라스크)](https://covenant.tistory.com/251))에서 넷플릭스 유레카를 이용하여 서비스 디스커버리를 만들었고 스프링부트, Go, 플라스크 서비스를 등록하였습니다. 
 
 <br />
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/gateway-msa.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/gateway-msa.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 본 글에서는 스프링 클라우드 게이트웨이(Spring Cloud Gateway)를 이용하여 클라이언트는 스프링 게이트웨이를 통해서 URI을 호출하면 스프링 게이트웨이가 요청을 처리할 수 있는 벡엔드 애플리케이션에게 요청을 전달하고, 응답을 전달받아 클라이언트에 응답하도록 하겠습니다.
@@ -43,14 +43,14 @@ Spring Cloud Gateway를 이용하여 게이트웨이 구성 및 유레카 서버
 ## 문제상황
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/client-direct-call.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/client-direct-call.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 게이트웨이를 사용하지 않으면 다양한 문제를 만나게됩니다. 간단한 사례를 보겠습니다. 만약 클라이언트에서 마이크로서비스를 직접 호출한다고 가정해봅시다.
 
 <br />
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/client-direct-call-problem.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/client-direct-call-problem.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 주문량이 많아져서 많아진 주문량을 처리하기 위해서 인스턴스를 4개로 늘렸습니다. 클라이언트에서 각각 주문에 대한 호스트네임(혹은 IP)를 알아야하며 호출해야합니다. 즉 부하분산(로드벨런서)가 어려워집니다. 주문량이 줄어들어 주문 인스턴스를 하나로 줄일경우 역시 클라이언트에서 주문 인스턴스가 하나로 줄었다는것을 알아야합니다. 
@@ -70,7 +70,7 @@ Microsoft Ignite 문서인 [API 게이트웨이 패턴과 클라이언트-마이
 ## 게이트웨이 특징
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/api-gateway.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/api-gateway.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" >
 <br />
 <center> 
 <a href="https://www.slideshare.net/ifkakao/msa-api-gateway"> 카카오 광고 플랫폼 MSA 적용 사례 및 API Gateway와 인증 구현에 대한 소개 </a>
@@ -98,7 +98,7 @@ Microsoft Ignite 문서인 [API 게이트웨이 패턴과 클라이언트-마이
 # 2. 게이트웨이의 클라이언트 요청 처리 시나리오
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/gateway-msa-example.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/gateway-msa-example.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 로그인을 한다는 가상의 시나리오에대해서 어떻게 동작하는지 살펴보겠습니다.
@@ -140,7 +140,7 @@ Microsoft Ignite 문서인 [API 게이트웨이 패턴과 클라이언트-마이
 # 3. 스프링 클라우드 게이트웨이 구현
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/dependency.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/dependency.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center>
 인텔리제이 dependency 선택
@@ -244,7 +244,7 @@ cloud:
 ## 서비스 실행
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/register-instance.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/register-instance.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 지난 글([넷플릭스 유레카를 이용한 서비스 디스커버리, 등록 구현](https://covenant.tistory.com/251))에서 했었던 스프링, GO, 플라스크 인스턴스를 유레카에 등록합니다. 이미 유레카 등록 설정을 마쳤기에 디스커버리 서버를 실행하고 각각 인스턴스를 실행합니다. 
@@ -259,7 +259,7 @@ cloud:
 ## 유레카에 서비스 등록 확인
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/eureka.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/eureka.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 성공적으로 서비스가 등록되었으면 http://localhost:8761/에 접속시 4개의 서비스가 유레카에 등록되었음을 확인할 수 있습니다.
@@ -273,13 +273,13 @@ cloud:
 포스트맨에서 스프링 서비스에 요청을해보겠습니다. 스프링 서비스 서버는 127.0.0.1:8030이지만 스프링서버를 직접호출하는것이 아닌 게이트웨이 주소를 호출할 것입니다. __[GET] localhost:9000/spring-service__ 를 호출해봅시다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/postman.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/postman.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 게이트웨이 주소를 호출했지만 성공적으로 스프링 서비스를 호출한 것을 확인할 수 있습니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/gateway-discover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/gateway-discover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 - (1): 스프링부트, GO, 플라스크 서비스 실행시 유레카에 등록합니다.
@@ -293,7 +293,7 @@ cloud:
 
 <br />
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/actuator.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/SpringCloud/Spring_Gateway/img/actuator.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <center>
 캐싱된 routes 정보 확인

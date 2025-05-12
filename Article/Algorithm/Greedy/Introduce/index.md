@@ -1,22 +1,32 @@
 # 그리디 알고리즘(Greedy Algorithm) 및 백준 문제 추천
 
+<br/>
+<br/>
+<br/>
+
 
 ## 조감도
 
+<br/>
+
+
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Greedy/Introduce/img/mindmap.png?raw=true" align="center" width="800px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Greedy/Introduce/img/mindmap.png?raw=true" align="center" width="800px" >
 </p>
 
 탐욕 알고리즘 아이디어를 활용한 알고리즘(문제들) 입니다.
 
+<br/>
+<br/>
 <br/>
 
 
 ## 도입
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Greedy/Introduce/img/kakao.jpg?raw=true" align="center" width="800px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Greedy/Introduce/img/kakao.jpg?raw=true" align="center" width="800px" >
 </p>
+<br/>
 
 제주 카카오에서 일하고 있던 무지는 판교 카카오에 있는 라이언이 빨리 오라는 카톡을 보고 판교 카카오로 이동하려고 합니다. 마음이 급한 무지는 당황하며 어떻게 하면 빨리 이동할 수 있을지 고민을 합니다. <br>
 무지는 크게 두 가지 방법으로 판교 카카오로 이동할 수 있습니다.
@@ -34,27 +44,31 @@
 현재 시점에서 최적의 답을 찾기 위한 선택을 하는 방법입니다. 가장 직관적인 문제해결이지만 제한 조건을 만족하는 적합한 해를 찾는 방법이지 최적의 해를 찾는 방법은 아닙니다. 최적의 해를 찾기 위해서는 동적계획법(Dynamic Programming)을 사용합니다. 
 
 <br/>
+<br/>
+<br/>
 
 ## 예시. 외판원(Traveling Salesman) 문제
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Greedy/Introduce/img/graph2.png?raw=true" align="center" width="350px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Greedy/Introduce/img/graph2.png?raw=true" align="center" width="350px" >
 </p>
 
 A, B, C, D 도시가 있습니다. 각 도시의 다리를 건너갈 때 숫자 만큼의 비용이 듭니다. 최소의 비용으로 __모든 도시를 방문__ 하려고 하면 어떻게 해야할까요?
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Greedy/Introduce/img/graph1.png?raw=true" align="center" width="350px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Greedy/Introduce/img/graph1.png?raw=true" align="center" width="350px" >
 </p>
 
 탐욕 알고리즘을 이용하면 A->B->D->C->A 총 33 비용이 듭니다. 
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Greedy/Introduce/img/graph3.png?raw=true" align="center" width="350px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Greedy/Introduce/img/graph3.png?raw=true" align="center" width="350px" >
 </p>
 
 그러나 잘 생각해보면 A->B->C->D->A 총 29 비용으로 모든 도시를 방문할 수 있습니다. 탐욕 알고리즘은 항상 최적의 해를 주지 않습니다.
 
+<br/>
+<br/>
 <br/>
 
 ## 백준 문제 추천
@@ -77,13 +91,19 @@ A, B, C, D 도시가 있습니다. 각 도시의 다리를 건너갈 때 숫자 
 난이도는 주관적인 기준으로 작성했습니다.
 
 <br/>
+<br/>
+<br/>
 
 
 ## 그리디 알고리즘 백준 문제집
 - 더 많은 백준 문제를 보고 싶다면! [백준 탐욕알고리즘 문제집 링크](https://www.acmicpc.net/problem/tag/%EA%B7%B8%EB%A6%AC%EB%94%94%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 
 <br>
+<br/>
+<br/>
 
+
+<!-- 
 ---------- 
 
 ## 참고
@@ -91,3 +111,5 @@ A, B, C, D 도시가 있습니다. 각 도시의 다리를 건너갈 때 숫자 
 - [탐욕 알고리즘](https://ratsgo.github.io/data%20structure&algorithm/2017/11/22/greedy/)
 - 문제 참고 :  [[SCCC 스터디] 8일차 그리디](https://ssu-gongdoli.tistory.com/68)
 - 이미지 : [제주 카카오 이미지](https://www.kakaocorp.com/kakao/travelDay/inJejuTourB)
+
+-->

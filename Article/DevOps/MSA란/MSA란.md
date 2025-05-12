@@ -1,10 +1,13 @@
+<!-- 
+
 # 가상 스타트업으로 알아보는 MSA이야기
+-->
 
 
 # 가상의 스타트업을 가정합시다
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/amazon.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/amazon.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" >
 <br />
 
 10년 전 새롭게 amazon이라는 스타트업이 시작한다고 가정해 봅시다. 오픈마켓으로 개발자 3명이 서비스를 개발할 것입니다. 
@@ -12,7 +15,7 @@
 <br />
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/1.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="60%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/1.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="60%" >
 <br />
 
 - 개발자가 로컬에서 톰캣(WAS)을 이용해서 실행할 것입니다. 
@@ -21,7 +24,7 @@
 <br />
 <br />
 
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/2.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/2.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 - 개발자가 3명이 되었습니다. 개발할 때 각자가 로컬에서 톰캣으로 실행합니다.
@@ -30,7 +33,7 @@
 
 <br />
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/3.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/3.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 - 상용 오픈을 할 때 배포 스크립트 혹은 톰캣매니저를 통해서 배포할 것입니다. 
@@ -41,7 +44,7 @@
 
 <br />
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/4.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/4.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 - 톰캣을 한대 더 구매합니다. 비용을 더 들여서 L4를 통해서 로드 벨런싱을 했을 것입니다.
@@ -53,7 +56,7 @@
 
 <br />
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/5.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/5.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 - 그러다가 동시접속자가 1000명을 넘겼습니다. 
@@ -64,7 +67,7 @@
 
 <br />
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/6.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/6.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 
@@ -78,7 +81,7 @@
 
 <br />
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/7.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/7.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 
@@ -113,7 +116,7 @@
 # 콘웨이의 법칙(Conway's Law)
 
 <br />
-<img src="https://res.cloudinary.com/dzawgnnlr/image/upload/q_auto/f_auto/w_auto/conways_law_cornet.png" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://res.cloudinary.com/dzawgnnlr/image/upload/q_auto/f_auto/w_auto/conways_law_cornet.png" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 - (광범위하게 정의하면) 모든 조직은 조직의 의사소통 구조(communication structure)와 똑같은 구조를 갖는 시스템을 설계한다. - Melvin Edward Conway
@@ -126,7 +129,7 @@
 # 모놀리식 아키텍처 정리
 
 <br />
-<img src="https://s3-eu-west-1.amazonaws.com/img3.n-ix.com/wp-content/uploads/2018/10/01181553/25-facts-about-outsourced-software-engineering-in-Eastern-Europe-021.jpg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://s3-eu-west-1.amazonaws.com/img3.n-ix.com/wp-content/uploads/2018/10/01181553/25-facts-about-outsourced-software-engineering-in-Eastern-Europe-021.jpg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 
 <center>Microservices vs Monolith: which architecture is the best choice for your business?</center>
 <br />
@@ -154,7 +157,7 @@
 # 회사의 새로운 결정
 
 <br />
-<img src="http://image.yes24.com/momo/TopCate57/MidCate03/5623549.jpg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="30%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=http://image.yes24.com/momo/TopCate57/MidCate03/5623549.jpg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="30%" >
 
 <center>기업은행의 차세대 프로젝트 성공사례를 담은 책 </center>
 <br />
@@ -183,7 +186,7 @@
 
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/twitter.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="50%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/twitter.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="50%" >
 <br />
 
 - 트위터는 500개가 넘는 마이크로서비스를 통해서 독립된 배포를 하고 있습니다. 
@@ -195,7 +198,7 @@
 # MSA의 시작 아마존의 선택
 
 <br />
-<img src="https://techrecipe.co.kr/wp-content/uploads/2020/02/200223_Amazon-Empire_001.jpg
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://techrecipe.co.kr/wp-content/uploads/2020/02/200223_Amazon-Empire_001.jpg
 " align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 <br />
 
@@ -221,7 +224,7 @@
 # MSA란?
 
 <br />
-<img src="https://media-exp1.licdn.com/dms/image/C5112AQGTlMG5hEdE9Q/article-cover_image-shrink_600_2000/0?e=1594252800&v=beta&t=vQfFncHd1FPLzOhQvpUsH-KNZ9xRfXEsOSS_laa5DCc" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://media-exp1.licdn.com/dms/image/C5112AQGTlMG5hEdE9Q/article-cover_image-shrink_600_2000/0?e=1594252800&v=beta&t=vQfFncHd1FPLzOhQvpUsH-KNZ9xRfXEsOSS_laa5DCc" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <center>Linked in. Microservices vs Monolith Architecture </center>
 <br />
 
@@ -241,7 +244,7 @@
 # MSA 장점
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/mono_msa.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/DevOps/MSA%EB%9E%80/img/mono_msa.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 
 <center>Source. Slide Share 모놀리스에서 마이크로서비스 아키텍처로의 전환 전략::박선용</center>
 

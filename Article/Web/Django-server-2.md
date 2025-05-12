@@ -1,16 +1,25 @@
-![cmd](0.jpg)
+![cmd](https://t1.daumcdn.net/thumb/R1024x0/?fname=https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/Web/0.jpg)
+
+<br />
+
+
 # Auzer를 이용하여 Django 배포하기
+
+<br />
+
 ## 2편 Server 설정
-------------------------
+
+<br />
+
 * Auzer 19.08.26버전을 기준으로 작성하였습니다. 
 * Django 2.2.4 버전을 기준으로 작성하였습니다. 
 * 본 글에서 사용하는 예제는 [여기](https://github.com/KoEonYack/Everyone-Exercise)  주소입니다.
 
 
-![cmd](https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/13.jpg?raw=true)
+![cmd](http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/13.jpg?raw=true)
 - **리소스로 이동**을 클릭합니다.
 
-![cmd](https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/14.jpg?raw=true)
+![cmd](http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/14.jpg?raw=true)
 - **공용 IP주소**를 확인합니다.
 
 ``` cmd
@@ -86,7 +95,7 @@ Require all granted
 - **Alias**: 공백을 기준으로 좌측에는 /static/ 우측에는 Django 프로젝트에서 static파일이 저장되는 곳(python3 manage.py collectstatic)의 경로를 작성합니다.
 - **Directory**: **Alias**에서 작성한 경로를 다시 한번 작성해 줍니다.
 
-![cmd](15.JPG)
+![cmd](http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Web/15.JPG?raw=true)
 - settings.py에서 ALLOWED_HOST = ['*']로 합니다.
 
 ``` cmd
@@ -129,6 +138,6 @@ apple@AuzerServer:~$ service apache2 restart
 - 아파치 서버를 재시작합니다.
 
 
-![cmd](https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/16.JPG?raw=true)
+![cmd](http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Web/16.JPG?raw=true)
 - 자 이렇게 배포를 완료했습니다.
 

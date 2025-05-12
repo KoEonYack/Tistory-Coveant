@@ -15,7 +15,7 @@
 
 <br />
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/maze.jpg?raw=true" align="center" width="800px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/maze.jpg?raw=true" align="center" width="800px" >
 </p>
 <center> Figure 1. 끝을 알 수 없는 미로를 빠져 나가는 방법은 무엇일까요? </center>
 <br>
@@ -62,7 +62,7 @@ init()
 ### 그림으로 보기
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_1.png?raw=true" align="center" width="800px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_1.png?raw=true" align="center" width="800px" >
 </p>
 
 __STEP 1:__ A를 시작노드로 하곘습니다.  
@@ -72,7 +72,7 @@ __STEP 1:__ A를 시작노드로 하곘습니다.
 <br />
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_2.png?raw=true" align="center" width="800px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_2.png?raw=true" align="center" width="800px" >
 </p>
 
 __STEP 2:__ A에 인접한 B, C가 스택에 저장됩니다.
@@ -82,7 +82,7 @@ __STEP 2:__ A에 인접한 B, C가 스택에 저장됩니다.
 <br />
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_3.png?raw=true" align="center" width="800px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_3.png?raw=true" align="center" width="800px" >
 </p>
 
 __STEP 3:__ 스택의 맨 위에 있는 C를 꺼내서 Visited 배열에 넣습니다. C의 인접한 노드인 D, F가 스택에 저장됩니다. 
@@ -92,7 +92,7 @@ __STEP 3:__ 스택의 맨 위에 있는 C를 꺼내서 Visited 배열에 넣습�
 <br />
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_4.png?raw=true" align="center" width="800px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_4.png?raw=true" align="center" width="800px" >
 </p>
 
 __STEP 4:__ 스택의 맨 위에 있는 F를 꺼내서 Visited 배열에 넣습니다. F에 인접한 노드인 D는 이미 Stack에 있으므로 넘어갑니다.
@@ -102,7 +102,7 @@ __STEP 4:__ 스택의 맨 위에 있는 F를 꺼내서 Visited 배열에 넣습�
 <br />
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_5.png?raw=true" align="center" width="800px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_5.png?raw=true" align="center" width="800px" >
 </p>
 
 __STEP 5:__ 스택의 맨 위에 있는 D를 꺼내서 Visited 배열에 넣습니다. D에 인접한 C, F는 Visited 배열에 있으며 B는 스택에 있으므로 넘어갑니다.
@@ -112,7 +112,7 @@ __STEP 5:__ 스택의 맨 위에 있는 D를 꺼내서 Visited 배열에 넣습�
 <br />
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_6.png?raw=true" align="center" width="800px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfs_6.png?raw=true" align="center" width="800px" >
 </p>
 
 __STEP 6:__ 스택의 맨 위에 있는 B를 꺼내서 Visited 배열에 넣습니다. 스택이 비어있으므로 탐색을 종료합니다.
@@ -167,7 +167,7 @@ while Q is non-empty
 ### 그림으로 보기
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_1.png?raw=true" align="center" width="800px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_1.png?raw=true" align="center" width="800px" >
 </p>
 
 __STEP 1:__ A노드 부터 탐색을 시작할 것입니다.
@@ -177,7 +177,7 @@ __STEP 1:__ A노드 부터 탐색을 시작할 것입니다.
 <br />
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_2.png?raw=true" align="center" width="800px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_2.png?raw=true" align="center" width="800px" >
 </p>
 
 __STEP 2:__ A노드를 Visited 리스트에 넣습니다. A노드에 인접한 B, C를 큐에 넣습니다.
@@ -187,7 +187,7 @@ __STEP 2:__ A노드를 Visited 리스트에 넣습니다. A노드에 인접한 B
 <br />
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_3.png?raw=true" align="center" width="800px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_3.png?raw=true" align="center" width="800px" >
 </p>
 
 __STEP 3:__ 큐의 맨 앞에 있는 B를 Visited 리스트에 넣습니다. B에 인접한 노드 D를 큐에 넣습니다.
@@ -197,7 +197,7 @@ __STEP 3:__ 큐의 맨 앞에 있는 B를 Visited 리스트에 넣습니다. B�
 <br />
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_4.png?raw=true" align="center" width="800px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_4.png?raw=true" align="center" width="800px" >
 </p>
 
 __STEP 4:__ 큐의 맨 앞에 있는 C를 Visited 리스트에 넣습니다. C에 인접한 노드 F를 큐에 넣습니다.
@@ -207,7 +207,7 @@ __STEP 4:__ 큐의 맨 앞에 있는 C를 Visited 리스트에 넣습니다. C�
 <br />
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_5.png?raw=true" align="center" width="800px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_5.png?raw=true" align="center" width="800px" >
 </p>
 
 __STEP 5:__ 큐의 맨 앞에 있는 D를 Visited 리스트에 넣습니다. D에 인접한 F는 이미 큐에 있으므로 넘어갑니다.
@@ -217,7 +217,7 @@ __STEP 5:__ 큐의 맨 앞에 있는 D를 Visited 리스트에 넣습니다. D�
 <br />
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_6.png?raw=true" align="center" width="800px" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/bfs_6.png?raw=true" align="center" width="800px" >
 </p>
 
 __STEP 6:__ 큐의 맨 앞에 있는 F를 Visited 리스트에 넣습니다. 큐는 비어있게 되므로 탐색을 종료합니다.
@@ -243,7 +243,7 @@ __STEP 6:__ 큐의 맨 앞에 있는 F를 Visited 리스트에 넣습니다. 큐
 ## DFS vs BFS 탐색 차이
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfsbfs_animation_final.gif?raw=true" align="center" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Algorithm/Graph/img/dfsbfs_animation_final.gif?raw=true" align="center" width="" >
 </p>
 <center> Figure 2. 트리에서 DFS, BFS 탐색 차이 </center>
 

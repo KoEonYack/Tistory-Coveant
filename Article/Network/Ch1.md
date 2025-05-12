@@ -1,5 +1,11 @@
+<!-- 
+
 # 👀 한 눈에 확인하는 컴퓨터 구조
 -------
+-->
+
+<br />
+
 * 본 포스트는 지금은 사라져버린 교육기관인 아이엘아이티 네트워크 강의를 수강후 재구성하였습니다.
 
 <br/>
@@ -7,8 +13,10 @@
 
 ### 도입
 
+<br/>
+
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/1.JPG?raw=true" align="center" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/1.JPG?raw=true" align="center" >
 </p>
 
 * [이미지 출처 unsplash.com](https://unsplash.com/photos/8n9npBvQUWg)
@@ -21,18 +29,23 @@
     같은 회사의 부서라고해서 경영지원부에서 생긴 문제는 연구부와 별 관계가 없다.
 
 <br/>
+<br/>
+<br/>
 
 
 ### 비유
 
+<br/>
+
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/2.JPG?raw=true" align="center">
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/2.JPG?raw=true" align="center">
 </p>
 
 * 나라는 3가지로 나눌 수 있는데 **(1)영토**  **(2)정부** **(3)국민**으로 나눌 수 있다.
 
+<br/>
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/3.JPG?raw=true" align="center"  >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/3.JPG?raw=true" align="center"  >
 </p>
 
 * 한 가족이 살아가기 위해서 집이라는 공간이 필요하다. 한 나라에는 이런 집이 괭장히 무수히 많을 것이다.
@@ -42,13 +55,17 @@
 
 
 <br/>
+<br/>
+<br/>
 
 
 ### 유저, 커널, 하드웨어
 
+<br/>
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/4.JPG?raw=true" align="center" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/4.JPG?raw=true" align="center" >
 </p>
+<br/>
 
 * **영토**는 **하드웨**어(=물리적)로 볼 수 있다. **정부**는 __소프트웨어__(=논리적, virtual)로 볼 수 있다. 소프트웨어에서 virtual이 논리적이라는 말과 거의 똑같이 사용한다. 논리적이라는 말은 진짜가 아니라는 뜻이다. 그렇다라고 믿는 일종의 신앙적인 의미이다. 이 사실은 보안을 공부할 사람에게 중요하다.
 * **정부** 영역은 **커널**이다. **민간**은 **유저** 영역이다. 점선 위로 올라가면 제대로 민간 영역이다.
@@ -66,11 +83,13 @@
 
 
 <br/>
-
+<br/>
+<br/>
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/5.JPG?raw=true" align="center"  >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/5.JPG?raw=true" align="center"  >
 </p>
+<br/>
 
 * 컴퓨터에 하드웨어 장치(Device)를 설치하면, 이를 구동하기 위해서 소프트웨어가 필요한데 커널영역에서 필요하다.
   * 참고적로 커널 영역에서 fault가 나면 블루스크린이 나온다.
@@ -83,11 +102,12 @@
   * 프로세서가 파일에 대해서 하는 흔한 일이 (1) 생성(열기) (2) 읽기 / 쓰기 (3) 삭제 / 닫기 쉽게 말하면 IO가 될 것이다. 그러면 입출을 하면 IO에 따른 형식이 있을 것이다. 이런 Format을 읽기 형식, 쓰기형식을, 프로토콜이라고 한다. 내가 아는 프로토콜과 정의가 다른데? 내 말이 맞다. 구성요소와 Driver하고 공간이 있는데 Filter가 들어갈 수 있다.
 
 <br/>
-
-
+<br/>
+<br/>
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/6.JPG?raw=true" align="center"  >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/6.JPG?raw=true" align="center"  >
 </p>
+<br/>
 
 * 하드 디스크와 SSD가 있다. 이를 움직이기 위한 Device Drivere가 있다. 그 위에 파일 시스템이 있다.(NTFS) 파일 시스템이 있으면 여기하고 연결된 다리가 파일의 형태로 있을 것이다.
 * 윈도우 탐색기가 있는데, 어떤 파일을 클릭을 하면 파일을 거쳐서 Disk로 아래로 내려가는 것이다. 이때 말하는 파일은 두 종류이다. 커널과 인터페이싱을 하기 위한 파일과 디스크 안에 파일이 들어있다.
@@ -102,42 +122,53 @@
 
 
 <br/>
-
-
+<br/>
+<br/>
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/7.JPG?raw=true" align="center"  >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/7.JPG?raw=true" align="center"  >
 </p>
+<br/>
 
 
- * 하드웨어 레이어에 NIC(Network Interface Card, LAN카드)가 있다.
-    * 여기서 네트워크선이 쭉 빠져서 L2스위치로 간다. 라우터를 거쳐 인터넷으로 갈 것이다.
-    * 이 장치를 작동하기 위한 디바이스 드라이버가 있다.
-    * NIC를 동작시키기 위해서 이 위에 붙는 애들이 **TCP/IP** 같은 프로토콜이다.
-    * 인터넷 익스플로어를 이용해서 인터넷에 연결시키려고 한다면 파일을 이용해서 연결한다. 그러나 여기서는 파일이라고 안하고 **소켓**이라고 한다.
-    * **소켓의 본질은 파일**이다.
-    * lsof명령어를 수행하면 어떤 프로세스가 어떤 소켓을 열었는지 나온다.
-  * 파일은 인터페이스이다. 프로세스가 입출력을 수행한다. 그 규칙을 프로토콜이라고 한다. 와이어샥은 WinPcap을 설치해야한다. 드라이버와 프로토콜 사이에 오는 것이 WinPcap이다.
-  * WinPCap과 맞닿아서 작동하는 소프트웨어가 와이어샥크이다.
-    * 와이어샤크는 정체성이 Analyzer이다.
-    * WinPcap은 센서이다.
-    * 왓다갔다 하는 데이터를 WinPcap이 카피를 해서 와이어 샤크로 보낸다.
+* 하드웨어 레이어에 NIC(Network Interface Card, LAN카드)가 있다.
+  * 여기서 네트워크선이 쭉 빠져서 L2스위치로 간다. 라우터를 거쳐 인터넷으로 갈 것이다.
+  * 이 장치를 작동하기 위한 디바이스 드라이버가 있다.
+  * NIC를 동작시키기 위해서 이 위에 붙는 애들이 **TCP/IP** 같은 프로토콜이다.
+  * 인터넷 익스플로어를 이용해서 인터넷에 연결시키려고 한다면 파일을 이용해서 연결한다. 그러나 여기서는 파일이라고 안하고 **소켓**이라고 한다.
+  * **소켓의 본질은 파일**이다.
+  * lsof명령어를 수행하면 어떤 프로세스가 어떤 소켓을 열었는지 나온다.
+* 파일은 인터페이스이다. 프로세스가 입출력을 수행한다. 그 규칙을 프로토콜이라고 한다. 와이어샥은 WinPcap을 설치해야한다. 드라이버와 프로토콜 사이에 오는 것이 WinPcap이다.
+* WinPCap과 맞닿아서 작동하는 소프트웨어가 와이어샥크이다.
+  * 와이어샤크는 정체성이 Analyzer이다.
+  * WinPcap은 센서이다.
+  * 왓다갔다 하는 데이터를 WinPcap이 카피를 해서 와이어 샤크로 보낸다.
 
 
+<br/>
+<br/>
 <br/>
 
 
 ### 발상의 전환
 
 <p style="text-align: center;">
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/8.JPG?raw=true" align="center" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Network/Data/8.JPG?raw=true" align="center" >
 </p>
 
 <br/>
 
 * 컴퓨터 구조 책에 등장하는 원형 모양의 3개의 레이어를 쭉 피면 위에서 설명한 3개의 층(유저, 커널, 하드웨어)이 나온다.
 
+<br/>
+<br/>
+<br/>
+
 ### 참고 문헌 및 이미지 출처
 - [건물 이미지 https://unsplash.com/photos/8n9npBvQUWg](https://unsplash.com/photos/8n9npBvQUWg)
 - [사람 아이콘 https://www.flaticon.com/free-icon/standing-up-man_10522#term=man&page=1&position=7](https://www.flaticon.com/free-icon/standing-up-man_10522#term=man&page=1&position=7)
 - [PDF 아이콘 https://www.flaticon.com/free-icon/pdf_136440](https://www.flaticon.com/free-icon/pdf_136440)
 - Computer Organization and Design 5th DAVID A. PATTERSON
+
+<br/>
+<br/>
+<br/>

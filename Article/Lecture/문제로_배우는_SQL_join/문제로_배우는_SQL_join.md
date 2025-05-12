@@ -7,7 +7,7 @@
 
 <br />
 
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Lecture/%EB%AC%B8%EC%A0%9C%EB%A1%9C_%EB%B0%B0%EC%9A%B0%EB%8A%94_SQL_join/img/1.PNG?raw=true" align="center"  style="display: block; margin: 0px auto; display: block; margin: 0px auto; max-width: 100%; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Lecture/%EB%AC%B8%EC%A0%9C%EB%A1%9C_%EB%B0%B0%EC%9A%B0%EB%8A%94_SQL_join/img/1.PNG?raw=true" align="center"  style="display: block; margin: 0px auto; display: block; margin: 0px auto; max-width: 100%; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 
 <center> JOIN의 기본아이디어</center>
 
@@ -25,7 +25,7 @@
 <br />
 
 
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Lecture/%EB%AC%B8%EC%A0%9C%EB%A1%9C_%EB%B0%B0%EC%9A%B0%EB%8A%94_SQL_join/img/join.PNG?raw=true" align="center"  style="display: block; margin: 0px auto; display: block; margin: 0px auto; max-width: 100%; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Lecture/%EB%AC%B8%EC%A0%9C%EB%A1%9C_%EB%B0%B0%EC%9A%B0%EB%8A%94_SQL_join/img/join.PNG?raw=true" align="center"  style="display: block; margin: 0px auto; display: block; margin: 0px auto; max-width: 100%; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 
 <br />
 
@@ -95,7 +95,7 @@ ON CITY.COUNTRYCODE = COUNTRY.CODE
 - CONTINENT가 Asia인 COUNTRY의 POPULATION 합을 구해야합니다.
 
 
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Lecture/%EB%AC%B8%EC%A0%9C%EB%A1%9C_%EB%B0%B0%EC%9A%B0%EB%8A%94_SQL_join/img/2.PNG?raw=true" align="center"  style="display: block; 2margin: 0px auto; display: block; margin: 0px auto; max-width: 100%; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Lecture/%EB%AC%B8%EC%A0%9C%EB%A1%9C_%EB%B0%B0%EC%9A%B0%EB%8A%94_SQL_join/img/2.PNG?raw=true" align="center"  style="display: block; 2margin: 0px auto; display: block; margin: 0px auto; max-width: 100%; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 
 <br />
 
@@ -138,7 +138,7 @@ WHERE
 <br />
 
 
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Lecture/%EB%AC%B8%EC%A0%9C%EB%A1%9C_%EB%B0%B0%EC%9A%B0%EB%8A%94_SQL_join/img/3.PNG?raw=true" align="center"  style="display: block; 2margin: 0px auto; display: block; margin: 0px auto; max-width: 100%; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Lecture/%EB%AC%B8%EC%A0%9C%EB%A1%9C_%EB%B0%B0%EC%9A%B0%EB%8A%94_SQL_join/img/3.PNG?raw=true" align="center"  style="display: block; 2margin: 0px auto; display: block; margin: 0px auto; max-width: 100%; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 
 <br />
 
@@ -178,7 +178,7 @@ ORDER BY
 - [프로그래머스. 없어진 기록 찾기](https://programmers.co.kr/learn/courses/30/lessons/59042) 문제를 보겠습니다.
 - 본 문제에서 입양을 간 기록은 있는데, 보호소에 들어온 기록이 없는 동물의 ID와 이름을 ID 순으로 조회하는 SQL문을 작성해야 합니다.
 
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Lecture/%EB%AC%B8%EC%A0%9C%EB%A1%9C_%EB%B0%B0%EC%9A%B0%EB%8A%94_SQL_join/img/3.PNG?raw=true" align="center"  style="display: block; 2margin: 0px auto; display: block; margin: 0px auto; max-width: 100%; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Lecture/%EB%AC%B8%EC%A0%9C%EB%A1%9C_%EB%B0%B0%EC%9A%B0%EB%8A%94_SQL_join/img/3.PNG?raw=true" align="center"  style="display: block; 2margin: 0px auto; display: block; margin: 0px auto; max-width: 100%; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 
 <br />
 
@@ -187,7 +187,7 @@ ORDER BY
 
 <br />
 
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Lecture/%EB%AC%B8%EC%A0%9C%EB%A1%9C_%EB%B0%B0%EC%9A%B0%EB%8A%94_SQL_join/img/leftjoin.PNG?raw=true" align="center"  style="display: block; 2margin: 0px auto; display: block; margin: 0px auto; max-width: 100%; height: auto; border:1px solid #eaeaea; padding: 0px;" width="30%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Lecture/%EB%AC%B8%EC%A0%9C%EB%A1%9C_%EB%B0%B0%EC%9A%B0%EB%8A%94_SQL_join/img/leftjoin.PNG?raw=true" align="center"  style="display: block; 2margin: 0px auto; display: block; margin: 0px auto; max-width: 100%; height: auto; border:1px solid #eaeaea; padding: 0px;" width="30%" >
 
 <br />
 
@@ -206,7 +206,7 @@ ON
 <br />
 
 
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Lecture/%EB%AC%B8%EC%A0%9C%EB%A1%9C_%EB%B0%B0%EC%9A%B0%EB%8A%94_SQL_join/img/leftjoin_res.PNG?raw=true" align="center"  style="display: block; 2margin: 0px auto; display: block; margin: 0px auto; max-width: 100%; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Lecture/%EB%AC%B8%EC%A0%9C%EB%A1%9C_%EB%B0%B0%EC%9A%B0%EB%8A%94_SQL_join/img/leftjoin_res.PNG?raw=true" align="center"  style="display: block; 2margin: 0px auto; display: block; margin: 0px auto; max-width: 100%; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 
 <br />
 

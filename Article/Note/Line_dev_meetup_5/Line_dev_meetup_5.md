@@ -2,7 +2,7 @@
 
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/tree/master/Article/Note/Line_dev_meetup_5/img/line_logo.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/Note/Line_dev_meetup_5/img/line_logo.PNG" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 <br />
 
 LINE 개발자, 그리고 개발 문화라는 주제로 LINE Tech Evangelist Minwoo Park님이 진행하셨습니다. Zoom 웨비나로 진행되었으며 약 100명 이상 시청하였습니다.
@@ -15,7 +15,7 @@ LINE 개발자, 그리고 개발 문화라는 주제로 LINE Tech Evangelist Min
 <br />
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/tree/master/Article/Note/Line_dev_meetup_5/img/2.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/Note/Line_dev_meetup_5/img/2.PNG" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 <br />
 
 - 라인에 개발자 1000명이 있으며 많은 일을 하고 어떤 일을 하는지 소개하는 자리
@@ -29,7 +29,7 @@ LINE 개발자, 그리고 개발 문화라는 주제로 LINE Tech Evangelist Min
 # 라인 개발
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/3.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/3.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 
@@ -48,7 +48,7 @@ LINE 개발자, 그리고 개발 문화라는 주제로 LINE Tech Evangelist Min
 - Clova AI랑 협업하거나 자체 ML 조직과 협업하여 이미지 인식, 라인에도 카메라 인식과 글자 인식이 잘 되어있다. 협업해서 잘 구현된 서비스를 만들 수 있다. 
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/4.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/4.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 - 라인 스피커도 클로바와 협업해서 만든 작품이다.
@@ -68,7 +68,7 @@ LINE 개발자, 그리고 개발 문화라는 주제로 LINE Tech Evangelist Min
 
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/5.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/5.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 - 사용자에 도움이 되는가?
@@ -88,14 +88,14 @@ LINE 개발자, 그리고 개발 문화라는 주제로 LINE Tech Evangelist Min
 
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/6.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/6.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 - 개발에 필요하면 소프트웨어, 하드웨어를 다 빠르게 지원해준다.
 
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/7.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/7.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 - 회사가 커지면 누가 어떤 일을 하는지 알기 쉽지 않다. 한달에 한번으로 어떤 일을 하게 입력한다.
@@ -103,7 +103,7 @@ LINE 개발자, 그리고 개발 문화라는 주제로 LINE Tech Evangelist Min
 
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/9.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/Note/Line_dev_meetup_5/img/9.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 - 라인 디벨로퍼데이 크게 하고 있다.

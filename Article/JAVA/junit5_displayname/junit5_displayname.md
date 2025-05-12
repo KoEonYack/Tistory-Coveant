@@ -60,13 +60,13 @@ class EmailMaskingBasicTest {
 ```
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way1_default_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way1_default_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
 <br />
 <center>
 Junit5의 테스트 결과
 </center>
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way1_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way1_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
 <br />
 <center>
 @DisplayName을 지정한 테스트 결과
@@ -111,7 +111,7 @@ class EmailMaskingDisplayNameSimpleGeneratorTest {
 ```
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way2_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way2_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
 <br />
 
 @DisplayNameGeneration을 사용하여 테스트 메서드 이름을 변경할 수 있습니다. DisplayNameGenerator . ReplaceUnderscores.class은 테스트 메서드의 _를 공백으로 변경하여 테스트 메서드 이름으로 보여줍니다.
@@ -165,7 +165,7 @@ class EmailMaskingDisplayNameCustomGeneratorTest {
 ```
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way3_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way3_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
 <br />
 
 DisplayNameGeneration.Standard를 상속하여 원하는 대로 테스트 이름을 변경할 수 있습니다. 방법 2에서 봤던 것과 다르게 클레스에 @DisplayName이 사라졌습니다. generateDisplayNameForClass에 지정한 클래스 이름이 표시됩니다.
@@ -196,7 +196,7 @@ void email_param_masking_test(String email, String expectMaskingEmail) {
 ```
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way4_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way4_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
 <br />
 
 @ParameterizedTest에 표현 식을 지정할 수 있습니다. {0}, {1}은 파라미터값을 테스트 이름에 넣을 수 있습니다.
@@ -244,7 +244,7 @@ class EmailMaskingParamTest {
 ```
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way5_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/JAVA/junit5_displayname/img/way5_res.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="70%" />
 <br />
 
 Junit5.8에서 추가된 Named.named를 사용하면 파라미터에 이름을 지정할 수 있습니다. 

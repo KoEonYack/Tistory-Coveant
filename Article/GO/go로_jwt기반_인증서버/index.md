@@ -2,7 +2,7 @@
 
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/cover.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 <br />
@@ -68,7 +68,7 @@ Token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX3V1aWQiOiIxZGQ5MDEwYy00MzI
 위의 토큰을 복사하여 [jwt.io]([https://jwt.io/](https://jwt.io/)) 의 Encoded에 붙여넣고, HEADER에 HS512를 입력하면 “Signature Verified” 메시지를 볼 수 있습니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/jwt.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/jwt.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 키를 이용하여 서명을 하면 JWT를 안전하게 유지할 수 있습니다. 심지어 JWT가 디코딩된 경우에도 서명이 암호화된 상태로 유지됩니다. JWT를 만들 때 키가 노출되지 않아야 합니다. 
@@ -315,7 +315,7 @@ go run main.go
 Postman을 이용해서 로그인해 보겠습니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 15분간 유효한 JWT 토큰을 얻을 수 있습니다. (개발 끝?)
@@ -508,7 +508,7 @@ func CreateAuth(userid uint64, td *TokenDetails) error {
 P3X Redis UI를 이용해서 JWT 메타데이터가 키-값 쌍에 어떻게 저장되는지 아래를 살펴보세요!
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/p3x.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/p3x.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 login 기능을 테스트하기 전에 `Login()`함수 안에 `CreateAuth()` 함수를 호출할 것입니다. 
@@ -545,7 +545,7 @@ func Login(c *gin.Context) {
 Postman으로 테스트하면 다음과 같은 결과를 볼 수 있습니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 지금까지의 구현을 통해서 access_token, refresh_token를 생성했으며, 토큰의 메타데이터를 Redis에 저장하였습니다. 
@@ -716,7 +716,7 @@ func main() {
 `CreateToDo`를 테스트하기 위해서 발급받은 `access_token`을 복사하여 Authorization의 Bearer Token에 입력합니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_3.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 입력을 완료 했다면 Body탭으로 이동합니다. 그리고 다음의 JSON 값을 요청 바디에 보냅니다. 
@@ -728,7 +728,7 @@ func main() {
 ```
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_4.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 새로운 메모를 생성하였습니다!
@@ -790,7 +790,7 @@ func main() {
 ```
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_5.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_5.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 Postman에서 성공적으로 로그아웃 한 것을 확인할 수 있습니다.
@@ -941,7 +941,7 @@ router.POST("/token/refresh", Refresh)
 이렇게 구현한 것을 다음과 같이 테스트 해 보곘습니다.
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_6.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/GO/go%EB%A1%9C_jwt%EA%B8%B0%EB%B0%98_%EC%9D%B8%EC%A6%9D%EC%84%9C%EB%B2%84/img/postman_6.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 

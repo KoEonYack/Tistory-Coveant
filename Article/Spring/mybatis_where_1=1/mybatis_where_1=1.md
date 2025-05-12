@@ -193,7 +193,7 @@ trim을 쓰더라도 문제는 쿼리의 복잡성이 증가한다는 것입니�
 ## MVC에서의 데이터 검증
 
 <br />
-<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/mybatis_where_1%3D1/img/layer.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/mybatis_where_1%3D1/img/layer.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 Spring MVC 패턴에서 회원가입 요청이 넘어왔다고 가정하고 각 레이어별 데이터 검증을 살펴보겠습니다. 각 레이어별 검증은 다양하기에 하나의 예시라고 보면 됩니다.

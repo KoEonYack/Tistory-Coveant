@@ -2,7 +2,7 @@
 
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/GO/Docker%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_GO%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EB%B0%B0%ED%8F%AC/img/main.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/GO/Docker%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_GO%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EB%B0%B0%ED%8F%AC/img/main.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 본 글에서 사용할 기술스택인 Docker, Docker-compose, Gin, MySQL, Naver Cloud Platform입니다. Docker와 GO(Gin-Gonic)를 이용해서 클라우드(NCloud-MiniServer)에 배포해보겠습니다. NCloud가 아니더라도 사용하는 클라우드 인스턴스를 사용하면 됩니다.
@@ -244,7 +244,7 @@ NCloud 서버가 아닌 로컬 컴퓨터의 터미널에서 위와 같은 명령
 
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/GO/Docker%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_GO%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EB%B0%B0%ED%8F%AC/img/ping.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/GO/Docker%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_GO%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EB%B0%B0%ED%8F%AC/img/ping.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 
@@ -273,13 +273,13 @@ curl의 명령이 성공적이라면  {"message":" fn_3 ln successfully created"
 
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/GO/Docker%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_GO%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EB%B0%B0%ED%8F%AC/img/post_res.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/GO/Docker%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_GO%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EB%B0%B0%ED%8F%AC/img/post_res.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 Docker를 실행한 서버에서는 빨간색 박스와 같이 Post 메소드로 값을 200으로 받은 것을 볼 수 있습니다.
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/GO/Docker%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_GO%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EB%B0%B0%ED%8F%AC/img/post_mysql.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/GO/Docker%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_GO%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EB%B0%B0%ED%8F%AC/img/post_mysql.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 MySQL 도커 이미지에 접속해서 확인해보면 정상적으로 값이 저장된 것을 확인할 수 있습니다. (id 1, 2는 이전에 미리 넣어놓은 값입니다.)
@@ -292,7 +292,7 @@ MySQL 도커 이미지에 접속해서 확인해보면 정상적으로 값이 �
 ## 6-3. GET
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/GO/Docker%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_GO%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EB%B0%B0%ED%8F%AC/img/get_1.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/GO/Docker%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_GO%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EB%B0%B0%ED%8F%AC/img/get_1.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 `http://49.50.175.XX:3001/persons/` 를 브라우저에 입력하면 DB의 모든 값을 JSON으로 보여줍니다.
@@ -300,7 +300,7 @@ MySQL 도커 이미지에 접속해서 확인해보면 정상적으로 값이 �
 
 
 <br />
-<img src="https://github.com/KoEonYack/PracticeCoding/blob/master/Article/GO/Docker%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_GO%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EB%B0%B0%ED%8F%AC/img/get_2.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://t1.daumcdn.net/thumb/R1024x0/?fname=https://github.com/KoEonYack/PracticeCoding/blob/master/Article/GO/Docker%EB%A5%BC_%EC%9D%B4%EC%9A%A9%ED%95%9C_GO%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%EB%B0%B0%ED%8F%AC/img/get_2.PNG?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 
 `http://49.50.175.XX:3001/person/1` 를 브라우저에 입력하면 DB의 첫번째 값을 JSON으로 보여줍니다.
