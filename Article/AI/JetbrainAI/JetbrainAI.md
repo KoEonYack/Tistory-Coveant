@@ -5,13 +5,15 @@
 -->
 
 <br />
-<img src="./img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/AI/JetbrainAI/img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<br />
+<br />
 <br />
 
 ## 시작하며
 
 <br />
-<img src="./img/news.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/AI/JetbrainAI/img/news.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 <center>
 <a href="https://www.asiae.co.kr/article/2025061808243900876">네이버, 전사 AI 코딩 도구 '커서' 쓴다…이해진과 만난 커서 CEO</a>
@@ -31,7 +33,7 @@
 ## JetBrains AI란?
 
 <br />
-<img src="./img/home.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/AI/JetbrainAI/img/home.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 <center>
 https://www.jetbrains.com/ai-ides/
@@ -50,7 +52,7 @@ https://www.jetbrains.com/ai-ides/
 - Junie: 자율적으로 또는 개발자와 협력하여 작업을 처리하도록 설계된 AI 기반 코딩 에이전트
 
 <br />
-<img src="./img/price.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/AI/JetbrainAI/img/price.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 <center>
 <a href="https://www.jetbrains.com/ko-kr/ai-ides/buy/?section=personal&billing=yearly">JetBrains AI 요금제 및 가격</a>
@@ -66,7 +68,7 @@ https://www.jetbrains.com/ai-ides/
 ## 사용하는 법
 
 <br />
-<img src="./img/market.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/AI/JetbrainAI/img/market.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 <center>
 https://plugins.jetbrains.com/plugin/22282-jetbrains-ai-assistant
@@ -125,7 +127,7 @@ JetBrains나 외부 LLM 제공업체의 서버에 남아있지 않으며, AI 모
 ## 사용량
 
 <br />
-<img src="./img/quota.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/AI/JetbrainAI/img/quota.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="50%" >
 <br />
 
 JetBrains AI Pro는 크레딧 기반으로 서비스 사용량을 측정합니다. 현재 공식 문서에 정확한 크레딧 할당량이 명시되어 있지는 않지만, 커뮤니티를 찾아보았더니 각 플랜별 크레딧은 다음과 같은 비율로 추정됩니다.
@@ -191,7 +193,7 @@ A. 월간 클라우드 할당량이 소진되면 추가 보충 크레딧을 구�
 ### AI Assistant
 
 <br />
-<img src="./img/model1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/AI/JetbrainAI/img/model1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="50%" >
 <br />
 
 커서에서 많이본 방식으로 채팅창에서 변경하면 됩니다. Sonnet 4.5가 나온지 얼마 안되어서 그런지 아직은 4 버전이 최대입니다.
@@ -202,7 +204,7 @@ A. 월간 클라우드 할당량이 소진되면 추가 보충 크레딧을 구�
 
 ### Junie
 <br />
-<img src="./img/model2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/AI/JetbrainAI/img/model2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 Juine은 Settings에서 모델을 선택할 수 있습니다. GPT5가 무난무난한것 같습니다.
@@ -223,7 +225,7 @@ AI Assistant에게 사용자가 원하는 방향으로 작업을 수행하도록
 
 <br />
 
-```
+```text
 - 테스트 코드는 반드시 JUnit 5와 AssertJ를 사용해서 작성해 주세요.
 - 이 프로젝트에서는 Lombok 사용을 지양하고, getter/setter를 직접 생성해 주세요.
 ```
