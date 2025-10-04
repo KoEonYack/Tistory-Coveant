@@ -7,7 +7,7 @@ MacOS에서 Colima 사용 완벽정리!
 
 
 <br />
-<img src="./img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/DevOps/colima_%EC%A0%84%ED%99%98/img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 ## 1. 시작하며 
@@ -77,7 +77,7 @@ Docker뿐만 아니라 Containerd와 같은 다른 컨테이너 런타임도 지
 ## 4. Docker Desktop 삭제 
 
 <br />
-<img src="./img/docker_desktop.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/DevOps/colima_%EC%A0%84%ED%99%98/img/docker_desktop.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 Docker Desktop이 설치된 상태에서 Docker Desktop을 종료하고 Colima를 실행하면 credential 문제가 있어서 Docker Desktop을 제거하고 Colima를 설치하였습니다. 
