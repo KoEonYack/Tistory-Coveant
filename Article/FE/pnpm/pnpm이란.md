@@ -1,21 +1,23 @@
 <!-- 
 
-npm, yarn에서 pnpm으로 넘어가세요!
+완벽정리! npm에서 pnpm으로 넘어가야하는 이유
 
 -->
 
+<br />
+<img src="./img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<br />
 
 ## 시작하며 
 
 
 <br />
 
-
+회사에서 리엑트 프로젝트에 대해서 npm에서 pnpm 전환 작업을 하였습니다. 예상보다 원하는 개선을 하지는 못하였습니다. 그럼에도 npm대신 pnpm을 사용하는 장점을 좀 더 공부하다보니 아에 깔끔하게 정리하고 싶어서 이렇게 작성해 봅니다.
 
 <br />
 <br />
 <br />
-
 
 ## 패키지 매니저란?
 
@@ -454,8 +456,77 @@ npm, pnpm, Yarn. 패키지 매니저 중에서 실제 어떤 것이 가장 빠�
 <br />
 
 
+### SKT
+
+<br />
+<img src="./img/skt.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<br />
+<center>
+<a href="https://devocean.sk.com/blog/techBoardDetail.do?ID=166592&boardType=techBlog"> 패키지 매니저 선택을 위한 여정: NPM에서 Yarn으로 그리고 다시 pNPM </a>
+</center>
+
+<br />
+
+npm, pnpm 둘다 모든 캐시 및 lock 파일 삭제 후 테스트 결과 약 2배정도 빨라졌습니다.
 
 <br />
 <br />
 <br />
 
+### AB180
+
+<br />
+<img src="./img/benchmark2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<br />
+<center>
+<a href="https://engineering.ab180.co/stories/yarn-to-pnpm"> Yarn 대신 pnpm으로 넘어간 3가지 이유 </a>
+</center>
+<br />
+
+yarn을 사용하다가 아래의 이유로 pnpm으로 넘어갔다고 합니다.
+
+<br />
+
+- (1) Yarn PnP가 Git에 지속적으로 주는 부하
+- (2) Ghost Dependency와의 끈질긴 싸움
+
+<br />
+
+배포 과정 중에서 패키지 설치 시간이 Yarn 대비 30초 ~ 1분 정도 줄었다고 합니다.
+
+<br />
+<br />
+<br />
+
+### 핵클 
+
+<br />
+<img src="./img/hackle1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<br />
+
+- (1) prebuilt (의존성 설치 및 파일 이동) 속도 개선: prebuilt 시 job duration 속도가 50% 이상 개선 되었고, 의존성 설치에 소요되는 시간은 무려 90% 이상 감소
+
+<br />
+<img src="./img/hackle2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<br />
+
+- (2) build (어플리케이션 빌드 및 s3 업로드) 속도 개선: build 시 job duration 속도도 prebuild와 마찬가지로 50% 이상 개선 되었고, build 속도도 약 50% 개선
+
+<br />
+
+이 개선으로 인해 월간 배포 효율성이 약 160% 향상되었다고 합니다.
+
+<br />
+<br />
+<br />
+
+<!--
+
+참고. 
+- [https://velog.io/@sebinn/패키지-매니저-비교-npm-yarn-pnpm](https://velog.io/@sebinn/%ED%8C%A8%ED%82%A4%EC%A7%80-%EB%A7%A4%EB%8B%88%EC%A0%80-%EB%B9%84%EA%B5%90-npm-yarn-pnpm)
+- 김정환: 성능이 좋은 이유. performant npm
+    - https://youtu.be/YWnH0M-p_H4?si=wrpFA4Ms0L_G_IaC
+- Why you should prefer using pnpm over npm and yarn?
+    - https://refine.dev/blog/pnpm-vs-npm-and-yarn/)
+
+ -->
