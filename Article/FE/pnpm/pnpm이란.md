@@ -1,11 +1,13 @@
 <!-- 
 
-완벽정리! npm에서 pnpm으로 넘어가야하는 이유
+완벽정리! npm에서 pnpm으로 이사하해야하는 이유
 
 -->
 
 <br />
-<img src="./img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/5b0ccb7daa9e6a7d6949a00ded25d322f9f1327c/Article/FE/pnpm/img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<br />
+<br />
 <br />
 
 ## 시작하며 
@@ -13,7 +15,15 @@
 
 <br />
 
-회사에서 리엑트 프로젝트에 대해서 npm에서 pnpm 전환 작업을 하였습니다. 예상보다 원하는 개선을 하지는 못하였습니다. 그럼에도 npm대신 pnpm을 사용하는 장점을 좀 더 공부하다보니 아에 깔끔하게 정리하고 싶어서 이렇게 작성해 봅니다.
+벡엔드 개발자이긴 하지만, 팀에서 관리하는 리엑트로된 서비스가 있습니다. 기존 npm에서 pnpm으로 전환하는 작업을 해보았습니다. pnpm이 제공하는 디스크 공간 절약, 빠른 설치 속도, 그리고 안정적인 의존성 관리의 이점들을 익히 들어왔기에 기대가 있었습니다.
+
+<br />
+
+마이그레이션 이후 기대했던 만큼의 드라마틱한 개선은 없었습니다.
+
+<br />
+
+그럼에도 불구하고 왜 pnpm이 npm보다 더 나은 선택인지 깊이 있게 공부하며 알게 된 내용들을 정리해보고자 합니다.
 
 <br />
 <br />
@@ -62,13 +72,50 @@ package-lock.json과 같은 lock 파일을 통해, 여러 개발자가 협업하
 
 각 프로그래밍 언어 생태계는 저마다 활발하게 사용되는 대표적인 패키지 매니저를 가지고 있습니다.
 
+<br />
+
+<!--
+
 | 언어	| 대표 패키지 매니저 |
 ---|--------
 | Java	| Maven, Gradle |
 | JavaScript |	npm, Yarn, pnpm |
 Python |	pip, Conda | 
 Ruby | 	Gem
-Go | 	Go Modules
+Go | 	Go Modules 
+-->
+
+
+<table style="width: 100%; border-collapse: collapse; font-family: Arial, Helvetica, sans-serif; font-size: 16px; margin: 25px 0; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
+    <thead style="background-color: #f2f2f2;">
+        <tr>
+            <th style="border: 1px solid #ddd; padding: 12px 15px; text-align: center; font-weight: bold;">언어</th>
+            <th style="border: 1px solid #ddd; padding: 12px 15px; text-align: center; font-weight: bold;">대표 패키지 매니저</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="border: 1px solid #ddd; padding: 12px 15px; text-align: left;">Java</td>
+            <td style="border: 1px solid #ddd; padding: 12px 15px; text-align: left;">Maven, Gradle</td>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+            <td style="border: 1px solid #ddd; padding: 12px 15px; text-align: left;">JavaScript</td>
+            <td style="border: 1px solid #ddd; padding: 12px 15px; text-align: left;">npm, Yarn, pnpm</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #ddd; padding: 12px 15px; text-align: left;">Python</td>
+            <td style="border: 1px solid #ddd; padding: 12px 15px; text-align: left;">pip, Conda</td>
+        </tr>
+        <tr style="background-color: #f9f9f9;">
+            <td style="border: 1px solid #ddd; padding: 12px 15px; text-align: left;">Ruby</td>
+            <td style="border: 1px solid #ddd; padding: 12px 15px; text-align: left;">Gem</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #ddd; padding: 12px 15px; text-align: left;">Go</td>
+            <td style="border: 1px solid #ddd; padding: 12px 15px; text-align: left;">Go Modules</td>
+        </tr>
+    </tbody>
+</table>
 
 <br />
 <br />
@@ -77,7 +124,7 @@ Go | 	Go Modules
 ## 단점이 있는 npm
 
 <br />
-<img src="./img/raddit.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/5b0ccb7daa9e6a7d6949a00ded25d322f9f1327c/Article/FE/pnpm/img/raddit.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 <center>
 <a href="https://www.reddit.com/r/ProgrammerHumor/comments/6s0wov/heaviest_objects_in_the_universe/"> Heaviest Objects In The Universe </a>
@@ -98,7 +145,7 @@ npm은 자바스크립트 생태계를 풍성하게 만들어주었지만 그 �
 <br />
 <br />
 
-### npm 단점. 유령 의존성
+### npm 단점 1. 유령 의존성
 
 <br />
 
@@ -126,7 +173,7 @@ node_modules
 
 <br />
 
-__엄청난 디스크 공간 낭비__
+__문제 1. 엄청난 디스크 공간 낭비__
 
 <br />
 
@@ -135,7 +182,7 @@ __엄청난 디스크 공간 낭비__
 <br />
 <br />
 
-__파일 경로 길이 제한 문제__
+__문제 2. 파일 경로 길이 제한 문제__
 
 <br />
 
@@ -145,7 +192,7 @@ __파일 경로 길이 제한 문제__
 <br />
 <br />
 
-__npm v3의 해결책: 플랫 의존성__
+### pm v3의 해결책: 플랫 의존성
 
 <br />
 
@@ -182,7 +229,7 @@ __새로운 문제의 탄생: 유령 의존성 (Phantom Dependencies)__
 <br />
 <br />
 
-__이것이 왜 문제일까요?__
+__이것이 왜 문제일까?__
 
 <br />
 
@@ -192,11 +239,11 @@ __이것이 왜 문제일까요?__
 <br />
 <br />
 
-### npm 단점. 거대한 node_modules
+### npm 단점 2. 거대한 node_modules
 
 <br />
 
-위에서 보았던 행성보다 무거운 node_moduels 이미지를 다시 생각해보세요. npm은 프로젝트마다 필요한 모든 패키지를 node_modules 폴더 안에 전부 복사해서 저장합니다. 이 방식은 여러 프로젝트에서 동일한 패키지를 사용하더라도 매번 중복된 사본을 만들어내어 심각한 디스크 공간 낭비를 유발합니다.
+위에서 보았던 행성보다 무거운 node_moduels 이미지를 다시 상기해봅시다. npm은 프로젝트마다 필요한 모든 패키지를 node_modules 폴더 안에 전부 복사해서 저장합니다. 이 방식은 여러 프로젝트에서 동일한 패키지를 사용하더라도 매번 중복된 사본을 만들어내어 심각한 디스크 공간 낭비를 유발합니다.
 
 <br />
 
@@ -206,7 +253,7 @@ __이것이 왜 문제일까요?__
 <br />
 <br />
 
-## npm 단점. 복잡하고 느린 의존성 해석 (평탄화 알고리즘)
+### npm 단점 3. 복잡하고 느린 의존성 해석 (평탄화 알고리즘)
 
 <br />
 
@@ -234,7 +281,7 @@ pnpm은 기존 npm과 유사한 구조를 유지하면서도, 몇 가지 핵심�
 <br />
 <br />
 
-### pnpm 장점. 패키지 저장 방식의 혁신: 디스크 공간 효율화
+### pnpm 장점 1. 패키지 저장 방식의 혁신: 디스크 공간 효율화
 
 <br />
 
@@ -261,7 +308,7 @@ __전역 저장소__
 pnpm은 모든 패키지를 컴퓨터의 특정 공간(전역 저장소)에 단 한 번만 저장합니다. 
 
 <br />
-<img src="./img/pnpm_global.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/5b0ccb7daa9e6a7d6949a00ded25d322f9f1327c/Article/FE/pnpm/img/pnpm_global.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 <br />
 
 ```shell
@@ -273,6 +320,7 @@ ex. /Users/<사용자이름>/<중간 경로>/.pnpm-store/v3
 위의 명령어로 pnpm의 앙 저장소의 전체 경로를 알 수 있습니다. 경로에 이상한 문자가 길게 있는것을 볼 수 있습니다. 궁금하신 분들을 위해서 조금 더 자세한 이야기를 작성해보겠습니다.
 
 
+<br />
 <br />
 
 __좀 더 자세한 이야기__
@@ -324,7 +372,7 @@ pnpm은 CAS 방식을 통해 여러 프로젝트에서 동일한 패키지를 �
 __심볼릭 링크 참조__
 
 <br />
-<img src="./img/pnpm_local.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/5b0ccb7daa9e6a7d6949a00ded25d322f9f1327c/Article/FE/pnpm/img/pnpm_local.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="80%" >
 <br />
 
 여러 프로젝트에서 동일한 패키지를 필요로 할 경우, 파일을 복사하는 대신 전역 저장소에 있는 원본을 가리키는 바로가기(심볼릭 링크)만 생성합니다. 위의 스크린샷에서 화살표 표시가 심볼릭 링크 표시입니다.
@@ -345,7 +393,7 @@ __설치 과정 생략__
 <br />
 <br />
 
-### pnpm 장점 2. 획기적인 속도 향상: npm보다 약 2배 빠른 성능
+### pnpm 장점 2. 획기적인 속도 향상
 
 <br />
 
@@ -387,6 +435,7 @@ __pnpm의 동작 방식__
 총 소요 시간 = 셋 중 가장 오래 걸리는 패키지의 설치 시간
 
 <br />
+<br />
 
 __단순한 링크 작업__
 
@@ -405,9 +454,9 @@ __단순한 링크 작업__
 npm, pnpm, Yarn. 패키지 매니저 중에서 실제 어떤 것이 가장 빠르고 효율적인지 확인하기 위하여 패키지 매니저들의 다양한 상황을 가정하여 성능을 비교하는 벤치마크 테스트를 pnpm 사이트에 공개하고 있습니다. <a href="https://pnpm.io/ko/benchmarks"> (링크) </a>
 
 <br />
-<img src="./img/benchmark1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/5b0ccb7daa9e6a7d6949a00ded25d322f9f1327c/Article/FE/pnpm/img/benchmark1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
-<img src="./img/benchmark2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/5b0ccb7daa9e6a7d6949a00ded25d322f9f1327c/Article/FE/pnpm/img/benchmark2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 이미지에 작성된 테스트 항목은 아래의 상황입니다.
@@ -459,7 +508,7 @@ npm, pnpm, Yarn. 패키지 매니저 중에서 실제 어떤 것이 가장 빠�
 ### SKT
 
 <br />
-<img src="./img/skt.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/5b0ccb7daa9e6a7d6949a00ded25d322f9f1327c/Article/FE/pnpm/img/skt.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 <center>
 <a href="https://devocean.sk.com/blog/techBoardDetail.do?ID=166592&boardType=techBlog"> 패키지 매니저 선택을 위한 여정: NPM에서 Yarn으로 그리고 다시 pNPM </a>
@@ -476,7 +525,7 @@ npm, pnpm 둘다 모든 캐시 및 lock 파일 삭제 후 테스트 결과 약 2
 ### AB180
 
 <br />
-<img src="./img/benchmark2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/5b0ccb7daa9e6a7d6949a00ded25d322f9f1327c/Article/FE/pnpm/img/ab180.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 <center>
 <a href="https://engineering.ab180.co/stories/yarn-to-pnpm"> Yarn 대신 pnpm으로 넘어간 3가지 이유 </a>
@@ -501,13 +550,13 @@ yarn을 사용하다가 아래의 이유로 pnpm으로 넘어갔다고 합니다
 ### 핵클 
 
 <br />
-<img src="./img/hackle1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/5b0ccb7daa9e6a7d6949a00ded25d322f9f1327c/Article/FE/pnpm/img/hackle1.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 - (1) prebuilt (의존성 설치 및 파일 이동) 속도 개선: prebuilt 시 job duration 속도가 50% 이상 개선 되었고, 의존성 설치에 소요되는 시간은 무려 90% 이상 감소
 
 <br />
-<img src="./img/hackle2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/5b0ccb7daa9e6a7d6949a00ded25d322f9f1327c/Article/FE/pnpm/img/hackle2.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 - (2) build (어플리케이션 빌드 및 s3 업로드) 속도 개선: build 시 job duration 속도도 prebuild와 마찬가지로 50% 이상 개선 되었고, build 속도도 약 50% 개선
