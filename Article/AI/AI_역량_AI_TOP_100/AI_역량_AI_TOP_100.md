@@ -4,7 +4,11 @@ GPT에 질문만하는 방식으로는 AI 활용 역량을 갖출 수 없는 이
 -->
 
 <br />
-<img src="./img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/AI/AI_%EC%97%AD%EB%9F%89_AI_TOP_100/img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<br />
+
+AI를 잘 활용하여 놀라운 성능에 탑승하라는 의미로 나노바나나로 생성하였는데 예쁘게 생성이 안되는군요.
+
 <br />
 <br />
 
@@ -27,7 +31,7 @@ GPT에 질문만하는 방식으로는 AI 활용 역량을 갖출 수 없는 이
 이러한 의문을 더욱 증폭시킨 것은 최근 빅테크 기업들의 뉴스였습니다.
 
 <br />
-<img src="./img/meta.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/AI/AI_%EC%97%AD%EB%9F%89_AI_TOP_100/img/meta.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 <center>
 <a href="https://www.newsspace.kr/news/article.html?no=10713">
@@ -47,7 +51,7 @@ GPT에 질문만하는 방식으로는 AI 활용 역량을 갖출 수 없는 이
 변화하는 흐름 속에서 과연 AI 역량을 어떻게 정의하고 측정해야 할까? 고민하던 차에, 카카오브레인, 브라이언임팩트 주관으로 총상금 1억 5천만 원을 걸고 AI 시대의 문제 해결자를 발굴한다는 AI TOP 100 대회를 알게 되어 참가하였습니다.
 
 <br />
-<img src="./img/ai_top_100.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/AI/AI_%EC%97%AD%EB%9F%89_AI_TOP_100/img/ai_top_100.png?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 저는 지난 10월 18일(토) 온라인 예선에 응시하였습니다. 이 중 예선전 상위 100명이 겨루는 본선은 11월 22일(토) 카카오 AI 캠퍼스에서 진행되었습니다.
