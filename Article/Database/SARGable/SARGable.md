@@ -3,7 +3,7 @@ SARGable 한 번 이해하면, 쿼리 튜닝이 쉬워진다
 -->
 
 <br />
-<img src="https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="http://github.com/KoEonYack/Tistory-Coveant/blob/dabf9f723bf55299a2e2d4d403b8bb657f73a173/Article/Database/SARGable/img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
