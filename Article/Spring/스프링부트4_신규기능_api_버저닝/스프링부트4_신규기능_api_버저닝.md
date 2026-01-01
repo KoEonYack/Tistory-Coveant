@@ -4,7 +4,7 @@
 
 
 <br />
-<img src="./img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
+<img src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/Spring/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B84_%EC%8B%A0%EA%B7%9C%EA%B8%B0%EB%8A%A5_api_%EB%B2%84%EC%A0%80%EB%8B%9D/img/cover.jpg?raw=true" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="" >
 <br />
 <br />
 
@@ -135,8 +135,6 @@ X-API-Version 버전 헤더 없이 호출할 수 있습니다.
 curl -i http://localhost:8080/orders/1
 ```
 
-<br />
-
 ```yml
 spring:
   mvc:
@@ -156,7 +154,7 @@ spring:
 <br />
 <br />
 
-## 클라이언트도 “버전”을 1급으로: ApiVersionInserter + .apiVersion(...)
+## 클라이언트에서 API 버전호출
 
 <br />
 
@@ -188,8 +186,6 @@ OrderV2Response res = client.get()
 <br />
 
 인터페이스 레벨에서도 버전을 선언적으로 고정할 수 있습니다.
-
-<br />
 
 ```java
 @HttpExchange("/orders")
