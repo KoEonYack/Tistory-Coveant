@@ -577,5 +577,7 @@ yarn을 사용하다가 아래의 이유로 pnpm으로 넘어갔다고 합니다
     - https://youtu.be/YWnH0M-p_H4?si=wrpFA4Ms0L_G_IaC
 - Why you should prefer using pnpm over npm and yarn?
     - https://refine.dev/blog/pnpm-vs-npm-and-yarn/)
-
+- 잘가 npm, 어서오고 pnpm: https://po4tion.dev/pnpm
+- 핵클팀이 pnpm을 도입한 이유: https://hackle.io/ko/post/frontend-pnpm/
+- ab180: Yarn 대신 pnpm으로 넘어간 3가지 이유: https://engineering.ab180.co/stories/yarn-to-pnpm
  -->
