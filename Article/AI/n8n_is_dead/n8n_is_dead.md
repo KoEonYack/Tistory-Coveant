@@ -1,6 +1,6 @@
 <br />
 
-<img width="100%" alt="" src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/AI/n8n_is_dead/img/cover.jpg">
+<img width="100%" alt="" src="https://github.com/KoEonYack/Tistory-Coveant/blob/master/Article/AI/n8n_is_dead/img/cover.jpg?raw=true">
 
 <br />
 <br />
