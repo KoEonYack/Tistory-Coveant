@@ -48,6 +48,15 @@
    - 마지막 정리: 핵심 메시지를 짧게 다시 말한다.
 
 7. 이미지가 있는 경우 아래 HTML 형식을 사용한다.
+   - 티스토리 업로드용 글에서는 `./img/cover.png` 같은 로컬 상대경로를 그대로 두지 않는다.
+   - 저장소 기준 경로를 GitHub raw URL로 바꾼다.
+   - 변환 규칙: `./img/cover.png` → `https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/{현재_문서가_있는_Article_하위_디렉토리}/img/cover.png`
+   - 한글 디렉토리명이나 파일명은 URL 인코딩된 경로를 사용한다.
+   - 예: `Article/AI/싱글에이전트_멀티에이전트/img/cover.png`는 아래처럼 작성한다.
+
+   ```html
+   <img src="https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/AI/%EC%8B%B1%EA%B8%80%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8_%EB%A9%80%ED%8B%B0%EC%97%90%EC%9D%B4%EC%A0%84%ED%8A%B8/img/cover.png" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+   ```
 
    ```html
    <br />
@@ -118,5 +127,6 @@
 - 독자에게 바로 결론을 던지기보다, 글쓴이가 그 주제를 왜 정리하게 되었는지 먼저 설명한다.
 - 경험담이 있는 글은 시간 순서로, 기술 정리 글은 배경에서 실무 영향으로 이동한다.
 - 이미지는 가운데 정렬 HTML 태그와 `<center>` 캡션을 사용한다.
+- 로컬 이미지 경로는 티스토리에서 깨지지 않도록 GitHub raw URL로 변환한다.
 - 비교표는 HTML 테이블과 인라인 CSS를 사용하고, 열 사이에는 얇은 세로 구분선을 둔다.
 - 기술 글에서도 "단순히 A가 B로 바뀌었다"에서 끝내지 않고, 그 변경이 왜 생겼고 어떤 실수를 만들 수 있는지까지 다룬다.
