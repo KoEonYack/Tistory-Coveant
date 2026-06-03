@@ -1,18 +1,28 @@
+<!--
+
+지구상에서 가장 친절한 RAG: LLM에게 필요한 정보를 찾아주는 기술
+
+-->
 
 <br />
 
-<img src="https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/AI/RAG-%EC%8A%A4%ED%84%B0%EB%94%94-00-RAG%EA%B0%9C%EC%9A%94/img/d6cc9d71c95359c81715aa8beafcbd0b88ed063dcf90289fd1612acdfbdddd5d.jpg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/AI/%EC%A7%80%EA%B5%AC%EC%83%81%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5%EC%B9%9C%EC%A0%88%ED%95%9C-RAG-00-RAG%EA%B0%9C%EC%9A%94/img/cover.jpg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+
+<br />
+
+<img src="https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/AI/%EC%A7%80%EA%B5%AC%EC%83%81%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5%EC%B9%9C%EC%A0%88%ED%95%9C-RAG-00-RAG%EA%B0%9C%EC%9A%94/img/d6cc9d71c95359c81715aa8beafcbd0b88ed063dcf90289fd1612acdfbdddd5d.jpg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 
 <br />
 
 <br />
 
-<img src="https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/AI/RAG-%EC%8A%A4%ED%84%B0%EB%94%94-00-RAG%EA%B0%9C%EC%9A%94/img/1779518830146_4baf9850_0.jpeg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<img src="https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/AI/%EC%A7%80%EA%B5%AC%EC%83%81%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5%EC%B9%9C%EC%A0%88%ED%95%9C-RAG-00-RAG%EA%B0%9C%EC%9A%94/img/1779518830146_4baf9850_0.jpeg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 
 <br />
 
-#  RAG: LLM에게 필요한 정보를 찾아주는 기술
+## 시작하며
 
+<br />
 
 요즘 LLM 기반 서비스를 만들다 보면 **에이전트**, **툴 호출**, **에이전틱 워크플로우**, **온톨로지**, **그래프 RAG** 같은 용어를 자주 만나게 됩니다.  
 하지만 그보다 먼저 이해해야 할 기본 개념 중 하나가 바로 **RAG**입니다.
@@ -22,22 +32,35 @@ RAG는 오래된 개념처럼 보일 수 있지만, 여전히 LLM을 실무 시�
 
 벡터 기반 RAG를 중심으로, RAG의 목적과 동작 방식, 임베딩, 벡터 DB, 청킹, 리랭킹, Query Transformation 같은 핵심 개념을 정리합니다.
 
-
+<br />
+<br />
+<br />
 
 ## 1. RAG가 왜 필요한가요?
 
+<br />
+
 LLM은 많은 지식을 알고 있는 것처럼 보이지만, 기본적으로 몇 가지 한계를 가지고 있습니다.
+
+<br />
 
 첫째, **학습 시점 이후의 정보를 알지 못합니다.**  
 모델이 학습된 이후에 생긴 정책, 제품, 문서, 장애 이력, 고객 데이터는 모델 내부에 존재하지 않습니다.
 
+<br />
+
 둘째, **회사 내부 문서나 개인 데이터는 알 수 없습니다.**  
 사내 매뉴얼, 계약서, 고객 상담 이력, 운영 정책, 기술 가이드 같은 정보는 공개 학습 데이터에 포함되어 있지 않은 경우가 많습니다.
+
+<br />
 
 셋째, **모르는 내용도 그럴듯하게 말할 수 있습니다.**  
 이것을 흔히 환각, 즉 hallucination이라고 부릅니다. 모델은 모르는 내용을 "모른다"고 하기보다, 그럴듯한 문장을 생성할 수 있습니다.
 
+<br />
+
 예를 들어 모델이 모르는 최신 서비스명이나 내부 프로젝트명을 물어보면, 실제로는 정보가 없는데도 마치 아는 것처럼 설명할 수 있습니다.
+
 
 ```text
 사용자:
@@ -50,12 +73,18 @@ LLM:
 이 답변은 그럴듯해 보일 수 있지만, 근거가 없는 답변입니다.  
 RAG는 이런 문제를 줄이기 위해 등장한 방식입니다.
 
-
+<br />
+<br />
+<br />
 
 ## 2. RAG란 무엇인가요?
 
+<br />
+
 **RAG**는 **Retrieval-Augmented Generation**의 약자입니다.  
 한국어로 표현하면 **검색 증강 생성** 또는 **검색 기반 생성**이라고 볼 수 있습니다.
+
+<br />
 
 핵심 아이디어는 간단합니다.
 
@@ -67,17 +96,21 @@ LLM이 답변하기 전에,
 
 즉, LLM에게 모든 것을 외우게 만드는 것이 아니라, 질문에 필요한 정보를 외부에서 찾아서 컨텍스트로 제공하는 방식입니다.
 
+<br />
+
 가장 기본적인 RAG 흐름은 다음과 같습니다.
 
 ```text
 사용자 질문(User Query)
-  ↓
+↓
 관련 문서 검색(Retrieval)
-  ↓
+↓
 검색 결과를 컨텍스트로 구성(Context)
-  ↓
+↓
 LLM 답변 생성(Generation)
 ```
+
+<br />
 
 예를 들어 사용자가 사내 휴가 정책을 물어본다고 가정해보겠습니다.
 
@@ -85,6 +118,8 @@ LLM 답변 생성(Generation)
 사용자 질문:
 육아휴직 신청 절차를 알려주세요.
 ```
+
+<br />
 
 일반 LLM은 해당 회사의 내부 정책을 알 수 없습니다.  
 하지만 RAG 시스템은 먼저 사내 HR 문서에서 관련 내용을 검색합니다.
@@ -95,6 +130,8 @@ LLM 답변 생성(Generation)
 - HR 정책 문서 > 휴직 신청 기한
 - HR 정책 문서 > 필요 서류
 ```
+
+<br />
 
 그리고 이 검색 결과를 LLM에게 전달합니다.
 
@@ -109,11 +146,17 @@ LLM 답변 생성(Generation)
 
 이렇게 하면 LLM은 자신의 기억에 의존하는 것이 아니라, 검색된 문서를 근거로 답변할 수 있습니다.
 
-
+<br />
+<br />
+<br />
 
 ## 3. 사실 우리는 이미 RAG를 하고 있었습니다
 
+<br />
+
 RAG라는 이름을 몰라도, 많은 사람은 이미 비슷한 방식을 사용해본 적이 있습니다.
+
+<br />
 
 예를 들어 ChatGPT에 문서를 붙여넣고 이렇게 요청한 경험이 있을 수 있습니다.
 
@@ -130,31 +173,71 @@ RAG라는 이름을 몰라도, 많은 사람은 이미 비슷한 방식을 사�
 
 다만 차이가 있습니다.
 
-|방식|설명|
-|---|---|
-|수동 방식|사람이 직접 문서를 찾아서 LLM에게 붙여넣습니다.|
-|RAG 방식|시스템이 자동으로 관련 문서를 찾아서 LLM에게 제공합니다.|
+<br />
+
+<table style="width:100%; border-collapse:collapse; margin:0 auto; font-size:15px; line-height:1.6; border-top:2px solid #333;">
+<thead>
+  <tr>
+    <th style="width:50%; padding:12px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #d9d9d9; background:#f7f8fa; text-align:left; font-weight:700;">방식</th>
+    <th style="width:50%; padding:12px 10px; border-bottom:1px solid #d9d9d9; background:#f7f8fa; text-align:left; font-weight:700;">설명</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">수동 방식</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">사람이 직접 문서를 찾아서 LLM에게 붙여넣습니다.</td>
+  </tr>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">RAG 방식</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">시스템이 자동으로 관련 문서를 찾아서 LLM에게 제공합니다.</td>
+  </tr>
+</tbody>
+</table>
+
+<br />
 
 즉, RAG는 사람이 하던 "문서 찾아서 붙여넣기"를 시스템화한 구조라고 볼 수 있습니다.
 
-
+<br />
+<br />
+<br />
 
 ## 4. 왜 그냥 모든 문서를 LLM에게 넣으면 안 되나요?
+
+<br />
 
 이론적으로는 모든 문서를 LLM에게 넣고 답변하게 만들 수도 있습니다.  
 하지만 실제 서비스에서는 이 방식이 적합하지 않은 경우가 많습니다.
 
+<br />
+<br />
+<br />
+
 ### 4.1 컨텍스트 길이에 한계가 있습니다
+
+<br />
 
 LLM은 한 번에 읽을 수 있는 토큰 수가 제한되어 있습니다.  
 문서가 수백 장, 수천 장이라면 모든 내용을 한 번에 넣기 어렵습니다.
 
+<br />
+<br />
+<br />
+
 ### 4.2 비용이 증가합니다
+
+<br />
 
 관련 없는 문서까지 모두 넣으면 입력 토큰 수가 늘어납니다.  
 토큰 수가 늘어나면 비용이 증가하고, 응답 속도도 느려질 수 있습니다.
 
+<br />
+<br />
+<br />
+
 ### 4.3 정확도가 떨어질 수 있습니다
+
+<br />
 
 문서가 많다고 항상 좋은 답변이 나오는 것은 아닙니다.  
 관련 없는 정보가 많이 섞이면 LLM이 중요한 근거를 놓치거나, 엉뚱한 내용을 참고할 수 있습니다.
@@ -171,9 +254,13 @@ LLM은 한 번에 읽을 수 있는 토큰 수가 제한되어 있습니다.
 
 RAG의 목적은 바로 여기에 있습니다.
 
-
+<br />
+<br />
+<br />
 
 ## 5. RAG를 시험공부에 비유하면
+
+<br />
 
 RAG는 시험 직전에 학생에게 요약노트를 주는 방식과 비슷합니다.
 
@@ -183,32 +270,39 @@ RAG는 시험 직전에 학생에게 요약노트를 주는 방식과 비슷합�
 
 ```text
 전체 교재
-  ↓
+↓
 문제와 관련된 페이지 검색
-  ↓
+↓
 요약노트 구성
-  ↓
+↓
 답안 작성
 ```
+
+<br />
 
 RAG도 같은 방식으로 동작합니다.
 
 ```text
 전체 문서 저장소
-  ↓
+↓
 질문과 관련된 문서 조각 검색
-  ↓
+↓
 검색 결과를 프롬프트에 삽입
-  ↓
+↓
 LLM이 근거 기반 답변 생성
 ```
 
 이때 RAG의 품질은 "요약노트를 얼마나 잘 만들어주느냐"에 따라 달라집니다.  
 즉, 어떤 문서를 검색하고, 어떤 내용을 LLM에게 전달하는지가 매우 중요합니다.
 
-
+<br />
+<br />
+<br />
 
 ## 6. Fine-tuning과 RAG의 차이
+
+<br />
+
 
 LLM에게 새로운 지식을 제공하는 방법으로는 크게 두 가지를 생각할 수 있습니다.
 
@@ -220,14 +314,51 @@ LLM에게 새로운 지식을 제공하는 방법으로는 크게 두 가지를 
 **Fine-tuning**은 모델 자체를 추가 학습시키는 방식입니다.  
 반면 **RAG**는 모델은 그대로 두고, 외부 지식을 검색해서 답변 시점에 제공하는 방식입니다.
 
-|구분|Fine-tuning|RAG|
-|---|---|---|
-|목적|모델의 행동 방식이나 특정 패턴 학습|외부 지식 참조|
-|지식 업데이트|다시 학습이 필요할 수 있습니다|문서나 DB만 업데이트하면 됩니다|
-|최신 정보 반영|상대적으로 어렵습니다|상대적으로 쉽습니다|
-|내부 문서 활용|가능하지만 관리가 어렵습니다|매우 적합합니다|
-|답변 근거 추적|어려울 수 있습니다|문서 출처를 연결하기 쉽습니다|
-|주요 사용처|말투, 형식, 태스크 패턴 학습|사내 문서 QA, 정책 검색, 기술 문서 검색|
+<br />
+
+<table style="width:100%; border-collapse:collapse; margin:0 auto; font-size:15px; line-height:1.6; border-top:2px solid #333;">
+<thead>
+  <tr>
+    <th style="width:33.33%; padding:12px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #d9d9d9; background:#f7f8fa; text-align:left; font-weight:700;">구분</th>
+    <th style="width:33.33%; padding:12px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #d9d9d9; background:#f7f8fa; text-align:left; font-weight:700;">Fine-tuning</th>
+    <th style="width:33.33%; padding:12px 10px; border-bottom:1px solid #d9d9d9; background:#f7f8fa; text-align:left; font-weight:700;">RAG</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">목적</td>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">모델의 행동 방식이나 특정 패턴 학습</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">외부 지식 참조</td>
+  </tr>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">지식 업데이트</td>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">다시 학습이 필요할 수 있습니다</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">문서나 DB만 업데이트하면 됩니다</td>
+  </tr>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">최신 정보 반영</td>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">상대적으로 어렵습니다</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">상대적으로 쉽습니다</td>
+  </tr>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">내부 문서 활용</td>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">가능하지만 관리가 어렵습니다</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">매우 적합합니다</td>
+  </tr>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">답변 근거 추적</td>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">어려울 수 있습니다</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">문서 출처를 연결하기 쉽습니다</td>
+  </tr>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">주요 사용처</td>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">말투, 형식, 태스크 패턴 학습</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">사내 문서 QA, 정책 검색, 기술 문서 검색</td>
+  </tr>
+</tbody>
+</table>
+
+<br />
 
 RAG가 특히 적합한 상황은 다음과 같습니다.
 
@@ -249,14 +380,20 @@ RAG가 특히 적합한 상황은 다음과 같습니다.
 
 실무에서는 Fine-tuning과 RAG를 경쟁 관계로 보기보다, 서로 다른 문제를 해결하는 도구로 보는 것이 좋습니다.
 
-
+<br />
+<br />
+<br />
 
 ## 7. 벡터 기반 RAG의 핵심은 Embedding입니다
+
+<br />
 
 RAG에서 가장 많이 사용되는 방식은 **벡터 기반 검색(Vector Search)** 입니다.  
 이를 이해하려면 먼저 **임베딩(Embedding)** 을 알아야 합니다.
 
 임베딩은 텍스트를 숫자 벡터로 바꾸는 과정입니다.
+
+<br />
 
 예를 들어 다음 세 단어를 생각해보겠습니다.
 
@@ -290,9 +427,13 @@ RAG에서 가장 많이 사용되는 방식은 **벡터 기반 검색(Vector Sea
 
 즉, 임베딩은 텍스트의 의미를 숫자 공간 안에 배치하는 과정이라고 볼 수 있습니다.
 
-
+<br />
+<br />
+<br />
 
 ## 8. Vector DB는 무엇인가요?
+
+<br />
 
 **Vector DB**는 임베딩된 벡터를 저장하고, 특정 질문과 가장 가까운 벡터를 빠르게 찾아주는 데이터베이스입니다.
 
@@ -328,26 +469,30 @@ Vector DB는 대략 다음 역할을 합니다.
 
 쉽게 말하면 Vector DB는 "의미가 비슷한 문서"를 찾아주는 저장소입니다.
 
+```text
+참고로, 아래 배경도 함께 보면 Vector DB를 이해하기 쉽습니다. RAG에서 사용하는 Vector DB는 크게 세 가지 흐름이 합쳐진 결과로 볼 수 있습니다.
+ 
+첫 번째는 1970년대 정보검색 분야의 Vector Space Model입니다. 이 모델은 문서와 사용자의 검색어를 벡터로 표현하고, 두 벡터의 유사도를 계산해 관련 문서를 찾는 방식입니다. 당시에는 지금처럼 딥러닝 embedding을 사용한 것은 아니고, 단어 빈도나 TF-IDF 같은 sparse vector를 주로 사용했습니다. 하지만 “문서와 query를 벡터 공간에 놓고, 가까운 것을 찾는다”는 핵심 아이디어는 지금의 Vector DB와 매우 유사합니다.
+ 
+두 번째 전환점은 2013년 Google 연구진이 발표한 Word2Vec입니다. Word2Vec은 단어를 dense vector로 표현하는 방식을 대중화했습니다. 단어를 단순한 문자열이나 ID로 다루는 것이 아니라, 의미 관계가 반영된 벡터로 표현할 수 있다는 점을 보여주었습니다. 예를 들어 의미가 비슷한 단어들은 벡터 공간에서 가까운 위치에 놓이고, 단어 간 관계도 벡터 연산으로 어느 정도 표현될 수 있습니다.
+ 
+다만 Word2Vec이 Vector DB 자체의 시작점은 아닙니다. Word2Vec은 데이터베이스가 아니라 embedding 모델입니다. 그러나 Word2Vec 이후 “텍스트의 의미를 벡터로 표현하고, 벡터 간 거리를 이용해 의미적으로 가까운 정보를 찾는다”는 사고방식이 널리 확산되었습니다. 이 흐름은 이후 문장 embedding, 문서 embedding, 이미지 embedding, multimodal embedding으로 확장되었습니다.
+ 
+세 번째 흐름은 ANN, Approximate Nearest Neighbor 검색 기술의 발전입니다. embedding을 만들 수 있어도, 수백만 개나 수억 개의 벡터 중에서 가까운 벡터를 빠르게 찾지 못하면 실서비스에 사용하기 어렵습니다. 모든 벡터와 하나씩 거리를 계산하는 방식은 데이터가 커질수록 너무 느려지기 때문입니다. 이를 해결하기 위해 HNSW 같은 ANN 알고리즘과 FAISS 같은 벡터 검색 라이브러리가 발전했습니다. HNSW는 그래프 구조를 활용해 근접 벡터를 빠르게 찾는 방식이고, FAISS는 dense vector의 효율적인 similarity search와 clustering을 위한 대표적인 라이브러리입니다.
+```
 
-
-> [!NOTE]  
-> RAG에서 사용하는 Vector DB는 크게 세 가지 흐름이 합쳐진 결과로 볼 수 있습니다.
-> 
-> 첫 번째는 1970년대 정보검색 분야의 Vector Space Model입니다. 이 모델은 문서와 사용자의 검색어를 벡터로 표현하고, 두 벡터의 유사도를 계산해 관련 문서를 찾는 방식입니다. 당시에는 지금처럼 딥러닝 embedding을 사용한 것은 아니고, 단어 빈도나 TF-IDF 같은 sparse vector를 주로 사용했습니다. 하지만 “문서와 query를 벡터 공간에 놓고, 가까운 것을 찾는다”는 핵심 아이디어는 지금의 Vector DB와 매우 유사합니다.
-> 
-> 두 번째 전환점은 2013년 Google 연구진이 발표한 Word2Vec입니다. Word2Vec은 단어를 dense vector로 표현하는 방식을 대중화했습니다. 단어를 단순한 문자열이나 ID로 다루는 것이 아니라, 의미 관계가 반영된 벡터로 표현할 수 있다는 점을 보여주었습니다. 예를 들어 의미가 비슷한 단어들은 벡터 공간에서 가까운 위치에 놓이고, 단어 간 관계도 벡터 연산으로 어느 정도 표현될 수 있습니다.
-> 
-> 다만 Word2Vec이 Vector DB 자체의 시작점은 아닙니다. Word2Vec은 데이터베이스가 아니라 embedding 모델입니다. 그러나 Word2Vec 이후 “텍스트의 의미를 벡터로 표현하고, 벡터 간 거리를 이용해 의미적으로 가까운 정보를 찾는다”는 사고방식이 널리 확산되었습니다. 이 흐름은 이후 문장 embedding, 문서 embedding, 이미지 embedding, multimodal embedding으로 확장되었습니다.
-> 
-> 세 번째 흐름은 ANN, Approximate Nearest Neighbor 검색 기술의 발전입니다. embedding을 만들 수 있어도, 수백만 개나 수억 개의 벡터 중에서 가까운 벡터를 빠르게 찾지 못하면 실서비스에 사용하기 어렵습니다. 모든 벡터와 하나씩 거리를 계산하는 방식은 데이터가 커질수록 너무 느려지기 때문입니다. 이를 해결하기 위해 HNSW 같은 ANN 알고리즘과 FAISS 같은 벡터 검색 라이브러리가 발전했습니다. HNSW는 그래프 구조를 활용해 근접 벡터를 빠르게 찾는 방식이고, FAISS는 dense vector의 효율적인 similarity search와 clustering을 위한 대표적인 라이브러리입니다.
-
-
-
+<br />
+<br />
+<br />
 
 ## 9. 왜 벡터라고 부르나요?
 
-임베딩 결과는 단순한 숫자 목록이 아니라, 고차원 공간 안의 좌표처럼 볼 수 있습니다.  
-각 텍스트는 벡터 공간 안의 한 점 또는 방향으로 표현됩니다.
+<br />
+
+임베딩 결과는 단순한 숫자 목록이 아니라, 고차원 공간 안의 좌표처럼 볼 수 있습니다. 각 텍스트는 벡터 공간 안의 한 점 또는 방향으로 표현됩니다.
+
+<br />
+
 
 두 문서가 얼마나 비슷한지 판단할 때는 보통 다음과 같은 기준을 사용합니다.
 
@@ -372,9 +517,13 @@ RAG에서 자주 언급되는 방식은 **코사인 유사도(Cosine Similarity)
 
 그래서 벡터 기반 RAG에서는 질문과 문서를 모두 벡터로 바꾼 뒤, 질문 벡터와 가까운 문서 벡터를 검색합니다.
 
-
+<br />
+<br />
+<br />
 
 ## 10. 벡터 기반 RAG의 전체 구조
+
+<br />
 
 벡터 기반 RAG는 크게 두 단계로 나눌 수 있습니다.
 
@@ -383,62 +532,103 @@ RAG에서 자주 언급되는 방식은 **코사인 유사도(Cosine Similarity)
 2. 질의 단계(Querying)
 ```
 
-
+<br />
+<br />
+<br />
 
 ### 10.1 인덱싱 단계
+
+<br />
 
 인덱싱은 문서를 미리 검색 가능한 형태로 준비하는 과정입니다.
 
 ```text
 원시 데이터(Raw Data)
-  ↓
+↓
 데이터 추출 및 파싱(Data Extraction & Parsing)
-  ↓
+↓
 데이터 정제(Data Cleaning)
-  ↓
+↓
 데이터 변환(Data Transformation)
-  ↓
+↓
 청크 분할(Chunking)
-  ↓
+↓
 임베딩 생성(Embedding)
-  ↓
+↓
 벡터 DB 저장(Vector Store)
 ```
 
 각 단계의 역할은 다음과 같습니다.
 
-| 단계                                     | 설명                                         |
-| -------------------------------------- | ------------------------------------------ |
-| 원시 데이터(Raw Data)                       | PDF, Word, HTML, DB, Markdown 등 원본 데이터입니다. |
-| 데이터 추출 및 파싱(Data Extraction & Parsing) | 문서에서 텍스트, 표, 메타데이터를 추출하는 단계입니다.            |
-| 데이터 정제(Data Cleaning)                  | 불필요한 공백, 깨진 문자, 중복 텍스트를 제거하는 단계입니다.        |
-| 데이터 변환(Data Transformation)            | 검색에 적합한 구조로 문서를 재구성하는 단계입니다.               |
-| 청크 분할(Chunking)                        | 긴 문서를 작은 단위로 나누는 단계입니다.                    |
-| 임베딩 생성(Embedding)                      | 각 청크를 벡터로 변환하는 단계입니다.                      |
-| 벡터 DB 저장(Vector Store)                 | 벡터와 원문, 메타데이터를 저장하는 단계입니다.                 |
+<br />
+
+<table style="width:100%; border-collapse:collapse; margin:0 auto; font-size:15px; line-height:1.6; border-top:2px solid #333;">
+<thead>
+  <tr>
+    <th style="width:50%; padding:12px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #d9d9d9; background:#f7f8fa; text-align:left; font-weight:700;">단계</th>
+    <th style="width:50%; padding:12px 10px; border-bottom:1px solid #d9d9d9; background:#f7f8fa; text-align:left; font-weight:700;">설명</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">원시 데이터(Raw Data)</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">PDF, Word, HTML, DB, Markdown 등 원본 데이터입니다.</td>
+  </tr>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">데이터 추출 및 파싱(Data Extraction &amp; Parsing)</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">문서에서 텍스트, 표, 메타데이터를 추출하는 단계입니다.</td>
+  </tr>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">데이터 정제(Data Cleaning)</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">불필요한 공백, 깨진 문자, 중복 텍스트를 제거하는 단계입니다.</td>
+  </tr>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">데이터 변환(Data Transformation)</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">검색에 적합한 구조로 문서를 재구성하는 단계입니다.</td>
+  </tr>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">청크 분할(Chunking)</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">긴 문서를 작은 단위로 나누는 단계입니다.</td>
+  </tr>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">임베딩 생성(Embedding)</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">각 청크를 벡터로 변환하는 단계입니다.</td>
+  </tr>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">벡터 DB 저장(Vector Store)</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">벡터와 원문, 메타데이터를 저장하는 단계입니다.</td>
+  </tr>
+</tbody>
+</table>
+
+<br />
 
 여기서 특히 중요한 단계는 **청크 분할(Chunking)** 입니다.  
 문서를 너무 크게 나누면 검색 결과가 뭉뚱그려지고, 너무 작게 나누면 문맥이 사라질 수 있습니다.
 
-
+<br />
+<br />
+<br />
 
 ### 10.2 질의 단계
+
+<br />
 
 질의 단계는 사용자의 질문이 들어왔을 때 실행되는 과정입니다.
 
 ```text
 사용자 질문(User Query)
-  ↓
+↓
 질문 변환(Query Transformation)
-  ↓
+↓
 질문 임베딩(Query Embedding)
-  ↓
+↓
 벡터 검색(Vector Search)
-  ↓
+↓
 검색 결과 재정렬(Reranking)
-  ↓
+↓
 컨텍스트 구성(Context Building)
-  ↓
+↓
 LLM 답변 생성(Generation)
 ```
 
@@ -460,9 +650,13 @@ SSO 연동 설정 방법
 
 이 과정이 **Query Transformation**입니다.
 
-
+<br />
+<br />
+<br />
 
 ## 11. RAG에서 중요한 질문: 관련도란 무엇인가요?
+
+<br />
 
 RAG를 구현하면 곧바로 이런 질문을 마주하게 됩니다.
 
@@ -500,26 +694,36 @@ SSO 연동은 SAML 또는 OIDC 프로토콜을 통해 구성할 수 있습니다
 임베딩 모델은 이런 부정 표현이나 세부 조건을 항상 정확히 구분하지 못할 수 있습니다.  
 그래서 실무 RAG에서는 벡터 검색만 사용하지 않고, 여러 보완 기법을 함께 사용합니다.
 
+<br />
+<br />
+<br />
 
 ## 12. RAG 고도화 기법
+
+<br />
 
 초기 RAG는 비교적 단순한 구조로 동작합니다.
 
 ```text
 질문 임베딩
-  ↓
+↓
 벡터 DB 검색
-  ↓
+↓
 상위 K개 문서 삽입
-  ↓
+↓
 답변 생성
 ```
 
 하지만 실제 서비스에서는 이것만으로 부족한 경우가 많습니다.  
 그래서 다양한 RAG 고도화 기법이 함께 사용됩니다.
 
+<br />
+<br />
+<br />
 
 ### 12.1 Query Transformation
+
+<br />
 
 **Query Transformation**은 사용자의 질문을 검색에 적합한 형태로 재작성하는 과정입니다.
 
@@ -545,13 +749,20 @@ Query Transformation에서는 다음을 확인해야 합니다.
 예를 들어 사용자가 "이거"라고 말했을 때, 이전 대화에서 언급된 대상이 "SSO"라면 검색 질의는 "SSO 설정 방법"으로 바뀌어야 합니다.  
 반대로 맥락을 잘못 해석하면 전혀 다른 문서를 검색할 수 있으므로 주의해야 합니다.
 
-
+<br />
+<br />
+<br />
 
 ### 12.2 Query Expansion
+
+<br />
 
 **Query Expansion**은 검색 성능을 높이기 위해 관련 키워드를 확장하는 과정입니다.
 
 문서와 사용자의 용어가 다를 때 특히 유용합니다.  
+
+<br />
+
 예를 들어 사용자는 "통합 로그인"이라고 묻지만, 문서에는 다음과 같은 용어가 사용될 수 있습니다.
 
 ```text
@@ -591,9 +802,13 @@ Query Expansion
 → 검색에 도움이 되는 관련 키워드를 추가하는 과정입니다.
 ```
 
-
+<br />
+<br />
+<br />
 
 ### 12.3 Query Decomposition
+
+<br />
 
 **Query Decomposition**은 복잡한 질문을 여러 개의 작은 질문으로 나누는 과정입니다.
 
@@ -614,13 +829,13 @@ SSO 설정 방법과 장애 발생 시 확인해야 할 로그를 알려줘.
 
 ```text
 원본 질문
-  ↓
+↓
 하위 질문 생성
-  ↓
+↓
 각 질문별 검색
-  ↓
+↓
 검색 결과 통합
-  ↓
+↓
 최종 답변 생성
 ```
 
@@ -648,9 +863,13 @@ Query Decomposition은 특히 다음과 같은 질문에 유용합니다.
 3. 해지 시 위약금 조항이 있나요?
 ```
 
-
+<br />
+<br />
+<br />
 
 ### 12.4 Query Routing
+
+<br />
 
 **Query Routing**은 질문을 적절한 데이터 소스나 검색기로 보내는 과정입니다.
 
@@ -694,9 +913,13 @@ Query Routing에서는 다음을 확인해야 합니다.
 잘못된 라우팅이 발생했을 때 fallback 전략이 있나요?
 ```
 
-
+<br />
+<br />
+<br />
 
 ### 12.5 Reranking
+
+<br />
 
 **Reranking**은 1차 검색 결과를 다시 정렬하는 과정입니다.
 
@@ -707,18 +930,23 @@ Query Routing에서는 다음을 확인해야 합니다.
 
 ```text
 벡터 검색으로 후보 20개 검색
-  ↓
+↓
 Reranker로 관련도 재평가
-  ↓
+↓
 상위 3~5개만 LLM에 전달
 ```
 
 Reranking은 RAG 품질을 높이는 데 매우 효과적인 단계입니다.  
 검색 결과는 나오지만 답변이 부정확하다면, 먼저 Reranking 적용을 검토할 수 있습니다.
 
-
+<br />
+<br />
+<br />
 
 ### 12.6 Metadata Filtering
+
+<br />
+
 
 **Metadata Filtering**은 문서의 속성 정보를 활용해 검색 범위를 좁히는 방법입니다.
 
@@ -744,9 +972,13 @@ Reranking은 RAG 품질을 높이는 데 매우 효과적인 단계입니다.
 실무 RAG에서 메타데이터는 매우 중요합니다.  
 잘 설계된 메타데이터는 검색 품질을 높이고, 불필요한 문서 검색을 줄여줍니다.
 
-
+<br />
+<br />
+<br />
 
 ## 13. RAG는 단순히 Vector DB를 붙이는 일이 아닙니다
+
+<br />
 
 요즘은 RAG를 시작하는 것 자체는 쉬워졌습니다.
 
@@ -757,6 +989,8 @@ Vector DB에 저장합니다.
 질문이 들어오면 검색합니다.
 검색 결과를 LLM에게 넣습니다.
 ```
+
+<br />
 
 하지만 실제로 쓸 만한 RAG를 만들려면 더 많은 고민이 필요합니다.
 
@@ -776,9 +1010,13 @@ Reranking을 적용할 것인가요?
 
 결국 좋은 RAG는 "LLM을 잘 쓰는 문제"이면서 동시에 "데이터를 잘 다루는 문제"입니다.
 
-
+<br />
+<br />
+<br />
 
 ## 14. 좋은 RAG의 핵심은 데이터 이해입니다
+
+<br />
 
 RAG를 구축하다 보면 어느 순간 이런 질문을 하게 됩니다.
 
@@ -791,11 +1029,15 @@ RAG를 구축하다 보면 어느 순간 이런 질문을 하게 됩니다.
 검색을 잘 되게 하려면 어떤 태그를 붙여야 하나요?
 ```
 
-이 구간부터는 단순 구현보다 데이터 설계가 중요해집니다.
+이 구간부터는 단순 구현보다 데이터 설계가 중요해집니다. 문서 유형에 따라 청킹 전략도 달라져야 합니다.
 
-문서 유형에 따라 청킹 전략도 달라져야 합니다.
+<br />
+<br />
+<br />
 
 ### 정책 문서
+
+<br />
 
 정책 문서는 조항 단위로 나누는 것이 적합할 수 있습니다.
 
@@ -806,7 +1048,13 @@ RAG를 구축하다 보면 어느 순간 이런 질문을 하게 됩니다.
 제4조 예외 사항
 ```
 
+<br />
+<br />
+<br />
+
 ### 기술 문서
+
+<br />
 
 기술 문서는 문제 해결 단위로 나누는 것이 좋을 수 있습니다.
 
@@ -818,32 +1066,57 @@ RAG를 구축하다 보면 어느 순간 이런 질문을 하게 됩니다.
 참고 명령어
 ```
 
-### FAQ 문서
-
-FAQ는 질문과 답변을 하나의 청크로 묶는 방식이 적합할 수 있습니다.
-
-```text
-Q. 비밀번호를 잊어버렸습니다.
-A. 관리자 포털에서 재설정할 수 있습니다.
-```
-
-즉, 모든 문서에 같은 청킹 전략을 적용하면 안 됩니다.  
-문서의 성격에 맞게 나눠야 검색 품질이 좋아집니다.
-
-
+<br />
+<br />
+<br />
 
 ## 15. Memory와 RAG는 구분하는 것이 좋습니다
+
+<br />
 
 에이전트 시스템에서는 **Memory**와 **RAG**가 함께 언급되는 경우가 많습니다.  
 하지만 둘은 목적이 다르기 때문에 구분해서 설계하는 것이 좋습니다.
 
-| 구분     | Memory                      | RAG                   |
-| ------ | --------------------------- | --------------------- |
-| 목적     | 사용자나 에이전트의 상태, 선호, 과거 행동 저장 | 외부 지식 문서 검색           |
-| 데이터 성격 | 개인화된 경험, 대화 이력, 작업 상태       | 정책, 매뉴얼, 문서, DB       |
-| 변경 주체  | 에이전트 또는 사용자                 | 문서 관리 시스템, 운영자        |
-| 위험     | 잘못된 기억 누적                   | 잘못된 문서 검색             |
-| 예시     | 사용자는 Python을 선호합니다.         | API 인증 방식은 OAuth2입니다. |
+<br />
+
+<table style="width:100%; border-collapse:collapse; margin:0 auto; font-size:15px; line-height:1.6; border-top:2px solid #333;">
+<thead>
+  <tr>
+    <th style="width:33.33%; padding:12px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #d9d9d9; background:#f7f8fa; text-align:left; font-weight:700;">구분</th>
+    <th style="width:33.33%; padding:12px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #d9d9d9; background:#f7f8fa; text-align:left; font-weight:700;">Memory</th>
+    <th style="width:33.33%; padding:12px 10px; border-bottom:1px solid #d9d9d9; background:#f7f8fa; text-align:left; font-weight:700;">RAG</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">목적</td>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">사용자나 에이전트의 상태, 선호, 과거 행동 저장</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">외부 지식 문서 검색</td>
+  </tr>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">데이터 성격</td>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">개인화된 경험, 대화 이력, 작업 상태</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">정책, 매뉴얼, 문서, DB</td>
+  </tr>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">변경 주체</td>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">에이전트 또는 사용자</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">문서 관리 시스템, 운영자</td>
+  </tr>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">위험</td>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">잘못된 기억 누적</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">잘못된 문서 검색</td>
+  </tr>
+  <tr>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">예시</td>
+    <td style="padding:11px 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #eeeeee; vertical-align:top;">사용자는 Python을 선호합니다.</td>
+    <td style="padding:11px 10px; border-bottom:1px solid #eeeeee; vertical-align:top;">API 인증 방식은 OAuth2입니다.</td>
+  </tr>
+</tbody>
+</table>
+
+<br />
 
 RAG 참조 문서를 에이전트가 마음대로 수정하게 만들면 운영 파이프라인이 복잡해질 수 있습니다.  
 문서 수정, 재파싱, 재청킹, 재임베딩, 인덱스 갱신, 권한 관리까지 고려해야 하기 때문입니다.
@@ -858,13 +1131,15 @@ RAG Knowledge Base
 → 검증된 문서, 정책, 매뉴얼, 기술 자료
 ```
 
-
+<br />
+<br />
+<br />
 
 ## 16. RAG가 죽었다는 말에 대하여
 
-LLM의 컨텍스트 길이가 길어지고, 에이전트와 툴 호출이 발전하면서 RAG가 필요 없는 것 아니냐는 이야기가 종종 나옵니다.
+<br />
 
-하지만 RAG의 본질은 사라지지 않습니다.
+LLM의 컨텍스트 길이가 길어지고, 에이전트와 툴 호출이 발전하면서 RAG가 필요 없는 것 아니냐는 이야기가 종종 나옵니다. 하지만 RAG의 본질은 사라지지 않습니다.
 
 ```text
 필요한 정보를 찾습니다.
@@ -879,9 +1154,13 @@ LLM의 컨텍스트 길이가 길어지고, 에이전트와 툴 호출이 발전
 
 RAG는 특정 유행 기술이라기보다, LLM 시스템에서 외부 지식을 다루는 기본 패턴에 가깝습니다.
 
-
+<br />
+<br />
+<br />
 
 ## 17. RAG를 공부할 때 봐야 할 핵심 주제
+
+<br />
 
 RAG를 제대로 공부하려면 단순히 "Vector DB에 넣고 검색한다"에서 멈추면 안 됩니다.  
 아래 주제를 함께 이해해야 합니다.
@@ -913,11 +1192,13 @@ RAG를 제대로 공부하려면 단순히 "Vector DB에 넣고 검색한다"에
 3. 검색된 결과가 정말 답변에 필요한 근거인가요?
 ```
 
-
+<br />
 
 ## 18. RAG 구현을 위한 기본 체크리스트
 
 RAG 시스템을 만들 때는 아래 질문을 기준으로 점검할 수 있습니다.
+
+<br />
 
 ### 데이터 준비
 
@@ -929,6 +1210,8 @@ PDF, HTML, Markdown, DB, Notion, Confluence 등 어디에서 가져오나요?
 문서 업데이트 주기는 어떻게 관리하나요?
 ```
 
+<br />
+
 ### 청킹
 
 ```text
@@ -939,6 +1222,8 @@ PDF, HTML, Markdown, DB, Notion, Confluence 등 어디에서 가져오나요?
 문서 유형별로 다른 청킹 전략이 필요한가요?
 ```
 
+<br />
+
 ### 임베딩
 
 ```text
@@ -947,6 +1232,8 @@ PDF, HTML, Markdown, DB, Notion, Confluence 등 어디에서 가져오나요?
 질문과 문서가 같은 언어로 임베딩되나요?
 임베딩 모델 변경 시 재색인이 필요한가요?
 ```
+
+<br />
 
 ### 검색
 
@@ -958,6 +1245,8 @@ Top-K 값은 적절한가요?
 검색 결과에 노이즈가 많지는 않나요?
 ```
 
+<br />
+
 ### 생성
 
 ```text
@@ -968,6 +1257,8 @@ LLM에게 전달하는 컨텍스트가 충분한가요?
 검색 결과에 없는 내용을 생성하지 않도록 제어하나요?
 ```
 
+<br />
+
 ### 평가
 
 ```text
@@ -977,11 +1268,15 @@ LLM에게 전달하는 컨텍스트가 충분한가요?
 검색 실패와 생성 실패를 분리해서 분석하나요?
 ```
 
-
+<br />
 
 ## 19. 정리
 
+<br />
+
 RAG는 LLM에게 모든 지식을 외우게 만드는 기술이 아닙니다.  LLM이 답변하기 전에 필요한 정보를 찾아서 제공하는 구조입니다.
+
+<br />
 
 핵심 흐름은 단순합니다.
 
@@ -991,6 +1286,8 @@ RAG는 LLM에게 모든 지식을 외우게 만드는 기술이 아닙니다.  L
 필요한 문맥만 골라냅니다.
 LLM에게 근거와 함께 답하게 합니다.
 ```
+
+<br />
 
 하지만 실제 품질은 세부 설계에서 달라집니다.
 
@@ -1004,6 +1301,8 @@ LLM에게 어떤 컨텍스트를 넣나요?
 답변이 근거에 기반하는지 어떻게 검증하나요?
 ```
 
+<br />
+
 결국 RAG의 목적은 하나입니다.
 
 ```text
@@ -1012,5 +1311,10 @@ LLM이 더 정확하고,
 더 근거 있는 답변을 하도록 돕는 것입니다.
 ```
 
-RAG는 낡은 개념이라기보다, LLM을 실무 시스템으로 만들기 위한 기본 인프라에 가깝습니다.  
-에이전트, 툴 호출, 긴 컨텍스트, 온톨로지, 그래프 검색이 발전하더라도, 좋은 답변을 위해 필요한 정보를 찾아 넣는다는 RAG의 본질은 계속 남습니다.
+<br />
+
+RAG는 낡은 개념이라기보다, LLM을 실무 시스템으로 만들기 위한 기본 인프라에 가깝습니다. 에이전트, 툴 호출, 긴 컨텍스트, 온톨로지, 그래프 검색이 발전하더라도, 좋은 답변을 위해 필요한 정보를 찾아 넣는다는 RAG의 본질은 계속 남습니다.
+
+<br />
+<br />
+<br />
