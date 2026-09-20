@@ -1,8 +1,16 @@
 <!--
 
-지구상에서 가장 친절한 RAG: 데이터 전처리가 검색 품질을 결정하는 이유
+지구상에서 가장 친절한 RAG 01: 데이터 전처리가 검색 품질을 결정하는 이유
 
 -->
+
+<br />
+
+<img src="https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/AI/%EC%A7%80%EA%B5%AC%EC%83%81%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5%EC%B9%9C%EC%A0%88%ED%95%9C-RAG-01-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%A0%84%EC%B2%98%EB%A6%AC/img/cover.jpg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+
+<br />
+<br />
+<br />
 
 ## 1. 시작하며
 

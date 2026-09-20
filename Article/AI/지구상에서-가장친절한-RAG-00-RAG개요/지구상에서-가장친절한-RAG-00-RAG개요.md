@@ -1,6 +1,6 @@
 <!--
 
-지구상에서 가장 친절한 RAG: LLM에게 필요한 정보를 찾아주는 기술
+지구상에서 가장 친절한 RAG 00: LLM에게 필요한 정보를 찾아주는 기술
 
 -->
 
@@ -10,13 +10,9 @@
 
 <br />
 
-<img src="https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/AI/%EC%A7%80%EA%B5%AC%EC%83%81%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5%EC%B9%9C%EC%A0%88%ED%95%9C-RAG-00-RAG%EA%B0%9C%EC%9A%94/img/d6cc9d71c95359c81715aa8beafcbd0b88ed063dcf90289fd1612acdfbdddd5d.jpg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
-
-<br />
-
-<br />
-
 <img src="https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/AI/%EC%A7%80%EA%B5%AC%EC%83%81%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5%EC%B9%9C%EC%A0%88%ED%95%9C-RAG-00-RAG%EA%B0%9C%EC%9A%94/img/1779518830146_4baf9850_0.jpeg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+<br />
+<center> RAG 전체 흐름도 </center>
 
 <br />
 
@@ -1272,6 +1268,8 @@ LLM에게 전달하는 컨텍스트가 충분한가요?
 
 ## 19. 정리
 
+<br />
+<img src="https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/AI/%EC%A7%80%EA%B5%AC%EC%83%81%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5%EC%B9%9C%EC%A0%88%ED%95%9C-RAG-00-RAG%EA%B0%9C%EC%9A%94/img/d6cc9d71c95359c81715aa8beafcbd0b88ed063dcf90289fd1612acdfbdddd5d.jpg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
 <br />
 
 RAG는 LLM에게 모든 지식을 외우게 만드는 기술이 아닙니다.  LLM이 답변하기 전에 필요한 정보를 찾아서 제공하는 구조입니다.

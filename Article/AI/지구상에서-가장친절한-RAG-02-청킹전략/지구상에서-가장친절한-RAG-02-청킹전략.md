@@ -1,8 +1,17 @@
 <!--
 
-지구상에서 가장 친절한 RAG: 청킹 전략은 왜 중요한가
+지구상에서 가장 친절한 RAG 02: 청킹 전략은 왜 중요한가
 
 -->
+
+<br />
+
+<img src="https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/AI/%EC%A7%80%EA%B5%AC%EC%83%81%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5%EC%B9%9C%EC%A0%88%ED%95%9C-RAG-02-%EC%B2%AD%ED%82%B9%EC%A0%84%EB%9E%B5/img/cover.jpg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+
+<br />
+<br />
+<br />
+
 
 ## 시작하며
 

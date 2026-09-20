@@ -1,8 +1,18 @@
 <!--
 
-지구상에서 가장 친절한 RAG: 검색된 근거를 더 잘 쓰는 방법
+지구상에서 가장 친절한 RAG 05: 검색된 근거를 더 잘 쓰는 방법
 
 -->
+
+<br />
+
+<img src="https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/AI/%EC%A7%80%EA%B5%AC%EC%83%81%EC%97%90%EC%84%9C-%EA%B0%80%EC%9E%A5%EC%B9%9C%EC%A0%88%ED%95%9C-RAG-05-%EA%B2%80%EC%83%89%ED%9B%84-%EC%B5%9C%EC%A0%81%ED%99%94/img/cover.jpg" align="center" style="display: block; margin: 0px auto; display: block; height: auto; border:1px solid #eaeaea; padding: 0px;" width="100%" >
+
+<br />
+<br />
+<br />
+
+
 
 ## 시작하며
 
