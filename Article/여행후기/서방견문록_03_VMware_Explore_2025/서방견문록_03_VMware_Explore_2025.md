@@ -7,12 +7,15 @@
 라스베이거스에 놀러 간 것은 아니기에 이제 본업으로 돌아가 봅시다.<br />VMware Explore 2025는 수백 개의 세션에서 클라우드 AI 관련 주제를 다룹니다. 그중에서 Spring One 세션에 주로 참석하였습니다.
 
 <br />
-
 <br />
 
 ### 1. 등록
 
+[##_Image|kage@dLv0Ag/btsQexzXXjz/AAAAAAAAAAAAAAAAAAAAAOUEj2NXS0Dy1ZZAR6ef5ik2M1ZXy1NMgt3uM60pfIq_/img.jpg?credential=yqXZFxpELC7KVnFOS48ylbz2pIh7yKj8&amp;expires=1790780399&amp;allow_ip=&amp;allow_referer=&amp;signature=iDJZ%2FKynWlw4IeWAK325GF9P%2B3c%3D|CDM|1.3|{"originWidth":1800,"originHeight":1226,"style":"alignCenter"}_##]
+
+<!-- 
 ![](https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/%EC%97%AC%ED%96%89%ED%9B%84%EA%B8%B0/%EC%84%9C%EB%B0%A9%EA%B2%AC%EB%AC%B8%EB%A1%9D_03_VMware_Explore_2025/img/01_1._%EB%93%B1%EB%A1%9D.jpg)
+-->
 
 <br />
 
@@ -29,7 +32,6 @@
 ![](https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/%EC%97%AC%ED%96%89%ED%9B%84%EA%B8%B0/%EC%84%9C%EB%B0%A9%EA%B2%AC%EB%AC%B8%EB%A1%9D_03_VMware_Explore_2025/img/03_%EB%93%B1%EB%A1%9D%ED%95%98%EB%8A%94_%EA%B3%B3%EC%9E%85%EB%8B%88%EB%8B%A4._%EA%B1%B0%EB%8C%80%ED%95%9C_LED%EA%B0%80_%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4._%EC%82%AC%EC%A7%84%EC%9C%BC%EB%A1%9C_%EB%8A%90%EB%82%8C%EC%9D%B4_%EC%9E%98_%EC%A0%84%EB%8B%AC%EC%9D%B4_%EC%95%88.jpg)
 
 <br />
-
 <br />
 
 조식을 먹기 위해서 일찍 갔습니다.
@@ -51,7 +53,6 @@
 등록을 완료하면 사전 등록 시 입력한 회사명과 제 이름이 출력된 명찰을 줍니다.<br /><br />모자이크한 것은 QR 코드인데 세션이나 장소 입장 시 QR 코드를 촬영합니다.
 
 <br />
-
 <br />
 
 ### 2. 로비(대기 Zone)
@@ -79,7 +80,6 @@
 ![](https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/%EC%97%AC%ED%96%89%ED%9B%84%EA%B8%B0/%EC%84%9C%EB%B0%A9%EA%B2%AC%EB%AC%B8%EB%A1%9D_03_VMware_Explore_2025/img/09_%EB%B0%96%EC%9D%B4_%EC%8B%9C%EC%9B%90%ED%95%98%EA%B2%8C_%EB%B3%B4%EC%9E%85%EB%8B%88%EB%8B%A4.jpg)
 
 <br />
-
 <br />
 
 라스베이거스의 명물 스피어 뷰입니다. 통유리를 통해서 스피어를 볼 수 있습니다. 
@@ -127,7 +127,6 @@
 지금까지 보신 것은 2층이었고 1층으로 내려가면 식사하는 공간이 나옵니다. <br /><br />1층에도 입구가 있는데 보안 요원들이 1층에서 들어오는 것을 막고 있습니다. 
 
 <br />
-
 <br />
 
 ### 3. The Hub
@@ -183,7 +182,6 @@
 ![](https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/%EC%97%AC%ED%96%89%ED%9B%84%EA%B8%B0/%EC%84%9C%EB%B0%A9%EA%B2%AC%EB%AC%B8%EB%A1%9D_03_VMware_Explore_2025/img/22_%EA%B5%B3%EC%A6%88%EB%A5%BC_%EB%B9%BC%EB%86%93%EC%9D%84_%EC%88%98_%EC%97%86%EC%A3%A0._%EA%B0%80%EB%B0%A9%EC%9D%84_%EC%A4%8D%EB%8B%88%EB%8B%A4._%EB%82%98%EB%88%A0%EC%A3%BC%EC%8B%9C%EB%8A%94_%EB%B6%84%EC%9D%B4_%EC%97%90%EB%84%88%EC%A7%80%EA%B0%80_%EC%A7%84%EC%A7%9C_%EB%84%98%EC%B9%A9.jpg)
 
 <br />
-
 <br />가방은 꽤 크고 튼튼하고 푸르뎅뎅합니다. 공군에 나눠주면 좋을 것 같습니다. 
 
 재활용 소재를 이용했다고 하는데 튼튼한 비닐 느낌이 있습니다.
@@ -197,7 +195,6 @@
 첫날 세션 입장 전에 티셔츠를 받겠냐고 물어보고 나눠줍니다.
 
 <br />
-
 <br />
 
 ![](https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/%EC%97%AC%ED%96%89%ED%9B%84%EA%B8%B0/%EC%84%9C%EB%B0%A9%EA%B2%AC%EB%AC%B8%EB%A1%9D_03_VMware_Explore_2025/img/24_%EC%B2%AB%EB%82%A0_%EC%84%B8%EC%85%98_%EC%9E%85%EC%9E%A5%EC%A0%84%EC%97%90_%ED%8B%B0%EC%85%94%EC%B8%A0%EB%A5%BC_%EB%B0%9B%EA%B2%A0%EB%83%90%EA%B3%A0_%EB%AC%BC%EC%96%B4%EB%B3%B4%EA%B3%A0_%EB%82%98%EB%88%A0%EC%A4%8D%EB%8B%88%EB%8B%A4.jpg)
@@ -237,7 +234,6 @@
 <br />
 
 유일하게 체험하는 거 발견했습니다. <br /><br />AWS 클라우드 상품 중에 카메라로 찍은 사진을 원하는 스타일로 변경해 주는 것입니다. 웹툰의 툰필터와 유사한 서비스입니다. <br /><br />화풍을 선택하고 현장에서 제 얼굴을 촬영하고 30초 뒤에 저렇게 사진이 출력되었습니다. <br /><br />
-
 <br />
 
 ![](https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/%EC%97%AC%ED%96%89%ED%9B%84%EA%B8%B0/%EC%84%9C%EB%B0%A9%EA%B2%AC%EB%AC%B8%EB%A1%9D_03_VMware_Explore_2025/img/31_%EC%9C%A0%EC%9D%BC%ED%95%98%EA%B2%8C_%EC%B2%B4%ED%97%98%ED%95%98%EB%8A%94%EA%B1%B0_%EB%B0%9C%EA%B2%AC%ED%96%88%EC%8A%B5%EB%8B%88%EB%8B%A4._AWS_%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C_%EC%83%81%ED%92%88_%EC%A4%91%EC%97%90_%EC%B9%B4%EB%A9%94%EB%9D%BC%EB%A1%9C_%EC%B0%8D%EC%9D%80.jpg)
@@ -247,7 +243,6 @@
 클라우드 주제만 있는 것이 아닙니다. SpringOne 라운지가 있는데 여기서 주요 메인테이너들을 만날 수 있습니다. 
 
 <br />
-
 <br />
 
 ![](https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/%EC%97%AC%ED%96%89%ED%9B%84%EA%B8%B0/%EC%84%9C%EB%B0%A9%EA%B2%AC%EB%AC%B8%EB%A1%9D_03_VMware_Explore_2025/img/32_%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C_%EC%A3%BC%EC%A0%9C%EB%A7%8C_%EC%9E%88%EB%8A%94%EA%B2%83%EC%9D%B4_%EC%95%84%EB%8B%99%EB%8B%88%EB%8B%A4._SpringOne_%EB%9D%BC%EC%9A%B4%EC%A7%80%EA%B0%80_%EC%9E%88%EB%8A%94%EB%8D%B0_%EC%97%AC%EA%B8%B0%EC%84%9C.jpg)
@@ -281,7 +276,6 @@ K-면허를 가지고 있는 저도 레이싱 겜을 해봤습니다. 생각보�
 ![](https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/%EC%97%AC%ED%96%89%ED%9B%84%EA%B8%B0/%EC%84%9C%EB%B0%A9%EA%B2%AC%EB%AC%B8%EB%A1%9D_03_VMware_Explore_2025/img/37_K-%EB%A9%B4%ED%97%88%EB%A5%BC_%EA%B0%80%EC%A7%80%EA%B3%A0_%EC%9E%88%EB%8A%94_%EC%A0%80%EB%8F%84_%EB%A0%88%EC%9D%B4%EC%8B%B1_%EA%B2%9C%EC%9D%84_%ED%95%B4%EB%B4%A4%EC%8A%B5%EB%8B%88%EB%8B%A4._%EC%83%9D%EA%B0%81%EB%B3%B4%EB%8B%A4_%EC%96%B4%EB%A0%A4%EC%9B%A0%EC%8A%B5%EB%8B%88%EB%8B%A4.jpg)
 
 <br />
-
 <br />
 
 The Hub의 맨 뒤에 핸즈온 랩이 있습니다. 
@@ -289,7 +283,6 @@ The Hub의 맨 뒤에 핸즈온 랩이 있습니다. 
 입구에 모니터 12대에 실습하는 상황 대시보드가 실시간으로 모니터링되어서 보여주고 있습니다. 
 
 <br />
-
 <br />
 
 ![](https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/%EC%97%AC%ED%96%89%ED%9B%84%EA%B8%B0/%EC%84%9C%EB%B0%A9%EA%B2%AC%EB%AC%B8%EB%A1%9D_03_VMware_Explore_2025/img/38_%EC%9E%85%EA%B5%AC%EC%97%90_%EB%AA%A8%EB%8B%88%ED%84%B0_12%EB%8C%80%EC%97%90_%EC%8B%A4%EC%8A%B5%ED%95%98%EB%8A%94_%EC%83%81%ED%99%A9_%EB%8C%80%EC%8B%9C%EB%B3%B4%EB%93%9C%EA%B0%80_%EC%8B%A4%EC%8B%9C%EA%B0%84%EC%9C%BC%EB%A1%9C_%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81%EB%90%98%EC%96%B4%EC%84%9C_%EB%B3%B4.jpg)
@@ -319,9 +312,7 @@ The Hub의 맨 뒤에 핸즈온 랩이 있습니다. 
 라스베이거스 느낌 나게 카드도 있습니다. 
 
 <br />
-
 <br />
-
 <br />
 
 ![](https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/%EC%97%AC%ED%96%89%ED%9B%84%EA%B8%B0/%EC%84%9C%EB%B0%A9%EA%B2%AC%EB%AC%B8%EB%A1%9D_03_VMware_Explore_2025/img/43_%EB%9D%BC%EC%8A%A4%EB%B2%A0%EC%9D%B4%EA%B1%B0%EC%8A%A4_%EB%8A%90%EB%82%8C_%EB%82%98%EA%B2%8C_%EC%B9%B4%EB%93%9C%EB%8F%84_%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.jpg)
@@ -335,7 +326,6 @@ The Hub의 맨 뒤에 핸즈온 랩이 있습니다. 
 ![](https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/%EC%97%AC%ED%96%89%ED%9B%84%EA%B8%B0/%EC%84%9C%EB%B0%A9%EA%B2%AC%EB%AC%B8%EB%A1%9D_03_VMware_Explore_2025/img/45_%EB%9D%BC%EC%8A%A4%EB%B2%A0%EC%9D%B4%EA%B1%B0%EC%8A%A4_%EB%8A%90%EB%82%8C_%EB%82%98%EA%B2%8C_%EC%B9%B4%EB%93%9C%EB%8F%84_%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4.jpg)
 
 <br />
-
 <br />
 
 Puppy Love라는 부스에서는 귀여운 새끼 강아지들이 있습니다. 
@@ -343,9 +333,7 @@ Puppy Love라는 부스에서는 귀여운 새끼 강아지들이 있습니다.�
 그런데 이 장소가 시끄럽고 큰 소리가 나는 곳이라 좋지 않은 곳이라고 생각이 들었는데 그래서인지 오후에는 강아지들이 다 없었습니다. 
 
 <br />
-
 <br />
-
 <br />
 
 ### 4. 세션
@@ -367,7 +355,6 @@ Spring 주제는 Explore에 비해서 마이너해서인지 다른 세션에 비
 한 50~100명 수용하는 사이즈에서 모든 세션이 진행되었습니다. 
 
 <br />
-
 <br />
 
 ![](https://raw.githubusercontent.com/KoEonYack/Tistory-Coveant/refs/heads/master/Article/%EC%97%AC%ED%96%89%ED%9B%84%EA%B8%B0/%EC%84%9C%EB%B0%A9%EA%B2%AC%EB%AC%B8%EB%A1%9D_03_VMware_Explore_2025/img/48_%ED%95%9C_50~100%EB%AA%85_%EC%88%98%EC%9A%A9%ED%95%98%EB%8A%94_%EC%82%AC%EC%9D%B4%EC%A6%88%EC%97%90%EC%84%9C_%EB%AA%A8%EB%93%A0_%EC%84%B8%EC%85%98%EC%9D%B4_%EC%A7%84%ED%96%89%EB%90%98%EC%97%88%EC%8A%B5%EB%8B%88%EB%8B%A4.jpg)
@@ -435,7 +422,6 @@ Customer Panel 시간입니다. 스프링 고수들의 실전 노하우 �
 출시된 지 3년은 지난 것 같은 무선 충전기를 받았습니다. (왜 아이폰 15 지원이라고만 되어 있을까요..)<br /><br />맥북 거치대, 키링도 주더군요. 
 
 <br />
-
 <br />
 
 ### 6. 코리아 파티
@@ -463,7 +449,6 @@ Customer Panel 시간입니다. 스프링 고수들의 실전 노하우 �
 여기 김치가 한국보다 맛있습니다. 감동.. <br /><br />쫌 눈치가 보여서 사진 못 찍고 있다가 앞에 계신 분이 찍으시길래 따라 찍었습니다.<br /><br />이렇게 회도 나옵니다. 
 
 <br />
-
 <br />
 
 하지만 먹는 것으로서는 미국에 있는 동안 쉽지 않았는데 그것은 다음 글에서 이어서 보시죠!! [K-백엔드 개발자의 서방견문록: 식사](https://covenant.tistory.com/294)
